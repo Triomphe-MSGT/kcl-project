@@ -1,0 +1,915 @@
+'use client'
+
+import { useState, useEffect } from 'react'
+import { useTranslations } from 'next-intl'
+import {
+  Search,
+  Grid3X3,
+  List,
+  Laptop,
+  Wheat,
+  Coffee,
+  Heart,
+  Gamepad2,
+  Package,
+  Car,
+  Zap,
+  Building,
+  Settings,
+  Sparkles,
+  Scissors,
+  Shirt,
+  Palette,
+  Droplets,
+  Sprout,
+  PiggyBank,
+  Apple,
+  GlassWater,
+  Shield,
+  Dumbbell,
+  Monitor,
+  Volume2,
+  Music,
+  Box,
+  ChevronRight,
+  ShoppingCart,
+  Filter,
+  CheckCircle,
+  X,
+  User,
+  MapPin,
+  FileText,
+  Hash,
+  Send,
+} from 'lucide-react'
+import { PageHero } from '@/components/layout/PageHero'
+import { buildWhatsAppMessage, openWhatsAppMessage } from '@/lib/whatsapp'
+
+const WHATSAPP_NUMBER = '237683242277'
+
+// Types
+interface ProductSubcategory {
+  key: string
+  icon: React.ElementType
+  image: string
+}
+
+interface ProductCategory {
+  id: string
+  icon: React.ElementType
+  color: string
+  bgColor: string
+  gradient: string
+  subcategories: ProductSubcategory[]
+  totalProducts: number
+  image: string
+}
+
+// Place Order Modal Component
+interface PlaceOrderModalProps {
+  isOpen: boolean
+  onClose: () => void
+  subcategory: {
+    categoryId: string
+    subcategoryKey: string
+    image: string
+  } | null
+}
+
+function PlaceOrderModal({
+  isOpen,
+  onClose,
+  subcategory,
+}: PlaceOrderModalProps) {
+  const t = useTranslations('ProcurementPage')
+  const [formData, setFormData] = useState({
+    name: '',
+    address: '',
+    productDescription: '',
+    quantity: '',
+  })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+      // Reset form when modal closes
+      setFormData({
+        name: '',
+        address: '',
+        productDescription: '',
+        quantity: '',
+      })
+    }
+  }, [isOpen])
+
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }))
+  }
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+
+    const categoryName = subcategory
+      ? t(`categories.${subcategory.categoryId}.name`)
+      : '—'
+    const productName = subcategory
+      ? t(
+          `categories.${subcategory.categoryId}.subcategories.${subcategory.subcategoryKey}.name`
+        )
+      : '—'
+
+    const message = buildWhatsAppMessage(
+      t('modalOrder.orderModal.whatsapp.orderTitle'),
+      [
+        { label: t('modalOrder.orderModal.name.label'), value: formData.name },
+        {
+          label: t('modalOrder.orderModal.address.label'),
+          value: formData.address,
+        },
+        {
+          label: t('modalOrder.orderModal.category.label'),
+          value: categoryName,
+        },
+        {
+          label: t('modalOrder.orderModal.product.label'),
+          value: productName,
+        },
+        {
+          label: t('modalOrder.orderModal.productDescription.label'),
+          value: formData.productDescription,
+        },
+        {
+          label: t('modalOrder.orderModal.quantity.label'),
+          value: formData.quantity,
+        },
+      ]
+    )
+
+    openWhatsAppMessage(WHATSAPP_NUMBER, message)
+
+    // Simulate submission process
+    setTimeout(() => {
+      setIsSubmitting(false)
+      onClose()
+    }, 1500)
+  }
+
+  if (!isOpen) return null
+
+  return (
+    <div className='fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4 overflow-y-auto'>
+      <div className='w-full max-w-md bg-white rounded-xl shadow-2xl relative'>
+        <button
+          onClick={onClose}
+          className='absolute top-4 right-4 p-2 text-gray-600 hover:text-gray-900 transition-colors bg-white rounded-full shadow-md hover:shadow-lg z-10'
+          aria-label={t('modalOrder.close')}
+        >
+          <X size={20} />
+        </button>
+
+        <div className='p-6'>
+          <div className='text-center mb-6'>
+            <div className='w-16 h-16 bg-gradient-to-r from-kci-brand to-kci-accent rounded-full flex items-center justify-center mx-auto mb-4'>
+              <ShoppingCart className='text-white' size={28} />
+            </div>
+            <h2 className='text-2xl font-bold text-gray-900 '>
+              {t('modalOrder.orderModal.title')}
+            </h2>
+            <p className='text-gray-600 mt-2'>
+              {subcategory &&
+                t(
+                  `categories.${subcategory.categoryId}.subcategories.${subcategory.subcategoryKey}.name`
+                )}
+            </p>
+          </div>
+
+          <form onSubmit={handleSubmit} className='space-y-4'>
+            <div>
+              <label
+                htmlFor='name'
+                className='block text-sm font-medium text-gray-700 mb-1 '
+              >
+                {t('modalOrder.orderModal.name.label')}
+              </label>
+              <div className='relative'>
+                <User
+                  className='absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400'
+                  size={18}
+                />
+                <input
+                  type='text'
+                  id='name'
+                  name='name'
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  placeholder={t('modalOrder.orderModal.name.placeholder')}
+                  className='w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-kci-brand focus:border-transparent'
+                  required
+                />
+              </div>
+            </div>
+
+            <div>
+              <label
+                htmlFor='address'
+                className='block text-sm font-medium text-gray-700 mb-1 '
+              >
+                {t('modalOrder.orderModal.address.label')}
+              </label>
+              <div className='relative'>
+                <MapPin
+                  className='absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400'
+                  size={18}
+                />
+                <input
+                  type='text'
+                  id='address'
+                  name='address'
+                  value={formData.address}
+                  onChange={handleInputChange}
+                  placeholder={t('modalOrder.orderModal.address.placeholder')}
+                  className='w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-kci-brand focus:border-transparent'
+                  required
+                />
+              </div>
+            </div>
+
+            <div>
+              <label
+                htmlFor='productDescription'
+                className='block text-sm font-medium text-gray-700 mb-1 '
+              >
+                {t('modalOrder.orderModal.productDescription.label')}
+              </label>
+              <div className='relative'>
+                <FileText
+                  className='absolute left-3 top-3 text-gray-400'
+                  size={18}
+                />
+                <textarea
+                  id='productDescription'
+                  name='productDescription'
+                  value={formData.productDescription}
+                  onChange={handleInputChange}
+                  placeholder={t(
+                    'modalOrder.orderModal.productDescription.placeholder'
+                  )}
+                  rows={3}
+                  className='w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-kci-brand focus:border-transparent resize-none'
+                  required
+                />
+              </div>
+            </div>
+
+            <div>
+              <label
+                htmlFor='quantity'
+                className='block text-sm font-medium text-gray-700 mb-1 '
+              >
+                {t('modalOrder.orderModal.quantity.label')}
+              </label>
+              <div className='relative'>
+                <Hash
+                  className='absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400'
+                  size={18}
+                />
+                <input
+                  type='number'
+                  id='quantity'
+                  name='quantity'
+                  value={formData.quantity}
+                  onChange={handleInputChange}
+                  placeholder={t('modalOrder.orderModal.quantity.placeholder')}
+                  min='1'
+                  className='w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-kci-brand focus:border-transparent'
+                  required
+                />
+              </div>
+            </div>
+
+            <button
+              type='submit'
+              disabled={isSubmitting}
+              className='w-full bg-gradient-to-r from-kci-brand to-kci-accent hover:from-kci-brand/90 hover:to-kci-accent/90 text-white py-3 px-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center disabled:opacity-70'
+            >
+              {isSubmitting ? (
+                <>
+                  <div className='animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2'></div>
+                  {t('modalOrder.orderModal.submit')}...
+                </>
+              ) : (
+                <>
+                  <Send size={18} className='mr-2' />
+                  {t('modalOrder.orderModal.submit')}
+                </>
+              )}
+            </button>
+          </form>
+
+          <p className='text-xs text-gray-500 text-center mt-4'>
+            {t('modalOrder.orderModal.note')}
+          </p>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const productCategories: ProductCategory[] = [
+  {
+    id: 'technology',
+    icon: Laptop,
+    color: 'text-kci-brand',
+    bgColor: 'bg-kci-brand/10',
+    gradient: 'from-kci-brand to-blue-600',
+    totalProducts: 2847,
+    image:
+      '/images/home/axes/procurement.jpg',
+    subcategories: [
+      {
+        key: 'electronics',
+        icon: Laptop,
+        image:
+          '/images/home/axes/procurement.jpg',
+      },
+      {
+        key: 'automotive',
+        icon: Car,
+        image:
+          '/images/home/axes/procurement.jpg',
+      },
+      {
+        key: 'energy',
+        icon: Zap,
+        image:
+          '/images/home/axes/procurement.jpg',
+      },
+      {
+        key: 'construction',
+        icon: Building,
+        image:
+          '/images/home/axes/procurement.jpg',
+      },
+      {
+        key: 'electromechanical',
+        icon: Settings,
+        image:
+          '/images/home/axes/procurement.jpg',
+      },
+    ],
+  },
+  {
+    id: 'fashion',
+    icon: Shirt,
+    color: 'text-kci-warm',
+    bgColor: 'bg-kci-warm/10',
+    gradient: 'from-kci-warm to-orange-600',
+    totalProducts: 1965,
+    image:
+      '/images/home/axes/procurement.jpg',
+    subcategories: [
+      {
+        key: 'beauty',
+        icon: Sparkles,
+        image:
+          '/images/home/axes/procurement.jpg',
+      },
+      {
+        key: 'haircare',
+        icon: Scissors,
+        image:
+          '/images/home/axes/procurement.jpg',
+      },
+      {
+        key: 'clothing',
+        icon: Shirt,
+        image:
+          '/images/home/axes/procurement.jpg',
+      },
+      {
+        key: 'cosmetics',
+        icon: Palette,
+        image:
+          '/images/home/axes/procurement.jpg',
+      },
+      {
+        key: 'bodycare',
+        icon: Droplets,
+        image:
+          '/images/home/axes/procurement.jpg',
+      },
+    ],
+  },
+  {
+    id: 'agriculture',
+    icon: Wheat,
+    color: 'text-green-600',
+    bgColor: 'bg-green-50',
+    gradient: 'from-green-500 to-emerald-600',
+    totalProducts: 834,
+    image:
+      '/images/home/axes/procurement.jpg',
+    subcategories: [
+      {
+        key: 'crops',
+        icon: Sprout,
+        image:
+          '/images/home/axes/procurement.jpg',
+      },
+      {
+        key: 'livestock',
+        icon: PiggyBank,
+        image:
+          '/images/home/axes/procurement.jpg',
+      },
+    ],
+  },
+  {
+    id: 'food',
+    icon: Coffee,
+    color: 'text-amber-600',
+    bgColor: 'bg-amber-50',
+    gradient: 'from-amber-500 to-orange-600',
+    totalProducts: 1247,
+    image:
+      '/images/home/axes/procurement.jpg',
+    subcategories: [
+      {
+        key: 'foodProducts',
+        icon: Apple,
+        image:
+          '/images/home/axes/procurement.jpg',
+      },
+      {
+        key: 'beverages',
+        icon: GlassWater,
+        image:
+          '/images/home/axes/procurement.jpg',
+      },
+    ],
+  },
+  {
+    id: 'healthcare',
+    icon: Heart,
+    color: 'text-red-600',
+    bgColor: 'bg-red-50',
+    gradient: 'from-red-500 to-pink-600',
+    totalProducts: 673,
+    image:
+      '/images/home/axes/procurement.jpg',
+    subcategories: [
+      {
+        key: 'health',
+        icon: Shield,
+        image:
+          '/images/home/axes/procurement.jpg',
+      },
+      {
+        key: 'fitness',
+        icon: Dumbbell,
+        image:
+          '/images/home/axes/procurement.jpg',
+      },
+    ],
+  },
+  {
+    id: 'entertainment',
+    icon: Gamepad2,
+    color: 'text-purple-600',
+    bgColor: 'bg-purple-50',
+    gradient: 'from-purple-500 to-indigo-600',
+    totalProducts: 592,
+    image:
+      '/images/home/axes/procurement.jpg',
+    subcategories: [
+      {
+        key: 'gaming',
+        icon: Monitor,
+        image:
+          '/images/home/axes/procurement.jpg',
+      },
+      {
+        key: 'audio',
+        icon: Volume2,
+        image:
+          '/images/home/axes/procurement.jpg',
+      },
+      {
+        key: 'musical',
+        icon: Music,
+        image:
+          '/images/home/axes/procurement.jpg',
+      },
+    ],
+  },
+  {
+    id: 'others',
+    icon: Package,
+    color: 'text-gray-600',
+    bgColor: 'bg-gray-50',
+    gradient: 'from-gray-500 to-slate-600',
+    totalProducts: 298,
+    image:
+      '/images/home/axes/procurement.jpg',
+    subcategories: [
+      {
+        key: 'packaging',
+        icon: Box,
+        image:
+          '/images/home/axes/procurement.jpg',
+      },
+    ],
+  },
+]
+
+export default function ProductsPage() {
+  const t = useTranslations('ProcurementPage')
+  const [selectedCategory, setSelectedCategory] = useState<string>('all')
+  const [searchTerm, setSearchTerm] = useState('')
+  const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid')
+  const [selectedSubcategory, setSelectedSubcategory] = useState<{
+    categoryId: string
+    subcategoryKey: string
+    image: string
+  } | null>(null)
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [isOrderModalOpen, setIsOrderModalOpen] = useState(false)
+
+  // Filter categories based on search and selection
+  const filteredCategories = productCategories.filter((category) => {
+    const categoryName = t(`categories.${category.id}.name`)
+    const matchesSearch =
+      categoryName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      category.subcategories.some((sub) =>
+        t(`categories.${category.id}.subcategories.${sub.key}.name`)
+          .toLowerCase()
+          .includes(searchTerm.toLowerCase())
+      )
+    const matchesCategory =
+      selectedCategory === 'all' || category.id === selectedCategory
+    return matchesSearch && matchesCategory
+  })
+
+  const totalProducts = productCategories.reduce(
+    (sum, cat) => sum + cat.totalProducts,
+    0
+  )
+
+  const openSubcategoryModal = (
+    categoryId: string,
+    subcategoryKey: string,
+    image: string
+  ) => {
+    setSelectedSubcategory({ categoryId, subcategoryKey, image })
+    setIsModalOpen(true)
+  }
+
+  const openOrderModal = () => {
+    setIsModalOpen(false)
+    setIsOrderModalOpen(true)
+  }
+
+  const closeModal = () => {
+    setIsModalOpen(false)
+    setSelectedSubcategory(null)
+  }
+
+  const closeOrderModal = () => {
+    setIsOrderModalOpen(false)
+  }
+
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        closeModal()
+        closeOrderModal()
+      }
+    }
+
+    if (isModalOpen || isOrderModalOpen) {
+      window.addEventListener('keydown', handleKeyDown)
+    }
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [isModalOpen, isOrderModalOpen])
+
+  useEffect(() => {
+    if (isModalOpen || isOrderModalOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+  }, [isModalOpen, isOrderModalOpen])
+
+  return (
+    <main className='min-h-screen bg-kci-surface'>
+      <PageHero
+        title={t('hero.title')}
+        titleHighlight={t('hero.titleHighlight')}
+        description={t('hero.description')}
+      />
+
+      <section className='page-section'>
+        <div className='page-container'>
+          {/* Search and Filters */}
+          <div className='bg-white/90 backdrop-blur-md rounded-xl border border-gray-100/30 shadow-lg mb-8 p-6'>
+            <div className='flex flex-col lg:flex-row gap-4 items-center justify-between'>
+              <div className='flex-1 relative'>
+                <Search
+                  className='absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 group-hover:text-kci-brand transition-colors duration-200'
+                  size={22}
+                />
+                <input
+                  placeholder={t('search.placeholder')}
+                  className='w-full pl-12 pr-12 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-kci-brand/50 focus:border-transparent shadow-md bg-white/90 text-gray-800 placeholder-gray-400 transition-all duration-300'
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                />
+                {searchTerm && (
+                  <button
+                    onClick={() => setSearchTerm('')}
+                    className='absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-kci-brand transition-colors duration-200'
+                  >
+                    <X size={22} />
+                  </button>
+                )}
+              </div>
+
+              <div className='flex items-center gap-4'>
+                {/* Category Filter */}
+                <div className='relative'>
+                  <Filter
+                    className='absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 group-hover:text-kci-brand transition-colors duration-200'
+                    size={18}
+                  />
+                  <select
+                    value={selectedCategory}
+                    onChange={(e) => setSelectedCategory(e.target.value)}
+                    className='pl-10 pr-8 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-kci-brand/50 focus:border-transparent bg-white/90 text-gray-800 transition-all duration-300 appearance-none shadow-md'
+                  >
+                    <option value='all'>{t('search.allCategories')}</option>
+                    {productCategories.map((category) => (
+                      <option key={category.id} value={category.id}>
+                        {t(`categories.${category.id}.name`)}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                {/* View Mode Toggle */}
+                <div className='flex border border-gray-200 rounded-lg overflow-hidden shadow-md'>
+                  <button
+                    onClick={() => setViewMode('grid')}
+                    className={`p-3 transition-all duration-200 ${
+                      viewMode === 'grid'
+                        ? 'bg-kci-brand text-white'
+                        : 'bg-white text-gray-600 hover:bg-gray-50'
+                    }`}
+                  >
+                    <Grid3X3 size={20} />
+                  </button>
+                  <button
+                    onClick={() => setViewMode('list')}
+                    className={`p-3 transition-all duration-200 ${
+                      viewMode === 'list'
+                        ? 'bg-kci-brand text-white'
+                        : 'bg-white text-gray-600 hover:bg-gray-50'
+                    }`}
+                  >
+                    <List size={20} />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Products Grid */}
+          <div
+            className={`grid gap-6 mb-12 ${
+              viewMode === 'grid'
+                ? 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
+                : 'grid-cols-1'
+            }`}
+          >
+            {filteredCategories.map((category, index) => (
+              <div
+                key={category.id}
+                className={`bg-white/90 backdrop-blur-md border border-gray-100/30 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 overflow-hidden rounded-lg ${
+                  viewMode === 'list' ? 'flex flex-row' : 'flex flex-col h-full'
+                }`}
+              >
+                <div
+                  className={`relative overflow-hidden group ${
+                    viewMode === 'list' ? 'w-1/3' : 'h-48'
+                  }`}
+                >
+                  <img
+                    src={category.image}
+                    alt={t(`categories.${category.id}.name`)}
+                    className='w-full h-full object-cover group-hover:scale-105 transition-transform duration-500'
+                  />
+                  <div className='absolute inset-0 bg-gradient-to-t from-black/30 to-transparent'></div>
+                  <div className='absolute top-4 left-4'>
+                    <div className='p-2 bg-white/90 rounded-full shadow-md'>
+                      <category.icon className={category.color} size={22} />
+                    </div>
+                  </div>
+                  <div className='absolute bottom-4 right-4'>
+                    <span
+                      className={`bg-gradient-to-r ${category.gradient} text-white tracking-wide px-3 py-1 rounded-full text-sm`}
+                    >
+                      {category.totalProducts.toLocaleString('en-US')}{' '}
+                      {t('common.products')}
+                    </span>
+                  </div>
+                </div>
+
+                <div
+                  className={`p-6 ${
+                    viewMode === 'list' ? 'flex-1' : 'flex-1 flex flex-col'
+                  }`}
+                >
+                  <div className='p-0 mb-4'>
+                    <h3 className='text-xl font-bold text-gray-900 flex items-center justify-between tracking-wide mb-2'>
+                      {t(`categories.${category.id}.name`)}
+                      <ChevronRight
+                        className='text-kci-brand group-hover:scale-110 transition-transform duration-200'
+                        size={22}
+                      />
+                    </h3>
+                    <p className='text-gray-600 tracking-wide'>
+                      {t(`categories.${category.id}.description`)}
+                    </p>
+                  </div>
+
+                  {/* Subcategories */}
+                  <div
+                    className={`mb-6 ${viewMode === 'grid' ? 'flex-1' : ''}`}
+                  >
+                    <div
+                      className={`grid gap-2 ${
+                        viewMode === 'list'
+                          ? 'grid-cols-1 lg:grid-cols-2'
+                          : 'grid-cols-1'
+                      }`}
+                    >
+                      {category.subcategories.map((subcategory, index) => (
+                        <button
+                          key={index}
+                          onClick={() =>
+                            openSubcategoryModal(
+                              category.id,
+                              subcategory.key,
+                              subcategory.image
+                            )
+                          }
+                          className='flex items-center p-3 bg-gray-50 hover:bg-gray-100 rounded-lg transition-all duration-200 text-left border border-gray-100/30 group'
+                        >
+                          <subcategory.icon
+                            className={`${category.color} mr-3 group-hover:scale-110 transition-transform duration-200`}
+                            size={18}
+                          />
+                          <div className='flex-1'>
+                            <div className='font-medium text-gray-900 text-sm tracking-wide'>
+                              {t(
+                                `categories.${category.id}.subcategories.${subcategory.key}.name`
+                              )}
+                            </div>
+                          </div>
+                          <ChevronRight
+                            size={16}
+                            className='text-gray-400 group-hover:text-kci-brand transition-colors duration-200'
+                          />
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* No Results */}
+          {filteredCategories.length === 0 && (
+            <div className='text-center py-12 bg-white/90 backdrop-blur-md rounded-xl border border-gray-100/30 shadow-lg'>
+              <Package className='text-gray-400 mx-auto mb-4' size={64} />
+              <h3 className='text-xl font-semibold text-gray-900 mb-2 tracking-wide'>
+                {t('search.noResults.title')}
+              </h3>
+              <p className='text-gray-600 mb-6 tracking-wide'>
+                {t('search.noResults.description')}
+              </p>
+              <button
+                onClick={() => {
+                  setSearchTerm('')
+                  setSelectedCategory('all')
+                }}
+                className='bg-gradient-to-r from-kci-brand to-kci-accent hover:from-kci-brand/90 hover:to-kci-accent/90 text-white tracking-wide shadow-md hover:shadow-lg px-6 py-3 rounded-lg'
+              >
+                {t('search.noResults.resetButton')}
+              </button>
+            </div>
+          )}
+        </div>
+      </section>
+
+      {/* Subcategory Modal */}
+      {isModalOpen && selectedSubcategory && (
+        <div className='fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 overflow-y-auto'>
+          <div className='w-full max-w-4xl max-h-[95vh] overflow-y-auto bg-white/95 backdrop-blur-md rounded-xl border border-gray-100/30 shadow-xl relative'>
+            <button
+              onClick={closeModal}
+              className='absolute top-4 right-4 p-2 text-gray-600 hover:text-gray-900 transition-colors bg-white/90 rounded-full shadow-md hover:shadow-lg'
+              aria-label={t('modal.close')}
+            >
+              <X size={20} />
+            </button>
+
+            <div className='grid grid-cols-1 lg:grid-cols-2'>
+              <div className='relative h-[300px] lg:h-full overflow-hidden'>
+                <img
+                  src={selectedSubcategory.image}
+                  alt={t(
+                    `categories.${selectedSubcategory.categoryId}.subcategories.${selectedSubcategory.subcategoryKey}.name`
+                  )}
+                  className='w-full h-full object-cover group-hover:scale-105 transition-transform duration-500'
+                />
+                <div className='absolute inset-0 bg-gradient-to-t from-black/50 to-transparent'></div>
+                <div className='absolute bottom-6 left-6'>
+                  <h3 className='text-white text-2xl font-bold mb-2 tracking-wide'>
+                    {t(
+                      `categories.${selectedSubcategory.categoryId}.subcategories.${selectedSubcategory.subcategoryKey}.name`
+                    )}
+                  </h3>
+                </div>
+              </div>
+
+              <div className='p-8'>
+                <div className='mb-6'>
+                  <h3 className='text-xl font-bold text-gray-900 mb-2 tracking-wide'>
+                    {t('modal.popularProducts')}
+                  </h3>
+                  <p className='text-gray-600 tracking-wide'>
+                    {t(
+                      `categories.${selectedSubcategory.categoryId}.subcategories.${selectedSubcategory.subcategoryKey}.description`
+                    )}
+                  </p>
+                </div>
+
+                <div className='grid grid-cols-1 gap-3 mb-8'>
+                  {t
+                    .raw(
+                      `categories.${selectedSubcategory.categoryId}.subcategories.${selectedSubcategory.subcategoryKey}.popularProducts`
+                    )
+                    .map((product: string, index: number) => (
+                      <div
+                        key={index}
+                        className='flex items-center p-3 bg-gray-50 rounded-lg border border-gray-100/30 hover:bg-gray-100 transition-all duration-200'
+                      >
+                        <CheckCircle
+                          className='text-green-600 mr-3'
+                          size={18}
+                        />
+                        <span className='font-medium text-gray-900 text-sm tracking-wide'>
+                          {product}
+                        </span>
+                      </div>
+                    ))}
+                </div>
+
+                <div className='grid grid-cols-1 gap-4'>
+                  <button
+                    onClick={openOrderModal}
+                    className='bg-gradient-to-r from-kci-brand to-kci-accent hover:from-kci-brand/90 hover:to-kci-accent/90 text-white tracking-wide shadow-md hover:shadow-lg px-6 py-3 rounded-lg flex items-center justify-center'
+                  >
+                    <ShoppingCart size={18} className='mr-2' />
+                    {t('modal.placeOrder')}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Place Order Modal */}
+      <PlaceOrderModal
+        isOpen={isOrderModalOpen}
+        onClose={closeOrderModal}
+        subcategory={selectedSubcategory}
+      />
+    </main>
+  )
+}

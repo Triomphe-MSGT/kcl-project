@@ -1,0 +1,218 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@theme {
+  --font-sans: 'Brockmann', 'Helvetica Neue', Arial, sans-serif;
+
+  /* Couleurs logo KC International — bleu adouci */
+  --color-kci-brand: #2563eb;
+  --color-kci-brand-dark: #1d4ed8;
+  --color-kci-brand-light: #3b82f6;
+  --color-kci-accent: #00adee;
+  --color-kci-warm: #da9746;
+  --color-kci-surface: #f4f6f9;
+  --color-kci-bar: #1a1f2e;
+  --color-kci-bar-light: #252b3d;
+}
+
+@keyframes pageIn {
+  from {
+    opacity: 0.85;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroCursorBlink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-cursor {
+  animation: heroCursorBlink 0.75s step-end infinite;
+}
+
+.hero-text-shadow {
+  text-shadow: 0 2px 16px rgb(0 0 0 / 45%);
+}
+
+.hero-glow-accent {
+  text-shadow:
+    0 0 24px rgb(0 173 238 / 55%),
+    0 2px 12px rgb(0 0 0 / 40%);
+}
+
+.hero-glow-warm {
+  text-shadow:
+    0 0 20px rgb(218 151 70 / 45%),
+    0 2px 10px rgb(0 0 0 / 35%);
+}
+
+.nav-over-hero {
+  background: rgba(255, 255, 255, 0.749);
+  backdrop-filter: blur(16px);
+  border-bottom: 2px solid rgba(0, 174, 238, 0.099);
+  box-shadow:
+    0 12px 40px rgb(0 0 0 / 28%),
+    0 4px 14px rgb(0 0 0 / 14%),
+    inset 0 1px 0 rgba(255, 255, 255, 0.316);
+}
+
+.nav-header-over-hero {
+  box-shadow: 0 16px 48px rgb(0 0 0 / 32%);
+}
+
+.nav-scrolled {
+  background: white;
+  box-shadow:
+    0 6px 24px rgb(15 23 42 / 12%),
+    0 2px 6px rgb(15 23 42 / 8%);
+}
+
+@keyframes presentationFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes presentationFloatAlt {
+  0%,
+  100% {
+    transform: translateY(-6px);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+}
+
+.presentation-float {
+  animation: presentationFloat 5s ease-in-out infinite;
+}
+
+.presentation-float-alt {
+  animation: presentationFloatAlt 5s ease-in-out infinite;
+}
+
+.presentation-float-delay-1 {
+  animation-delay: 0.8s;
+}
+
+.presentation-float-delay-2 {
+  animation-delay: 1.6s;
+}
+
+.page-container {
+  width: 100%;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .page-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+.page-section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 640px) {
+  .page-section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.kci-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgb(226 232 240);
+  border-radius: 0.75rem;
+  background: white;
+  color: rgb(30 41 59);
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.kci-input:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: 0 0 0 2px rgb(37 99 235 / 0.45);
+}
+
+.kci-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: var(--color-kci-brand);
+  color: white;
+  font-weight: 700;
+  border-radius: 9999px;
+  padding: 0.75rem 1.5rem;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.kci-btn-primary:hover:not(:disabled) {
+  background: var(--color-kci-brand-light);
+}
+
+.kci-btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .presentation-float,
+  .presentation-float-alt {
+    animation: none;
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: white;
+  color: #1e293b;
+}
