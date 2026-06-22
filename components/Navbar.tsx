@@ -19,7 +19,6 @@ const navItems: NavItem[] = [
   { labelKey: 'procurement', href: '/procurement' },
   { labelKey: 'resources', href: '/resources' },
   { labelKey: 'contact', href: '/contact' },
-  { labelKey: 'faq', href: '/faq' },
 ]
 
 export function Navbar() {

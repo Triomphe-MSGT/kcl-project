@@ -74,6 +74,10 @@ export const metadata: Metadata = {
     telephone: false,
   },
   metadataBase: new URL('https://www.kciltd.com'),
+  icons: {
+    icon: '/images/kci-logo.png',
+    apple: '/images/kci-logo.png',
+  },
   alternates: {
     canonical: '/',
     languages: {

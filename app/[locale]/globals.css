@@ -9,7 +9,7 @@
   --color-kci-brand-dark: #1d4ed8;
   --color-kci-brand-light: #3b82f6;
   --color-kci-accent: #00adee;
-  --color-kci-warm: #da9746;
+  --color-kci-warm: #ffcc00;
   --color-kci-surface: #f4f6f9;
   --color-kci-bar: #1a1f2e;
   --color-kci-bar-light: #252b3d;
@@ -63,7 +63,7 @@
 
 .hero-glow-warm {
   text-shadow:
-    0 0 20px rgb(218 151 70 / 45%),
+    0 0 24px rgb(255 204 0 / 60%),
     0 2px 10px rgb(0 0 0 / 35%);
 }
 

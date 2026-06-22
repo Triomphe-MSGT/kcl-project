@@ -212,11 +212,6 @@ export function HomeAxes() {
                     </motion.div>
 
                     <div className='flex items-center gap-2'>
-                      {key === 'procurement' && (
-                        <span className='text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-kci-warm text-white shadow-sm'>
-                          {t('optionalBadge')}
-                        </span>
-                      )}
                       <span className='flex h-9 w-9 items-center justify-center rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white opacity-0 -translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300'>
                         <ArrowUpRight size={16} />
                       </span>

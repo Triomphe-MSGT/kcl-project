@@ -1,7 +1,8 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
+import { useSearchParams } from 'next/navigation'
 import {
   Send,
   ArrowRight,
@@ -16,7 +17,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { PageHero } from '@/components/layout/PageHero'
 
-const createContactSchema = (t: any) =>
+const createContactSchema = (t: (key: string) => string) =>
   z.object({
     name: z
       .string()
@@ -58,6 +59,7 @@ type ContactFormData = {
 
 export default function ContactPage() {
   const t = useTranslations('ContactPage')
+  const searchParams = useSearchParams()
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<
     'idle' | 'success' | 'error'
@@ -75,19 +77,53 @@ export default function ContactPage() {
     mode: 'onChange',
   })
 
+  useEffect(() => {
+    const department = searchParams.get('department') ?? ''
+    const subject = searchParams.get('subject') ?? ''
+    const message = searchParams.get('message') ?? ''
+
+    if (department || subject || message) {
+      reset({
+        name: '',
+        email: '',
+        phone: '',
+        company: '',
+        department,
+        subject,
+        message,
+      })
+    }
+
+    if (window.location.hash === '#contact-form') {
+      requestAnimationFrame(() => {
+        document
+          .getElementById('contact-form')
+          ?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      })
+    }
+  }, [searchParams, reset])
+
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true)
     setSubmitStatus('idle')
 
     try {
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 2000))
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
 
-      console.log('Form submitted:', data)
+      if (!response.ok) {
+        setSubmitStatus('error')
+        return
+      }
+
       setSubmitStatus('success')
       reset()
-    } catch (error) {
-      console.error('Form submission error:', error)
+    } catch {
       setSubmitStatus('error')
     } finally {
       setIsSubmitting(false)
@@ -177,7 +213,7 @@ export default function ContactPage() {
           </div>
 
           {/* Contact Form */}
-          <div className='max-w-4xl mx-auto'>
+          <div id='contact-form' className='max-w-4xl mx-auto scroll-mt-24'>
             <div className='bg-white rounded-2xl ring-1 ring-slate-200/80 overflow-hidden shadow-sm'>
               <div className='bg-kci-brand p-6 sm:p-8 text-white'>
                 <div className='flex items-center mb-4'>
@@ -384,7 +420,7 @@ export default function ContactPage() {
                             d='M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z'
                           ></path>
                         </svg>
-                        Sending...
+                        {t('form.sending')}
                       </span>
                     ) : (
                       <>

@@ -1,6 +1,6 @@
 'use client'
 
-import { JSX } from 'react'
+import { JSX, useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import { ArrowUp } from 'lucide-react'
@@ -10,6 +10,7 @@ import {
   IconBrandTiktok,
   IconBrandWhatsapp,
 } from '@tabler/icons-react'
+import { DEVELOPER_PHONES } from '@/lib/developer'
 
 const navLinks = [
   { key: 'about', href: '/about' },
@@ -17,7 +18,6 @@ const navLinks = [
   { key: 'procurement', href: '/procurement' },
   { key: 'resources', href: '/resources' },
   { key: 'contact', href: '/contact' },
-  { key: 'faq', href: '/faq' },
 ] as const
 
 const legalLinks = [
@@ -51,12 +51,14 @@ const socialLinks = [
 export function Footer(): JSX.Element {
   const t = useTranslations('FooterSection')
   const currentYear = new Date().getFullYear()
+  const [showDeveloperPhones, setShowDeveloperPhones] = useState(false)
 
   const scrollToTop = (): void => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
   return (
+    <>
     <footer className='w-full bg-kci-bar text-white/75'>
       <div className='h-0.5 w-full bg-gradient-to-r from-transparent via-kci-accent to-transparent' />
 
@@ -153,5 +155,41 @@ export function Footer(): JSX.Element {
         </div>
       </div>
     </footer>
+
+    <div className='w-full bg-kci-bar'>
+      <div className='w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-1 text-center'>
+        <button
+          type='button'
+          onClick={() => setShowDeveloperPhones((visible) => !visible)}
+          className={`group inline-block max-w-full cursor-pointer border-0 bg-transparent p-0 text-[9px] leading-tight transition-colors duration-300 ${
+            showDeveloperPhones ? 'text-white/35' : 'text-white/[0.1] hover:text-white/30'
+          }`}
+          aria-expanded={showDeveloperPhones}
+          aria-label={
+            showDeveloperPhones
+              ? DEVELOPER_PHONES.join(' · ')
+              : t('bottom.developedBy')
+          }
+        >
+          <span
+            className={
+              showDeveloperPhones ? 'hidden' : 'inline group-hover:hidden'
+            }
+          >
+            {t('bottom.developedBy')}
+          </span>
+          <span
+            className={
+              showDeveloperPhones
+                ? 'inline'
+                : 'hidden group-hover:inline'
+            }
+          >
+            {DEVELOPER_PHONES.join(' · ')}
+          </span>
+        </button>
+      </div>
+    </div>
+    </>
   )
 }

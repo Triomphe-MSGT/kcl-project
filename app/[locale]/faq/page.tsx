@@ -9,12 +9,10 @@ import {
   Package,
   Briefcase,
   Truck,
-  Headphones,
   DollarSign,
   Building2,
   X,
 } from 'lucide-react'
-import { Link } from '@/i18n/navigation'
 import { PageHero } from '@/components/layout/PageHero'
 import { PageCta } from '@/components/layout/PageCta'
 
@@ -238,7 +236,7 @@ export default function FAQPage() {
           {/* FAQ List */}
           <div className='space-y-4'>
             {filteredFAQs.length > 0 ? (
-              filteredFAQs.map((faq, index) => {
+              filteredFAQs.map((faq) => {
                 const category = faqCategories.find(
                   (cat) => cat.id === faq.category
                 )

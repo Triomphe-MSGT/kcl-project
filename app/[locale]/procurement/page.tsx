@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
+import { Link } from '@/i18n/navigation'
 import {
   Search,
   Grid3X3,
@@ -10,8 +11,6 @@ import {
   Wheat,
   Coffee,
   Heart,
-  Gamepad2,
-  Package,
   Car,
   Zap,
   Building,
@@ -27,25 +26,14 @@ import {
   GlassWater,
   Shield,
   Dumbbell,
-  Monitor,
-  Volume2,
-  Music,
-  Box,
   ChevronRight,
   ShoppingCart,
   Filter,
   CheckCircle,
   X,
-  User,
-  MapPin,
-  FileText,
-  Hash,
-  Send,
+  Package,
 } from 'lucide-react'
 import { PageHero } from '@/components/layout/PageHero'
-import { buildWhatsAppMessage, openWhatsAppMessage } from '@/lib/whatsapp'
-
-const WHATSAPP_NUMBER = '237683242277'
 
 // Types
 interface ProductSubcategory {
@@ -65,264 +53,13 @@ interface ProductCategory {
   image: string
 }
 
-// Place Order Modal Component
-interface PlaceOrderModalProps {
-  isOpen: boolean
-  onClose: () => void
-  subcategory: {
-    categoryId: string
-    subcategoryKey: string
-    image: string
-  } | null
-}
-
-function PlaceOrderModal({
-  isOpen,
-  onClose,
-  subcategory,
-}: PlaceOrderModalProps) {
-  const t = useTranslations('ProcurementPage')
-  const [formData, setFormData] = useState({
-    name: '',
-    address: '',
-    productDescription: '',
-    quantity: '',
+function getContactOrderHref(categoryName: string, productName: string) {
+  const params = new URLSearchParams({
+    department: 'sales',
+    subject: `Commande - ${categoryName} - ${productName}`,
+    message: `Bonjour,\n\nJe souhaite passer une commande pour : ${productName} (catégorie : ${categoryName}).\n\nMerci de me recontacter.`,
   })
-  const [isSubmitting, setIsSubmitting] = useState(false)
-
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden'
-    } else {
-      document.body.style.overflow = ''
-      // Reset form when modal closes
-      setFormData({
-        name: '',
-        address: '',
-        productDescription: '',
-        quantity: '',
-      })
-    }
-  }, [isOpen])
-
-  const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }))
-  }
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-
-    const categoryName = subcategory
-      ? t(`categories.${subcategory.categoryId}.name`)
-      : '—'
-    const productName = subcategory
-      ? t(
-          `categories.${subcategory.categoryId}.subcategories.${subcategory.subcategoryKey}.name`
-        )
-      : '—'
-
-    const message = buildWhatsAppMessage(
-      t('modalOrder.orderModal.whatsapp.orderTitle'),
-      [
-        { label: t('modalOrder.orderModal.name.label'), value: formData.name },
-        {
-          label: t('modalOrder.orderModal.address.label'),
-          value: formData.address,
-        },
-        {
-          label: t('modalOrder.orderModal.category.label'),
-          value: categoryName,
-        },
-        {
-          label: t('modalOrder.orderModal.product.label'),
-          value: productName,
-        },
-        {
-          label: t('modalOrder.orderModal.productDescription.label'),
-          value: formData.productDescription,
-        },
-        {
-          label: t('modalOrder.orderModal.quantity.label'),
-          value: formData.quantity,
-        },
-      ]
-    )
-
-    openWhatsAppMessage(WHATSAPP_NUMBER, message)
-
-    // Simulate submission process
-    setTimeout(() => {
-      setIsSubmitting(false)
-      onClose()
-    }, 1500)
-  }
-
-  if (!isOpen) return null
-
-  return (
-    <div className='fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4 overflow-y-auto'>
-      <div className='w-full max-w-md bg-white rounded-xl shadow-2xl relative'>
-        <button
-          onClick={onClose}
-          className='absolute top-4 right-4 p-2 text-gray-600 hover:text-gray-900 transition-colors bg-white rounded-full shadow-md hover:shadow-lg z-10'
-          aria-label={t('modalOrder.close')}
-        >
-          <X size={20} />
-        </button>
-
-        <div className='p-6'>
-          <div className='text-center mb-6'>
-            <div className='w-16 h-16 bg-gradient-to-r from-kci-brand to-kci-accent rounded-full flex items-center justify-center mx-auto mb-4'>
-              <ShoppingCart className='text-white' size={28} />
-            </div>
-            <h2 className='text-2xl font-bold text-gray-900 '>
-              {t('modalOrder.orderModal.title')}
-            </h2>
-            <p className='text-gray-600 mt-2'>
-              {subcategory &&
-                t(
-                  `categories.${subcategory.categoryId}.subcategories.${subcategory.subcategoryKey}.name`
-                )}
-            </p>
-          </div>
-
-          <form onSubmit={handleSubmit} className='space-y-4'>
-            <div>
-              <label
-                htmlFor='name'
-                className='block text-sm font-medium text-gray-700 mb-1 '
-              >
-                {t('modalOrder.orderModal.name.label')}
-              </label>
-              <div className='relative'>
-                <User
-                  className='absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400'
-                  size={18}
-                />
-                <input
-                  type='text'
-                  id='name'
-                  name='name'
-                  value={formData.name}
-                  onChange={handleInputChange}
-                  placeholder={t('modalOrder.orderModal.name.placeholder')}
-                  className='w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-kci-brand focus:border-transparent'
-                  required
-                />
-              </div>
-            </div>
-
-            <div>
-              <label
-                htmlFor='address'
-                className='block text-sm font-medium text-gray-700 mb-1 '
-              >
-                {t('modalOrder.orderModal.address.label')}
-              </label>
-              <div className='relative'>
-                <MapPin
-                  className='absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400'
-                  size={18}
-                />
-                <input
-                  type='text'
-                  id='address'
-                  name='address'
-                  value={formData.address}
-                  onChange={handleInputChange}
-                  placeholder={t('modalOrder.orderModal.address.placeholder')}
-                  className='w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-kci-brand focus:border-transparent'
-                  required
-                />
-              </div>
-            </div>
-
-            <div>
-              <label
-                htmlFor='productDescription'
-                className='block text-sm font-medium text-gray-700 mb-1 '
-              >
-                {t('modalOrder.orderModal.productDescription.label')}
-              </label>
-              <div className='relative'>
-                <FileText
-                  className='absolute left-3 top-3 text-gray-400'
-                  size={18}
-                />
-                <textarea
-                  id='productDescription'
-                  name='productDescription'
-                  value={formData.productDescription}
-                  onChange={handleInputChange}
-                  placeholder={t(
-                    'modalOrder.orderModal.productDescription.placeholder'
-                  )}
-                  rows={3}
-                  className='w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-kci-brand focus:border-transparent resize-none'
-                  required
-                />
-              </div>
-            </div>
-
-            <div>
-              <label
-                htmlFor='quantity'
-                className='block text-sm font-medium text-gray-700 mb-1 '
-              >
-                {t('modalOrder.orderModal.quantity.label')}
-              </label>
-              <div className='relative'>
-                <Hash
-                  className='absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400'
-                  size={18}
-                />
-                <input
-                  type='number'
-                  id='quantity'
-                  name='quantity'
-                  value={formData.quantity}
-                  onChange={handleInputChange}
-                  placeholder={t('modalOrder.orderModal.quantity.placeholder')}
-                  min='1'
-                  className='w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-kci-brand focus:border-transparent'
-                  required
-                />
-              </div>
-            </div>
-
-            <button
-              type='submit'
-              disabled={isSubmitting}
-              className='w-full bg-gradient-to-r from-kci-brand to-kci-accent hover:from-kci-brand/90 hover:to-kci-accent/90 text-white py-3 px-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center disabled:opacity-70'
-            >
-              {isSubmitting ? (
-                <>
-                  <div className='animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2'></div>
-                  {t('modalOrder.orderModal.submit')}...
-                </>
-              ) : (
-                <>
-                  <Send size={18} className='mr-2' />
-                  {t('modalOrder.orderModal.submit')}
-                </>
-              )}
-            </button>
-          </form>
-
-          <p className='text-xs text-gray-500 text-center mt-4'>
-            {t('modalOrder.orderModal.note')}
-          </p>
-        </div>
-      </div>
-    </div>
-  )
+  return `/contact?${params.toString()}#contact-form`
 }
 
 const productCategories: ProductCategory[] = [
@@ -482,54 +219,6 @@ const productCategories: ProductCategory[] = [
       },
     ],
   },
-  {
-    id: 'entertainment',
-    icon: Gamepad2,
-    color: 'text-purple-600',
-    bgColor: 'bg-purple-50',
-    gradient: 'from-purple-500 to-indigo-600',
-    totalProducts: 592,
-    image:
-      '/images/home/axes/procurement.jpg',
-    subcategories: [
-      {
-        key: 'gaming',
-        icon: Monitor,
-        image:
-          '/images/home/axes/procurement.jpg',
-      },
-      {
-        key: 'audio',
-        icon: Volume2,
-        image:
-          '/images/home/axes/procurement.jpg',
-      },
-      {
-        key: 'musical',
-        icon: Music,
-        image:
-          '/images/home/axes/procurement.jpg',
-      },
-    ],
-  },
-  {
-    id: 'others',
-    icon: Package,
-    color: 'text-gray-600',
-    bgColor: 'bg-gray-50',
-    gradient: 'from-gray-500 to-slate-600',
-    totalProducts: 298,
-    image:
-      '/images/home/axes/procurement.jpg',
-    subcategories: [
-      {
-        key: 'packaging',
-        icon: Box,
-        image:
-          '/images/home/axes/procurement.jpg',
-      },
-    ],
-  },
 ]
 
 export default function ProductsPage() {
@@ -543,7 +232,6 @@ export default function ProductsPage() {
     image: string
   } | null>(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
-  const [isOrderModalOpen, setIsOrderModalOpen] = useState(false)
 
   // Filter categories based on search and selection
   const filteredCategories = productCategories.filter((category) => {
@@ -560,11 +248,6 @@ export default function ProductsPage() {
     return matchesSearch && matchesCategory
   })
 
-  const totalProducts = productCategories.reduce(
-    (sum, cat) => sum + cat.totalProducts,
-    0
-  )
-
   const openSubcategoryModal = (
     categoryId: string,
     subcategoryKey: string,
@@ -574,44 +257,34 @@ export default function ProductsPage() {
     setIsModalOpen(true)
   }
 
-  const openOrderModal = () => {
-    setIsModalOpen(false)
-    setIsOrderModalOpen(true)
-  }
-
   const closeModal = () => {
     setIsModalOpen(false)
     setSelectedSubcategory(null)
-  }
-
-  const closeOrderModal = () => {
-    setIsOrderModalOpen(false)
   }
 
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
         closeModal()
-        closeOrderModal()
       }
     }
 
-    if (isModalOpen || isOrderModalOpen) {
+    if (isModalOpen) {
       window.addEventListener('keydown', handleKeyDown)
     }
 
     return () => {
       window.removeEventListener('keydown', handleKeyDown)
     }
-  }, [isModalOpen, isOrderModalOpen])
+  }, [isModalOpen])
 
   useEffect(() => {
-    if (isModalOpen || isOrderModalOpen) {
+    if (isModalOpen) {
       document.body.style.overflow = 'hidden'
     } else {
       document.body.style.overflow = ''
     }
-  }, [isModalOpen, isOrderModalOpen])
+  }, [isModalOpen])
 
   return (
     <main className='min-h-screen bg-kci-surface'>
@@ -703,7 +376,7 @@ export default function ProductsPage() {
                 : 'grid-cols-1'
             }`}
           >
-            {filteredCategories.map((category, index) => (
+            {filteredCategories.map((category) => (
               <div
                 key={category.id}
                 className={`bg-white/90 backdrop-blur-md border border-gray-100/30 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 overflow-hidden rounded-lg ${
@@ -890,26 +563,24 @@ export default function ProductsPage() {
                 </div>
 
                 <div className='grid grid-cols-1 gap-4'>
-                  <button
-                    onClick={openOrderModal}
+                  <Link
+                    href={getContactOrderHref(
+                      t(`categories.${selectedSubcategory.categoryId}.name`),
+                      t(
+                        `categories.${selectedSubcategory.categoryId}.subcategories.${selectedSubcategory.subcategoryKey}.name`
+                      )
+                    )}
                     className='bg-gradient-to-r from-kci-brand to-kci-accent hover:from-kci-brand/90 hover:to-kci-accent/90 text-white tracking-wide shadow-md hover:shadow-lg px-6 py-3 rounded-lg flex items-center justify-center'
                   >
                     <ShoppingCart size={18} className='mr-2' />
                     {t('modal.placeOrder')}
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
       )}
-
-      {/* Place Order Modal */}
-      <PlaceOrderModal
-        isOpen={isOrderModalOpen}
-        onClose={closeOrderModal}
-        subcategory={selectedSubcategory}
-      />
     </main>
   )
 }

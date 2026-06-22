@@ -20,7 +20,7 @@ for (const locale of locales) {
         expect(response?.status()).toBeLessThan(400)
         await expect(page.locator('header')).toBeVisible()
         await expect(page.locator('footer')).toBeVisible()
-        await expect(page.locator('main, [role="main"], body')).toBeVisible()
+        await expect(page.getByRole('main')).toBeVisible()
       })
     }
 

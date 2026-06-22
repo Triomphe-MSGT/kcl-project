@@ -6,84 +6,93 @@
         "part1": "Your success",
         "part2": "is our greatest mission"
       },
-      "description": "We support entrepreneurs, SMEs, and enterprises to grow, structure, and overcome their challenges — with flexible, human, tailored consulting solutions. Import-export is just one option among our services.",
+      "description": "Since our beginnings in 2021, our consulting firm has been dedicated to helping business owners grow, structure their operations, and overcome their daily challenges. We don't believe in one-size-fits-all solutions. That's why we take the time to listen and offer tailored support adapted to your reality.",
       "cta": {
         "primary": "Our services",
         "secondary": "Contact us"
       }
     },
     "presentation": {
-      "eyebrow": "About us",
+      "eyebrow": "Presentation",
       "title": "A consulting firm rooted on the ground",
-      "paragraph1": "At the heart of KC International SARL is a simple idea: your success is our greatest mission. Since 2021, we help business owners grow, structure their operations, and overcome daily challenges.",
-      "paragraph2": "We don't believe in one-size-fits-all solutions. We take time to listen and offer tailored support — whether you're launching a startup, running an SME, or scaling an established company.",
-      "paragraph3": "With teams in Yaoundé, Lagos, and Guangzhou, we connect your local projects to global opportunities, bringing you the best of each market.",
-      "link": "Learn more about us",
+      "paragraph1": "At the heart of KC International SARL is a simple idea: your success is our greatest mission. Since our beginnings in 2021, our consulting firm has been dedicated to helping business owners grow, structure their operations, and overcome their daily challenges.",
+      "paragraph2": "We don't believe in one-size-fits-all solutions. That's why we take the time to listen and offer tailored support adapted to your reality. With teams on the ground in Yaoundé (Cameroon), Lagos (Nigeria), and Guangzhou (China), we connect your local projects to global opportunities, bringing you the best of each market.",
+      "paragraph3": "Our team brings together passionate professionals who understand the challenges and realities of running a business today. Whether you're a young founder launching a startup, an SME manager looking to better organize your work, or a larger company ready to expand into a new region, we walk alongside you. We are the trusted partner you can rely on to navigate every stage of your growth with confidence.",
+      "link": "Get to know us",
       "highlights": {
-        "founded": { "value": "2021", "label": "Founded in" },
-        "hubs": { "value": "3", "label": "Regional hubs" },
-        "approach": { "value": "Tailored", "label": "Approach" }
+        "founded": {
+          "value": "2021",
+          "label": "Year founded"
+        },
+        "hubs": {
+          "value": "3",
+          "label": "Regional hubs"
+        },
+        "approach": {
+          "value": "Tailored",
+          "label": "Support"
+        }
       }
     },
     "axes": {
       "eyebrow": "Commercial focus",
       "title": "What we can do for you",
-      "description": "Our flexible, high-performance solutions free your business from daily constraints. Consulting and structuring are at the core of what we offer.",
+      "description": "At KCI SARL, we take care of your business by freeing you from daily constraints. Our flexible, high-performance solutions are designed to organize your operations, save you valuable time, and guide you toward success with peace of mind.",
       "optionalBadge": "Optional",
       "learnMore": "Learn more",
       "viewAll": "Explore all our services",
       "items": {
         "financial": {
           "title": "Financial Services",
-          "description": "Accounting, OHADA tax compliance, annual filings, business creation, FinTech, and legal tax optimization."
+          "description": "Accounting & Tax (Bookkeeping, financial audit, and tax optimization)"
         },
         "procurement": {
           "title": "Procurement & Logistics",
-          "description": "Global sourcing, customs formalities, and integrated freight — when your project requires it."
+          "description": "Global sourcing, customs formalities, and integrated freight"
         },
         "events": {
           "title": "Event Management",
-          "description": "Professional planning, logistics, audiovisual, and coordination for your business events."
+          "description": "Professional planning, logistics, and coordination"
         },
         "realEstate": {
           "title": "Real Estate",
-          "description": "Brokerage, acquisitions, leases, property development, and secure land transactions."
+          "description": "Real estate brokerage, acquisitions, leases, and property development"
         },
         "facilities": {
           "title": "Facilities Management",
-          "description": "Commercial maintenance, preventive upkeep, and qualified staffing for your premises."
+          "description": "Commercial maintenance, technical upkeep, and outsourcing"
         },
         "travel": {
           "title": "Travel & Visa Services",
-          "description": "Visa support for the UK, Canada, China, India, Russia, and Schengen countries."
+          "description": "Visa guidance and support for the UK, Canada, China, India, Russia, and many other destinations."
         }
       }
     },
     "presence": {
       "eyebrow": "Bi-market footprint",
-      "title": "Our regional hubs",
-      "description": "Three operational hubs to support you close to your markets — Central Africa, West Africa, and Asia.",
+      "title": "Present where you need us",
+      "description": "Three operational hubs connecting Africa to global opportunities.",
       "offices": {
         "yaounde": {
           "city": "Yaoundé",
           "name": "Regional HQ — Cameroon",
-          "role": "CEMAC · Consulting & Tax",
+          "role": "Central Africa",
           "description": "Your trusted office for accounting, taxes, property management, and visa services.",
           "address": "Behind Pharmacie Volontas Dei, Biyemassi Lac, Yaoundé",
           "phone": "+237 683 242 277"
         },
         "lagos": {
           "city": "Lagos",
-          "name": "West Africa Hub — Nigeria",
-          "role": "ECOWAS · Logistics & Payments",
+          "name": "Lagos Hub — Nigeria",
+          "role": "West Africa",
           "description": "Grow your business in West Africa with logistics and secure payment solutions.",
           "address": "Abimbola Street, Isolo Industrial Zone, Oshodi-Isolo LGA, Lagos",
           "phone": "+234 903 162 2889"
         },
         "guangzhou": {
           "city": "Guangzhou",
-          "name": "Asia Hub — China",
-          "role": "Sourcing · Quality control",
+          "name": "Guangzhou Hub — China",
+          "role": "Sourcing & Quality",
           "description": "We oversee your purchases, find the best factories, and inspect goods before shipment.",
           "address": "Junshan Hotel, Sanyuanli, Guangzhou City, Guangdong Province",
           "phone": "+86 150 1197 1089"
@@ -91,9 +100,9 @@
       }
     },
     "cta": {
-      "title": "Join the KCI SARL family",
-      "description": "Whether you're a startup founder, merchant, or project owner, we're here to listen. Let's build the future together.",
-      "button": "Contact us"
+      "title": "Join the KCI SARL Family",
+      "description": "Whether you're a startup founder seeking advice, a merchant looking to import safely, or a neighbor with a project close to your heart, we're here to listen. At KC International, we combine on-the-ground experience with networks worldwide to open doors and simplify your life. Your project is unique, and our greatest joy is helping you bring it to life.",
+      "button": "Contact Us"
     }
   },
   "ServicesSection": {
@@ -382,9 +391,9 @@
       "links": {
         "about": "About Us",
         "services": "Our Services",
-        "procurement": "Procurement",
-        "resources": "Resources",
-        "contact": "Contact",
+        "procurement": "Procurement Hubs",
+        "resources": "Resources & Insights",
+        "contact": "Contact Us",
         "faq": "FAQ"
       }
     },
@@ -405,7 +414,8 @@
         "faq": "FAQ",
         "privacy": "Privacy"
       },
-      "backToTop": "Back to top"
+      "backToTop": "Back to top",
+      "developedBy": "Developed by Triomphe Mandeg"
     }
   },
   "NavbarSection": {
@@ -413,147 +423,147 @@
       "home": "Home",
       "about": "About Us",
       "services": "Our Services",
-      "procurement": "Procurement",
-      "resources": "Resources",
-      "contact": "Contact",
+      "procurement": "Procurement Hubs",
+      "resources": "Resources & Insights",
+      "contact": "Contact Us",
       "faq": "FAQ"
     },
     "cta": {
       "button": "Contact Us"
     },
     "logo": {
-      "alt": "Company Logo"
+      "alt": "KC International SARL Logo"
     }
   },
   "AboutUsPage": {
     "hero": {
       "eyebrow": "About Us",
       "title": "Get to Know Us",
-      "paragraph1": "KC International Ltd is a dynamic business consulting firm dedicated to helping companies grow, thrive, and transform. Since we opened our doors in 2021, our focus has always been on you: delivering personalized, friendly, and practical solutions built around your unique business goals."
+      "paragraph1": "At the heart of KC International SARL is a simple idea: your success is our greatest mission. Since our beginnings in 2021, our consulting firm has been dedicated to helping business owners grow, structure their operations, and overcome their daily challenges."
     },
     "intro": {
-      "paragraph2": "With a welcoming presence on the ground in Yaoundé (Cameroon), Lagos (Nigeria), and Guangzhou (China), we bridge the gap between global opportunities and local market expertise to bring you the best of both worlds.",
-      "paragraph3": "Our team is made up of seasoned professionals who truly understand the daily challenges of running a business in today's fast-changing environment. Whether you are an early-stage startup, an established local business, or a larger brand stepping into new territory, we look forward to being the trusted partner right by your side every step of the way.",
-      "imageAlt": "KC International consulting team"
+      "paragraph2": "We don't believe in one-size-fits-all solutions. That's why we take the time to listen and offer tailored support adapted to your reality. With teams on the ground in Yaoundé (Cameroon), Lagos (Nigeria), and Guangzhou (China), we connect your local projects to global opportunities, bringing you the best of each market.",
+      "paragraph3": "Our team brings together passionate professionals who understand the challenges and realities of running a business today. Whether you're a young founder launching a startup, an SME manager looking to better organize your work, or a larger company ready to expand into a new region, we walk alongside you. We are the trusted partner you can rely on to navigate every stage of your growth with confidence.",
+      "imageAlt": "KC International SARL team"
     },
     "mission": {
       "title": "Our Mission",
-      "description": "We empower businesses by delivering flexible, innovative services that improve daily efficiency, ensure regulatory compliance, and support sustainable growth."
+      "description": "Our core business is to give power back to entrepreneurs. We provide flexible, human, and innovative solutions that free you from administrative burdens, protect your legal compliance, and fuel solid, sustainable growth — because your success is the only true measure of ours."
     },
     "vision": {
       "title": "Our Vision",
-      "description": "To be the most trusted partner in business transformation, leading the future of commerce across Africa and international trade networks through honest relationships and an unwavering commitment to operational excellence."
+      "description": "To be the trusted guide businesses turn to for transformation. We want to design, hand in hand with you, a bright and secure economic future for our commerce and industries in Africa and beyond, through honest relationships, attentive listening, and impeccable service."
     },
     "values": {
       "eyebrow": "The CITIE Spirit",
       "title": "Our Core Values",
       "subtitle": "C-I-T-I-E",
-      "description": "Everything we build at KCI Ltd is rooted in our CITIE values. They are the heartbeat of our company and guide how we show up for you, your business, and your goals every single day.",
-      "closing": "Living these values allows us to build strong, warm, and lasting friendships with the clients and partners who place their dreams in our hands.",
+      "description": "Everything we build at KCI SARL is rooted in our CITIE values. They are the heart of our company and guide how we work alongside you, protect your business, and support you every day with respect and care.",
+      "closing": "These shared values are the foundation that allows us to build strong, sincere, and lasting bonds with each of our clients and partners, here and abroad.",
       "items": {
         "customer": {
           "letter": "C",
           "title": "Customer Centricity",
-          "subtitle": "Your needs come first",
-          "description": "Your happiness is our top priority. We listen to your story, understand your challenges, and work tirelessly to exceed your expectations."
+          "subtitle": "Respecting your needs",
+          "description": "Your satisfaction and peace of mind are our absolute priorities. We take the time to understand your unique challenges and join forces to go beyond your expectations."
         },
         "integrity": {
           "letter": "I",
           "title": "Integrity",
           "subtitle": "",
-          "description": "We believe in open doors and honest conversations. We treat every client with complete transparency, fairness, and deep respect."
+          "description": "We believe in frank and transparent relationships. Honesty and respect for the rules guide every exchange, because your business deserves total clarity and flawless ethics."
         },
         "trust": {
           "letter": "T",
           "title": "Trust",
           "subtitle": "",
-          "description": "Trust is earned, not given. We build lasting relationships by keeping our promises and being a partner you can count on through thick and thin."
+          "description": "Trust is not asked for — it is earned every day. We build strong, lasting partnerships by always keeping our promises and remaining the faithful partner you can rely on."
         },
         "innovation": {
           "letter": "I",
           "title": "Innovation",
           "subtitle": "",
-          "description": "We love fresh ideas! We keep learning, growing, and discovering creative ways to improve our processes and make your life easier."
+          "description": "We love fresh ideas that simplify your life! We keep learning and seeking creative solutions to improve how we work and help you save time and boost efficiency."
         },
         "excellence": {
           "letter": "E",
           "title": "Excellence",
           "subtitle": "",
-          "description": "We give our absolute best in everything we do, making sure our products and services are always high-quality, dependable, and right on time."
+          "description": "We put our heart and expertise into everything we do. We are committed to delivering products and services of impeccable quality you can count on with complete confidence."
         }
       }
     },
     "whatWeDo": {
-      "eyebrow": "Our expertise",
+      "eyebrow": "Our Services",
       "title": "What We Can Do For You",
-      "description": "Consulting is at our core. We take the stress out of daily operations with flexible, high-quality services designed to help you organize your business, save time, and reach your goals.",
+      "description": "At KCI SARL, we take care of your business by freeing you from daily constraints. Our flexible, high-performance solutions are designed to organize your operations, save you valuable time, and guide you toward success with peace of mind.",
       "services": {
         "accounting": {
-          "title": "1. Accounting, Finance & Smart Tax Solutions",
+          "title": "1. Accounting, Finance & Tax (Your Financial Peace of Mind)",
           "items": [
-            "Bookkeeping & Clear Auditing: Keeping your daily financial records clean, organized, and ready for your peace of mind.",
-            "Easy Accounting Software: Setting up the right digital financial tools for your team and teaching you how to use them.",
-            "Business Setup & Clear Planning: Guiding you through the legal steps to create your company and writing business plans that attract funds.",
-            "Regulatory Financial Reporting: Professional preparation of your annual reports and tax declarations based on IFRS or OHADA framework (DSF).",
-            "Smart Tax Optimization: Helping your business find legal ways to reduce tax expenses so you can save more money."
+            "Accounting & Tax Advisory: We keep your books clean, clear, and well organized every day. We perform internal reviews to safeguard the financial health of your business.",
+            "Easy Accounting Tools: We install digital tools suited to your team size and teach you how to use them to track your money with ease.",
+            "Business Creation & Future Planning: We guide you step by step through all legal steps to create your company and draft solid business plans to help you secure funding.",
+            "Annual Financial Statement Management (DSF): We prepare and file your Statistical and Fiscal Declaration (DSF) in strict compliance with mandatory OHADA zone rules.",
+            "Smart Tax Optimization: We find every legal solution to reduce your tax expenses, protect your profits, and improve your cash flow."
           ]
         },
         "sourcing": {
-          "title": "2. Trusted Sourcing & Shipping (Import/Export)",
+          "title": "2. Procurement, Import/Export & Logistics (Your Gateway to the World)",
           "items": [
-            "Procurement Assistance: Finding the best suppliers from local markets and worldwide for your shop, factory, or office materials.",
-            "Air, Sea, & Road Shipping: Reliable transport for your cargo by plane, ship, or truck across West and Central Africa.",
-            "Safe Delivery Services: Hassle-free delivery of your goods directly to your warehouse, store, or office doorstep."
+            "Trusted Sourcing & Procurement: We find the best local and international suppliers (especially in China), negotiate bulk prices, and verify product quality directly at the factory to help you avoid unpleasant surprises.",
+            "Freight & Cargo Transport: Whether by air, sea, or road, we move your cargo safely while handling all customs and transit formalities.",
+            "Turnkey Delivery: We track your parcels and orders all the way through, delivering your goods directly to your shop, factory, or warehouse door."
           ]
         },
         "events": {
-          "title": "3. Professional Event Management",
+          "title": "3. Event Management (Your Successful Events)",
           "items": [
-            "Event Budgeting & Cost Tracking: Smart financial planning to make sure your corporate launch or social party stays within budget.",
-            "Audio-Visual Production & Catering: Premium sound, screens, lights, and delicious food networks to impress your guests.",
-            "Friendly Staffing & Volunteer Coordination: Finding polite hostesses, protocol officers, and helpers to manage your event smoothly."
+            "Budget Tracking & Savings: We plan spending for your professional or private events to scrupulously respect your budget while guaranteeing maximum quality.",
+            "Audiovisual Equipment & Premium Catering: We set up the best technology (screens, sound, lighting) and select delicious menus to welcome your guests in the best conditions.",
+            "Reception & On-Site Staff: We recruit and coordinate dedicated teams — welcoming hostesses, reassuring security agents, and motivated volunteers so your event runs stress-free."
           ]
         },
         "realEstate": {
-          "title": "4. Your Real Estate Partner",
+          "title": "4. Your Real Estate Projects (Buy, Sell & Build)",
           "items": [
-            "Property Sales & Rentals (Brokerage): Making it safe and simple to buy, sell, or rent premium land and buildings.",
-            "Real Estate & Construction Projects: Building and developing modern properties tailored to your living or commercial needs."
+            "Advisory, Purchase & Leasing: We support you in buying, selling, or renting offices, commercial premises, or land while fully securing your transactions.",
+            "Property Development & Real Estate Projects: We help owners and investors design their projects, obtain building permits, and manage construction sites from start to finish."
           ]
         },
         "facilities": {
-          "title": "5. Care & Maintenance of Your Spaces (Facilities Management)",
+          "title": "5. Premises Care & Management (Facilities Management)",
           "items": [
-            "Thorough Cleaning & Handyman Services: Professional office cleaning, deep scrubbing, and fast property repairs when you need them.",
-            "Preventative Care Maintenance: Regular check-ups on your buildings and equipment to prevent unexpected breakdowns.",
-            "Outsourced Staffing Solutions: Providing trusted office assistants, cleaners, and maintenance workers to support your team."
+            "Professional Cleaning & Minor Repairs: Careful housekeeping, disinfection, and quick handyman interventions to keep your offices clean and welcoming.",
+            "Preventive Maintenance: We regularly monitor your equipment (electrical, plumbing, generators) to repair natural wear before breakdowns occur, saving you unexpected expenses.",
+            "Staffing Solutions: We find and select trusted employees (reception agents, technicians, etc.) to strengthen your team according to your needs."
           ]
         },
         "travel": {
-          "title": "6. Safe Travel & Visa Assistance",
+          "title": "6. Travel Services & Visa Assistance",
           "items": [
-            "Student & Business Visa Guides: Friendly, expert support to help you prepare your paperwork correctly for visas to the UK, China, Canada, India, Russia, and beyond."
+            "Visa Guidance & Support: A caring, expert guide to help you prepare your visa application flawlessly (business or study visas) for the UK, Canada, China, India, Russia, and many other destinations."
           ]
         },
         "fintech": {
-          "title": "7. Quick Payments & Money Solutions (FinTech)",
+          "title": "7. Easy Payment Solutions (FinTech)",
           "items": [
-            "Bill Payments Made Easy: Let us handle your monthly utility bills, TV subscriptions, and company taxes safely.",
-            "Secure Money Transfers: Fast and secure ways to send, receive, and manage funds for your daily trade."
+            "Simplified Bill Payments: Save time by letting us securely manage payment of your water and electricity bills, professional subscriptions, and taxes.",
+            "Secure Money Transfers: Reliable, fast solutions to send and receive funds across countries to keep your business activities running smoothly."
           ]
         },
         "support": {
-          "title": "8. Personal Business Support",
+          "title": "8. Personalized Assistance (Tailored Services)",
           "items": [
-            "Bespoke Services: Tailor-made support for any other specific business problem or personal need where you need a trusted helping hand."
+            "Unique Support: Because every journey is different, we remain fully available to provide flexible, tailored help for any other specific professional or personal need."
           ]
         }
       }
     },
     "cta": {
-      "title": "Let's build the future together",
-      "description": "Your project is unique — our greatest joy is helping you achieve it.",
-      "button": "Contact us"
+      "title": "Join the KCI SARL Family: Let's Build the Future Together",
+      "description": "Your project is unique, and our greatest joy is helping you bring it to life.",
+      "button": "Contact Us"
     }
   },
   "ProductsPage": {
@@ -605,250 +615,6 @@
         "resetButton": "Reset Filters"
       }
     },
-    "categories": {
-      "technology": {
-        "name": "Technology",
-        "description": "Advanced technological solutions and electronic equipment",
-        "subcategories": {
-          "electronics": {
-            "name": "Electronics",
-            "description": "Modern electronic components and devices",
-            "popularProducts": [
-              "Smartphones",
-              "Tablets",
-              "IC Components",
-              "IoT Sensors"
-            ]
-          },
-          "automotive": {
-            "name": "Automotive",
-            "description": "Automotive parts and accessories",
-            "popularProducts": [
-              "Spare Parts",
-              "Auto Accessories",
-              "GPS Systems",
-              "Batteries"
-            ]
-          },
-          "energy": {
-            "name": "Energy Solutions",
-            "description": "Sustainable energy equipment and solutions",
-            "popularProducts": [
-              "Solar Panels",
-              "Lithium Batteries",
-              "Inverters",
-              "LED Lights"
-            ]
-          },
-          "construction": {
-            "name": "Construction Materials",
-            "description": "Construction materials and equipment",
-            "popularProducts": [
-              "Power Tools",
-              "Materials",
-              "Equipment",
-              "Safety Gear"
-            ]
-          },
-          "electromechanical": {
-            "name": "Electromechanical",
-            "description": "Electromechanical systems and components",
-            "popularProducts": [
-              "Motors",
-              "Automation",
-              "Controllers",
-              "Sensors"
-            ]
-          }
-        }
-      },
-      "fashion": {
-        "name": "Fashion & Beauty",
-        "description": "Premium quality fashion, beauty and personal care",
-        "subcategories": {
-          "beauty": {
-            "name": "Beauty and Fashion",
-            "description": "Fashion trends and beauty products",
-            "popularProducts": [
-              "Dresses",
-              "Accessories",
-              "Jewelry",
-              "Watches"
-            ]
-          },
-          "haircare": {
-            "name": "Hair Care & Styling",
-            "description": "Hair care products and styling tools",
-            "popularProducts": [
-              "Shampoos",
-              "Conditioners",
-              "Styling Tools",
-              "Extensions"
-            ]
-          },
-          "clothing": {
-            "name": "Clothing",
-            "description": "Clothing for all styles and occasions",
-            "popularProducts": [
-              "T-shirts",
-              "Jeans",
-              "Dresses",
-              "Suits"
-            ]
-          },
-          "cosmetics": {
-            "name": "Cosmetics & Skincare",
-            "description": "Cosmetics and skincare products",
-            "popularProducts": [
-              "Makeup",
-              "Creams",
-              "Perfumes",
-              "Face Care"
-            ]
-          },
-          "bodycare": {
-            "name": "Body Care",
-            "description": "Body care and wellness products",
-            "popularProducts": [
-              "Body Wash",
-              "Lotions",
-              "Oils",
-              "Spa Products"
-            ]
-          }
-        }
-      },
-      "agriculture": {
-        "name": "Agriculture",
-        "description": "Modern agricultural solutions and farming equipment",
-        "subcategories": {
-          "crops": {
-            "name": "Crops",
-            "description": "Seeds, fertilizers and crop solutions",
-            "popularProducts": [
-              "Seeds",
-              "Fertilizers",
-              "Pesticides",
-              "Farm Tools"
-            ]
-          },
-          "livestock": {
-            "name": "Livestock",
-            "description": "Livestock equipment and products",
-            "popularProducts": [
-              "Animal Feed",
-              "Livestock Equipment",
-              "Vaccines",
-              "Water Systems"
-            ]
-          }
-        }
-      },
-      "food": {
-        "name": "Food & Beverage",
-        "description": "Quality food products and beverages",
-        "subcategories": {
-          "foodProducts": {
-            "name": "Food Products",
-            "description": "Fresh and processed foods",
-            "popularProducts": [
-              "Canned Foods",
-              "Spices",
-              "Oils",
-              "Cereals"
-            ]
-          },
-          "beverages": {
-            "name": "Beverages",
-            "description": "Beverages and syrups of all varieties",
-            "popularProducts": [
-              "Fruit Juices",
-              "Teas",
-              "Coffees",
-              "Flavored Waters"
-            ]
-          }
-        }
-      },
-      "healthcare": {
-        "name": "Healthcare",
-        "description": "Healthcare solutions and medical equipment",
-        "subcategories": {
-          "health": {
-            "name": "Health Solutions",
-            "description": "Medical equipment and devices",
-            "popularProducts": [
-              "Medical Devices",
-              "Hospital Equipment",
-              "Tests",
-              "Instruments"
-            ]
-          },
-          "fitness": {
-            "name": "Fitness & Wellness",
-            "description": "Fitness and wellness equipment",
-            "popularProducts": [
-              "Gym Equipment",
-              "Supplements",
-              "Fitness Devices",
-              "Yoga Products"
-            ]
-          }
-        }
-      },
-      "entertainment": {
-        "name": "Entertainment",
-        "description": "Gaming, audio and musical instruments",
-        "subcategories": {
-          "gaming": {
-            "name": "Gaming Consoles",
-            "description": "Gaming consoles and accessories",
-            "popularProducts": [
-              "Consoles",
-              "Controllers",
-              "Games",
-              "Gaming Accessories"
-            ]
-          },
-          "audio": {
-            "name": "Audio Systems",
-            "description": "Audio equipment and sound systems",
-            "popularProducts": [
-              "Speakers",
-              "Headphones",
-              "Microphones",
-              "Sound Systems"
-            ]
-          },
-          "musical": {
-            "name": "Musical Instruments",
-            "description": "Musical instruments and equipment",
-            "popularProducts": [
-              "Guitars",
-              "Pianos",
-              "Drums",
-              "Studio Equipment"
-            ]
-          }
-        }
-      },
-      "others": {
-        "name": "Others",
-        "description": "Packaging solutions and other specialized products",
-        "subcategories": {
-          "packaging": {
-            "name": "Packaging Solutions",
-            "description": "Packaging and logistics solutions",
-            "popularProducts": [
-              "Cardboard Boxes",
-              "Plastic Films",
-              "Labels",
-              "Pallets"
-            ]
-          }
-        }
-      }
-    },
     "modal": {
       "popularProducts": "Popular Products",
       "placeOrder": "Place an Order",
@@ -895,7 +661,7 @@
     },
     "hero": {
       "title": "What We Can Do For You",
-      "description": "A consulting firm rooted on the ground — we free your team from administrative, tax, and operational constraints so you can focus on growth."
+      "description": "At KCI SARL, we take care of your business by freeing you from daily constraints. Our flexible, high-performance solutions are designed to organize your operations, save you valuable time, and guide you toward success with peace of mind."
     },
     "search": {
       "placeholder": "Search for services or categories...",
@@ -909,200 +675,200 @@
     "categories": {
       "financial": {
         "name": "Financial Services",
-        "description": "Accounting, taxation, and FinTech payment solutions for your financial peace of mind",
-        "badge": "Finance & Fiscalité",
-        "clientsServed": "clients servis",
+        "description": "Accounting & Tax, FinTech payment solutions, and financial peace of mind",
+        "badge": "Finance & Tax",
+        "clientsServed": "clients served",
         "subcategories": {
           "accounting": {
-            "name": "Comptabilité & Conseil Fiscal",
-            "description": "Tenue de livres, vérifications internes et outils comptables adaptés à votre équipe",
-            "duration": "Service continu",
-            "price": "Sur devis",
+            "name": "Accounting & Tax",
+            "description": "Bookkeeping, financial audit, and tax optimization",
+            "duration": "Ongoing service",
+            "price": "On quote",
             "features": [
-              "Comptabilité quotidienne",
-              "Vérifications internes",
-              "Outils numériques",
-              "Suivi de trésorerie"
+              "Daily accounting",
+              "Internal reviews",
+              "Digital tools",
+              "Cash flow tracking"
             ]
           },
           "fintech": {
-            "name": "Solutions de Paiement FinTech",
-            "description": "Règlement des factures, taxes, abonnements et transferts de fonds sécurisés",
-            "duration": "À la demande",
-            "price": "Sur devis",
+            "name": "FinTech Payment Solutions",
+            "description": "Tax payments, subscriptions, and secure fund transfers",
+            "duration": "On demand",
+            "price": "On quote",
             "features": [
-              "Paiement des factures",
-              "Taxes et abonnements",
-              "Transferts internationaux",
-              "Routage multi-devises"
+              "Bill payments",
+              "Taxes & subscriptions",
+              "International transfers",
+              "Multi-currency routing"
             ]
           },
           "businessCreation": {
-            "name": "Création d'Entreprise & Plans d'Avenir",
-            "description": "Accompagnement légal pour créer votre société et rédiger des business plans solides",
-            "duration": "2-8 semaines",
-            "price": "Sur devis",
+            "name": "Business Creation & Future Planning",
+            "description": "Legal support to create your company and draft solid business plans",
+            "duration": "2-8 weeks",
+            "price": "On quote",
             "features": [
-              "Immatriculation",
-              "Structuration juridique",
+              "Registration",
+              "Legal structuring",
               "Business plans",
-              "Conformité OHADA"
+              "OHADA compliance"
             ]
           },
           "dsf": {
-            "name": "Gestion du Bilan Annuel (DSF)",
-            "description": "Préparation et dépôt de votre Déclaration Statistique et Fiscale en zone OHADA",
-            "duration": "Annuel",
-            "price": "Sur devis",
+            "name": "Annual Financial Statement (DSF)",
+            "description": "Preparation and filing of your Statistical and Fiscal Declaration in the OHADA zone",
+            "duration": "Annual",
+            "price": "On quote",
             "features": [
-              "Audit structurel",
-              "États financiers",
-              "Soumission dans les délais",
-              "Conformité garantie"
+              "Structural audit",
+              "Financial statements",
+              "Timely submission",
+              "Compliance guaranteed"
             ]
           }
         }
       },
       "procurementLogistics": {
         "name": "Procurement, Import/Export & Logistics",
-        "description": "Your gateway to the world — sourcing, freight, and turnkey delivery",
-        "badge": "Sourcing & Fret",
-        "clientsServed": "clients servis",
+        "description": "Global sourcing, customs formalities, and integrated freight",
+        "badge": "Sourcing & Freight",
+        "clientsServed": "clients served",
         "subcategories": {
           "sourcing": {
-            "name": "Sourcing & Achats de Confiance",
-            "description": "Recherche de fournisseurs, négociation de gros et contrôle qualité en usine",
+            "name": "Trusted Sourcing & Procurement",
+            "description": "Supplier research, bulk negotiation, and factory quality control",
             "duration": "Variable",
-            "price": "Sur devis",
+            "price": "On quote",
             "features": [
-              "Fournisseurs locaux et étrangers",
-              "Négociation de prix",
-              "Contrôle en usine",
-              "Présence en Chine"
+              "Local & international suppliers",
+              "Price negotiation",
+              "Factory inspection",
+              "Presence in China"
             ]
           },
           "freight": {
-            "name": "Transport de Marchandises (Fret)",
-            "description": "Acheminement par avion, bateau ou route avec formalités douanières",
-            "duration": "2-55 jours",
-            "price": "Sur devis",
+            "name": "Freight & Cargo Transport",
+            "description": "Transport by air, sea, or road with customs formalities",
+            "duration": "2-55 days",
+            "price": "On quote",
             "features": [
-              "Fret aérien",
-              "Fret maritime",
-              "Transport routier",
-              "Dédouanement inclus"
+              "Air freight",
+              "Sea freight",
+              "Road transport",
+              "Customs clearance included"
             ]
           },
           "delivery": {
-            "name": "Livraison Clé en Main",
-            "description": "Suivi de vos commandes jusqu'à votre boutique, usine ou entrepôt",
-            "duration": "Porte à porte",
-            "price": "Sur devis",
+            "name": "Turnkey Delivery",
+            "description": "Order tracking to your shop, factory, or warehouse",
+            "duration": "Door to door",
+            "price": "On quote",
             "features": [
-              "Suivi de colis",
-              "Dernier kilomètre",
-              "Livraison sécurisée",
-              "Preuve de livraison"
+              "Parcel tracking",
+              "Last mile",
+              "Secure delivery",
+              "Proof of delivery"
             ]
           }
         }
       },
       "eventManagement": {
         "name": "Event Management",
-        "description": "Professional planning, logistics, and coordination for your events",
-        "badge": "Événements Sur Mesure",
-        "clientsServed": "clients servis",
+        "description": "Professional planning, logistics, and coordination",
+        "badge": "Tailored Events",
+        "clientsServed": "clients served",
         "subcategories": {
           "budget": {
-            "name": "Suivi Budgétaire & Économies",
-            "description": "Planification des dépenses pour respecter votre budget avec qualité maximale",
-            "duration": "Tout au long du projet",
-            "price": "Sur devis",
+            "name": "Budget Tracking & Savings",
+            "description": "Expense planning to respect your budget with maximum quality",
+            "duration": "Throughout the project",
+            "price": "On quote",
             "features": [
-              "Budgets détaillés",
-              "Suivi des coûts",
-              "Économies ciblées",
-              "Rapports financiers"
+              "Detailed budgets",
+              "Cost tracking",
+              "Targeted savings",
+              "Financial reports"
             ]
           },
           "audiovisual": {
-            "name": "Matériel Audiovisuel",
-            "description": "Écrans, sons, lumières et technologie pour des événements réussis",
-            "duration": "1-2 semaines",
-            "price": "Sur devis",
+            "name": "Audiovisual Equipment",
+            "description": "Screens, sound, lighting, and technology for successful events",
+            "duration": "1-2 weeks",
+            "price": "On quote",
             "features": [
-              "Son professionnel",
-              "Éclairage scénique",
-              "Écrans géants",
-              "Diffusion en direct"
+              "Professional sound",
+              "Stage lighting",
+              "Large screens",
+              "Live streaming"
             ]
           },
           "catering": {
-            "name": "Traiteurs de Choix",
-            "description": "Menus délicieux et service complet pour accueillir vos invités",
-            "duration": "1-3 semaines",
-            "price": "Sur devis",
+            "name": "Premium Catering",
+            "description": "Delicious menus and full service to welcome your guests",
+            "duration": "1-3 weeks",
+            "price": "On quote",
             "features": [
-              "Menus personnalisés",
-              "Service complet",
-              "Bar à cocktails",
-              "Restrictions alimentaires"
+              "Custom menus",
+              "Full service",
+              "Cocktail bar",
+              "Dietary accommodations"
             ]
           },
           "staff": {
-            "name": "Accueil & Personnel de Terrain",
-            "description": "Hôtesses, agents de sécurité et bénévoles coordonnés pour votre événement",
-            "duration": "2-6 semaines",
-            "price": "Sur devis",
+            "name": "Reception & On-Site Staff",
+            "description": "Hostesses, security agents, and volunteers coordinated for your event",
+            "duration": "2-6 weeks",
+            "price": "On quote",
             "features": [
-              "Recrutement ciblé",
-              "Formation d'équipe",
+              "Targeted recruitment",
+              "Team training",
               "Coordination",
-              "Personnel dévoué"
+              "Dedicated staff"
             ]
           }
         }
       },
       "facilitiesManagement": {
         "name": "Facilities Management",
-        "description": "Commercial maintenance, technical upkeep, and staffing outsourcing",
-        "badge": "Gestion de Locaux",
-        "clientsServed": "clients servis",
+        "description": "Commercial maintenance, technical upkeep, and outsourcing",
+        "badge": "Premises Management",
+        "clientsServed": "clients served",
         "subcategories": {
           "cleaning": {
-            "name": "Nettoyage Professionnel",
-            "description": "Ménage soigné, désinfection et petites réparations pour des locaux accueillants",
-            "duration": "Contrats flexibles",
-            "price": "Sur devis",
+            "name": "Professional Cleaning",
+            "description": "Careful housekeeping, disinfection, and minor repairs for welcoming premises",
+            "duration": "Flexible contracts",
+            "price": "On quote",
             "features": [
-              "Nettoyage quotidien",
-              "Désinfection",
-              "Petites réparations",
-              "Produits écologiques"
+              "Daily cleaning",
+              "Disinfection",
+              "Minor repairs",
+              "Eco-friendly products"
             ]
           },
           "maintenance": {
-            "name": "Maintenance Préventive",
-            "description": "Surveillance de l'électricité, plomberie et générateurs pour éviter les pannes",
-            "duration": "Contrats annuels",
-            "price": "Sur devis",
+            "name": "Preventive Maintenance",
+            "description": "Monitoring of electrical, plumbing, and generators to prevent breakdowns",
+            "duration": "Annual contracts",
+            "price": "On quote",
             "features": [
-              "Inspections régulières",
-              "Réparations préventives",
-              "Équipe technique",
-              "Réduction des coûts"
+              "Regular inspections",
+              "Preventive repairs",
+              "Technical team",
+              "Cost reduction"
             ]
           },
           "staffing": {
-            "name": "Mise à disposition de Personnel",
-            "description": "Agents d'accueil, techniciens et personnel de confiance pour renforcer votre équipe",
-            "duration": "Service continu",
-            "price": "Sur devis",
+            "name": "Staffing Solutions",
+            "description": "Reception agents, technicians, and trusted staff to strengthen your team",
+            "duration": "Ongoing service",
+            "price": "On quote",
             "features": [
-              "Recrutement",
-              "Sélection rigoureuse",
-              "Formation",
-              "Gestion des contrats"
+              "Recruitment",
+              "Rigorous selection",
+              "Training",
+              "Contract management"
             ]
           }
         }
@@ -1110,63 +876,63 @@
       "realEstate": {
         "name": "Real Estate",
         "description": "Real estate brokerage, acquisitions, leases, and property development",
-        "badge": "Projets Immobiliers",
-        "clientsServed": "clients servis",
+        "badge": "Real Estate Projects",
+        "clientsServed": "clients served",
         "subcategories": {
           "brokerage": {
-            "name": "Conseil, Achat & Location",
-            "description": "Accompagnement pour acheter, vendre ou louer bureaux, locaux commerciaux ou terrains",
+            "name": "Advisory, Purchase & Leasing",
+            "description": "Support to buy, sell, or rent offices, commercial premises, or land",
             "duration": "Variable",
-            "price": "Sur devis",
+            "price": "On quote",
             "features": [
-              "Transactions sécurisées",
-              "Vérification juridique",
-              "Courtage",
-              "Gestion locative"
+              "Secure transactions",
+              "Legal verification",
+              "Brokerage",
+              "Property management"
             ]
           },
           "promotion": {
-            "name": "Promotion & Projets Immobiliers",
-            "description": "Conception de projets, permis de construire et pilotage de chantiers",
-            "duration": "6-24 mois",
-            "price": "Sur devis",
+            "name": "Property Development & Real Estate Projects",
+            "description": "Project design, building permits, and construction site management",
+            "duration": "6-24 months",
+            "price": "On quote",
             "features": [
-              "Permis de construire",
-              "Conception architecturale",
-              "Pilotage de chantier",
-              "Partenariats investisseurs"
+              "Building permits",
+              "Architectural design",
+              "Site management",
+              "Investor partnerships"
             ]
           }
         }
       },
       "travel": {
         "name": "Travel & Visa Services",
-        "description": "Visa support and travel assistance for UK, Canada, China, and more",
-        "badge": "Mobilité Globale",
-        "clientsServed": "clients servis",
+        "description": "Visa guidance and support for the UK, Canada, China, India, Russia, and many other destinations.",
+        "badge": "Global Mobility",
+        "clientsServed": "clients served",
         "subcategories": {
           "visa": {
-            "name": "Accompagnement Visa",
-            "description": "Préparation irréprochable de dossiers visa d'affaires ou d'études",
-            "duration": "2-8 semaines",
-            "price": "Sur devis",
+            "name": "Visa Assistance",
+            "description": "Flawless preparation of business or study visa applications",
+            "duration": "2-8 weeks",
+            "price": "On quote",
             "features": [
-              "UK, Canada, Chine",
-              "Inde, Russie, Schengen",
-              "Audit de dossier",
-              "Préparation entretien"
+              "UK, Canada, China",
+              "India, Russia, Schengen",
+              "File audit",
+              "Interview preparation"
             ]
           },
           "delegation": {
-            "name": "Logistique de Délégations",
-            "description": "Vols, hébergement et coordination pour délégations d'affaires internationales",
-            "duration": "Sur mesure",
-            "price": "Sur devis",
+            "name": "Delegation Logistics",
+            "description": "Flights, accommodation, and coordination for international business delegations",
+            "duration": "Tailored",
+            "price": "On quote",
             "features": [
-              "Réservation de vols",
-              "Hébergement premium",
-              "Déplacements locaux",
-              "Coordination complète"
+              "Flight booking",
+              "Premium accommodation",
+              "Local transport",
+              "Full coordination"
             ]
           }
         }
@@ -1186,9 +952,9 @@
   },
   "ContactPage": {
     "hero": {
-      "title": "Contact Our",
-      "titleHighlight": "Global Team",
-      "description": "Connect with our international team across three continents. We're here to support your import/export projects and answer all your questions."
+      "title": "Contact",
+      "titleHighlight": "Us",
+      "description": "Whether you're a startup founder seeking advice, a merchant looking to import safely, or a neighbor with a project close to your heart, we're here to listen. At KC International, we combine on-the-ground experience with networks worldwide to open doors and simplify your life."
     },
     "form": {
       "title": "Send us a Message",
@@ -1231,6 +997,7 @@
         }
       },
       "submitButton": "Send Message",
+      "sending": "Sending...",
       "required": "Required",
       "validation": {
         "name": {
@@ -1258,19 +1025,19 @@
     },
     "offices": {
       "title": "Our Regional Hubs",
-      "description": "On-the-ground offices to support you close to your needs.",
+      "description": "On-the-ground offices to support you as close as possible to your needs.",
       "guangzhou": {
         "name": "Guangzhou Hub (China)",
         "role": "Sourcing & Quality Control",
-        "description": "We oversee your purchases, find the best factories, and inspect goods before shipment.",
+        "description": "By your side to oversee your purchases, find the best factories, and inspect the quality of your goods before shipment.",
         "address": "Junshan Hotel, Sanyuanli, Guangzhou City, Guangdong Province",
         "phone": "+86 150 1197 1089",
-        "phoneLabel": "WhatsApp sourcing"
+        "phoneLabel": "Let's chat on WhatsApp (Direct line for our sourcing team)"
       },
       "lagos": {
         "name": "Lagos Hub (Nigeria)",
         "role": "West Africa & Logistics",
-        "description": "Grow your business in West Africa with logistics and secure payment solutions.",
+        "description": "To grow your business in West Africa, manage your logistics transport, and secure your payment solutions.",
         "address": "Abimbola Street, Isolo Industrial Zone, Oshodi-Isolo LGA, Lagos",
         "phone": "+234 903 162 2889",
         "phoneLabel": "Direct line"
@@ -1278,19 +1045,19 @@
       "yaounde": {
         "name": "Yaoundé Regional HQ (Cameroon)",
         "role": "Accounting, Tax & Visas",
-        "description": "Your trusted office for accounting, taxes, property management, and visa services.",
+        "description": "Your trusted office for accounting, taxes, property management, and visa applications.",
         "address": "Behind Pharmacie Volontas Dei, Biyemassi Lac, Yaoundé",
         "phone": "+237 683 242 277",
         "phoneLabel": "Direct line"
       },
       "emails": {
-        "title": "Email Contacts",
-        "sales": "Orders, purchases & import/export: sales@kci-ltd.com",
-        "info": "General inquiries & business advice: info@kci-ltd.com"
+        "title": "Our Digital Mailboxes",
+        "sales": "For orders, purchases, and import/export: sales@kci-ltd.com",
+        "info": "For general questions or business advice: info@kci-ltd.com"
       },
       "social": {
         "title": "Follow Our Stories",
-        "description": "Join our online community for free tips and client success stories."
+        "description": "Join our online community to discover our free advice and the successes of the entrepreneurs we support."
       }
     }
   },
@@ -1313,588 +1080,588 @@
         "name": "All Questions"
       },
       "financial": {
-        "name": "Finance & OHADA Compliance"
+        "name": "Financial Engineering, OHADA Compliance & Taxation"
       },
       "procurement": {
-        "name": "Procurement & Sourcing"
+        "name": "Global Procurement, Sourcing & Manufacturing Chains"
       },
       "logistics": {
-        "name": "Logistics & Mobility"
+        "name": "Multimodal Logistics, Freight & Global Mobility Services"
       },
       "realEstate": {
-        "name": "Real Estate & Facilities"
+        "name": "Real Estate Solutions & Facilities Management"
       },
       "strategy": {
-        "name": "Strategy, FinTech & Impact"
+        "name": "Business Strategy, FinTech & Impact Incubation"
       }
     },
     "faqs": {
       "1": {
-        "question": "En quoi KC International Ltd se distingue-t-elle des cabinets comptables traditionnels au Cameroun et au Nigeria ?",
-        "answer": "Les cabinets traditionnels se limitent à l'enregistrement historique de vos données ; KCI Ltd pratique un véritable génie financier actif. Nous ne nous contentons pas de tenir vos livres : nous analysons de manière stratégique votre structure d'entreprise, votre trésorerie et vos flux de transactions transfrontaliers. En combinant une connaissance pointue des réglementations locales (telles que le droit OHADA) avec les réalités des marchés internationaux où nous opérons (Chine, Nigeria), nous structurons proactivement vos finances pour maximiser votre rentabilité, votre efficacité et votre conformité.",
+        "question": "How does KC International Ltd stand apart from traditional accounting firms in Cameroon and Nigeria?",
+        "answer": "Traditional firms focus on recording your historical data; KCI Ltd practices active financial engineering. We do not simply keep your books—we strategically analyze your corporate structure, cash flow, and cross-border transactions. By combining deep knowledge of local regulations (such as OHADA law) with the realities of the international markets where we operate (China, Nigeria), we proactively structure your finances to maximize profitability, efficiency, and compliance.",
         "keywords": [
-          "comptabilité",
-          "génie financier",
+          "accounting",
+          "financial engineering",
           "OHADA",
-          "Cameroun",
+          "Cameroon",
           "Nigeria",
-          "conformité"
+          "compliance"
         ]
       },
       "2": {
-        "question": "Qu'est-ce que la Déclaration Statistique et Fiscale (DSF) et pourquoi confier sa gestion à KCI Ltd ?",
-        "answer": "La DSF est le bilan financier annuel obligatoire pour toutes les entreprises de la zone OHADA, y compris au Cameroun. C'est un document d'une grande complexité. Déposer une DSF erronée ou en retard expose votre entreprise à de lourdes sanctions financières et à des contrôles fiscaux stricts. L'équipe d'experts financiers de KCI Ltd prend en charge l'intégralité de l'architecture de votre DSF : audit structurel, compilation rigoureuse des états financiers et soumission dans les délais pour garantir que votre historique de conformité reste irréprochable.",
+        "question": "What is the Statistical and Fiscal Declaration (DSF) and why entrust its management to KCI Ltd?",
+        "answer": "The DSF is the mandatory annual financial statement for all companies in the OHADA zone, including Cameroon. It is a highly complex document. Filing an incorrect or late DSF exposes your business to heavy financial penalties and strict tax audits. KCI Ltd's team of financial experts handles the entire architecture of your DSF: structural audit, rigorous compilation of financial statements, and timely submission to keep your compliance record spotless.",
         "keywords": [
           "DSF",
-          "déclaration fiscale",
+          "tax declaration",
           "OHADA",
-          "bilan annuel",
-          "conformité",
-          "Cameroun"
+          "annual statement",
+          "compliance",
+          "Cameroon"
         ]
       },
       "3": {
-        "question": "Comment fonctionnent vos services d'optimisation fiscale sans exposer mon entreprise à des risques juridiques ?",
-        "answer": "Une véritable optimisation fiscale ne relève pas de la fraude, mais d'une utilisation intelligente de la législation. Nos spécialistes en fiscalité d'entreprise étudient en permanence les Codes des Impôts du Cameroun et du Nigeria afin d'identifier les crédits d'impôt, les incitations, les exonérations et les déductions légales propres à votre secteur. Nous structurons vos flux de transactions internes pour réduire légalement vos charges fiscales, préservant ainsi votre capital de roulement tout en maintenant votre entreprise à l'abri de tout risque d'audit.",
+        "question": "How do your tax optimization services work without exposing my business to legal risks?",
+        "answer": "True tax optimization is not fraud—it is intelligent use of legislation. Our corporate tax specialists continuously study the Tax Codes of Cameroon and Nigeria to identify tax credits, incentives, exemptions, and legal deductions specific to your sector. We structure your internal transaction flows to legally reduce your tax burden, preserving working capital while keeping your business safe from audit risk.",
         "keywords": [
-          "optimisation fiscale",
-          "fiscalité",
-          "Cameroun",
+          "tax optimization",
+          "taxation",
+          "Cameroon",
           "Nigeria",
-          "crédits d'impôt",
-          "conformité"
+          "tax credits",
+          "compliance"
         ]
       },
       "4": {
-        "question": "Quels logiciels de comptabilité déployez-vous et proposez-vous des formations pour nos équipes ?",
-        "answer": "Nous intégrons et déployons des solutions financières et des ERP standards de premier plan, notamment Sage Evolution, Excel et des architectures sur mesure sous Odoo, selon la taille de votre activité. Notre processus d'intégration est global : nous gérons la configuration initiale du système, la migration sécurisée de vos données historiques et nous dispensons des formations pratiques complètes à vos équipes pour leur garantir une autonomie opérationnelle immédiate.",
+        "question": "Which accounting software do you deploy, and do you offer training for our teams?",
+        "answer": "We integrate and deploy leading financial solutions and ERPs, including Sage Evolution, Excel, and custom Odoo architectures, depending on the size of your business. Our onboarding process is comprehensive: we handle initial system configuration, secure migration of your historical data, and deliver full hands-on training to your teams to ensure immediate operational autonomy.",
         "keywords": [
           "Sage Evolution",
           "Odoo",
           "ERP",
-          "comptabilité",
-          "formation",
-          "logiciel"
+          "accounting",
+          "training",
+          "software"
         ]
       },
       "5": {
-        "question": "KCI SARL peut-elle nous aider pour l'immatriculation d'entreprise et la structuration juridique de notre société ?",
-        "answer": "Oui. Nous simplifions l'ensemble du processus d'architecture d'entreprise pour les startups, les PME en pleine croissance et les marques internationales. De l'accompagnement auprès des registres du commerce au Cameroun et au Nigeria jusqu'à la structuration des entités légales, la définition des modèles de gouvernance et la rédaction de business plans stratégiques conformes aux exigences des banques et des investisseurs, nous veillons à ce que votre entreprise soit bâtie sur des bases solides et conformes.",
+        "question": "Can KCI SARL help with business registration and legal structuring of our company?",
+        "answer": "Yes. We simplify the entire business architecture process for startups, growing SMEs, and international brands. From support with trade registries in Cameroon and Nigeria to structuring legal entities, defining governance models, and drafting strategic business plans that meet bank and investor requirements, we ensure your company is built on solid, compliant foundations.",
         "keywords": [
-          "immatriculation",
-          "création d'entreprise",
-          "structuration juridique",
+          "registration",
+          "company formation",
+          "legal structuring",
           "business plan",
           "startup"
         ]
       },
       "6": {
-        "question": "Qu'est-ce que le conseil financier « fractionné ou à temps partiel » et comment cela permet-il à mon entreprise d'économiser de l'argent ?",
-        "answer": "Beaucoup d'entreprises en croissance ont besoin d'une direction financière de haut niveau mais n'ont pas le budget nécessaire pour supporter le salaire et les avantages sociaux à plein temps d'un Directeur Financier (CFO) ou d'un Chef Comptable. Le modèle de conseil à temps partiel de KCI Ltd vous offre un accès flexible et sur demande à nos experts financiers seniors. Vous bénéficiez d'une supervision stratégique, d'une préparation aux audits et d'une optimisation fiscale exactement quand vous en avez besoin, en payant uniquement pour les heures de conseil productives, sans les coûts fixes d'une embauche à plein temps.",
+        "question": "What is fractional or part-time financial advisory, and how does it save my business money?",
+        "answer": "Many growing businesses need high-level financial leadership but cannot afford the full-time salary and benefits of a Chief Financial Officer (CFO) or Head Accountant. KCI Ltd's part-time advisory model gives you flexible, on-demand access to our senior financial experts. You receive strategic oversight, audit preparation, and tax optimization exactly when you need it—paying only for productive advisory hours, without the fixed costs of a full-time hire.",
         "keywords": [
           "CFO",
-          "conseil financier",
-          "temps partiel",
-          "direction financière",
-          "économies"
+          "financial advisory",
+          "part-time",
+          "financial leadership",
+          "savings"
         ]
       },
       "7": {
-        "question": "Comment KCI SARL garantit-elle que mes pratiques comptables restent totalement à l'abri des redressements lors des contrôles de l'État ?",
-        "answer": "Nous réalisons des audits de conformité internes et proactifs bien avant que l'administration fiscale ne se manifeste. Notre équipe financière passe systématiquement au crible vos registres comptables, vos retenues sur salaire, vos déclarations de TVA et vos reçus de dépenses d'entreprise par rapport aux lois fiscales en vigueur. En identifiant et en corrigeant les écarts de conformité très tôt, nous rendons vos dossiers comptables irréprochables, vous garantissant ainsi des contrôles de l'État sans aucun stress.",
+        "question": "How does KCI SARL ensure my accounting practices remain fully protected from adjustments during government audits?",
+        "answer": "We conduct internal, proactive compliance audits long before the tax administration comes knocking. Our financial team systematically reviews your accounting records, payroll withholdings, VAT returns, and business expense receipts against current tax laws. By identifying and correcting compliance gaps early, we make your accounting files impeccable—ensuring stress-free government audits.",
         "keywords": [
           "audit",
-          "conformité",
-          "contrôle fiscal",
-          "TVA",
-          "comptabilité",
-          "redressement"
+          "compliance",
+          "tax inspection",
+          "VAT",
+          "accounting",
+          "adjustment"
         ]
       },
       "8": {
-        "question": "Pouvez-vous aider mon entreprise locale à passer d'une comptabilité informelle aux normes de reporting financier internationales ?",
-        "answer": "Formaliser sa comptabilité est l'étape la plus cruciale pour obtenir des prêts bancaires et nouer des partenariats internationaux. KCI SARL assainit l'historique de vos dossiers financiers, met en place des règles strictes de suivi des registres numériques et forme vos équipes au suivi des flux de trésorerie de l'entreprise. Nous assurons une transition fluide de vos opérations vers des structures de conformité vérifiées, rendant vos états financiers transparents et attractifs pour les investisseurs mondiaux.",
+        "question": "Can you help my local business transition from informal accounting to international financial reporting standards?",
+        "answer": "Formalizing your accounting is the most crucial step toward securing bank loans and international partnerships. KCI SARL cleans up your financial record history, implements strict digital ledger tracking rules, and trains your teams in corporate cash flow monitoring. We ensure a smooth transition of your operations to verified compliance structures, making your financial statements transparent and attractive to global investors.",
         "keywords": [
-          "comptabilité informelle",
-          "reporting financier",
-          "normes internationales",
-          "formalisation",
-          "investisseurs"
+          "informal accounting",
+          "financial reporting",
+          "international standards",
+          "formalization",
+          "investors"
         ]
       },
       "9": {
-        "question": "Proposez-vous des services de modélisation financière et d'évaluation pour les entreprises en quête d'investissements ou de partenariats ?",
-        "answer": "Oui. Nous concevons des modèles financiers sophistiqués et basés sur des données concrètes pour projeter vos revenus, vos dépenses d'exploitation et vos rendements sur 3 à 5 ans. Que vous présentiez votre projet à des fonds de capital-risque, négociiez une joint-venture ou cherchiez à céder des parts de votre société, nos modèles d'évaluation rigoureux vous apportent les données nécessaires pour maximiser votre pouvoir de négociation.",
+        "question": "Do you offer financial modeling and valuation services for businesses seeking investment or partnerships?",
+        "answer": "Yes. We design sophisticated, data-driven financial models to project your revenue, operating expenses, and returns over 3 to 5 years. Whether you are presenting to venture capital funds, negotiating a joint venture, or seeking to sell equity in your company, our rigorous valuation models provide the data you need to maximize your negotiating power.",
         "keywords": [
-          "modélisation financière",
-          "évaluation",
-          "investissement",
-          "capital-risque",
-          "joint-venture"
+          "financial modeling",
+          "valuation",
+          "investment",
+          "venture capital",
+          "joint venture"
         ]
       },
       "10": {
-        "question": "Comment gérez-vous la conformité fiscale transfrontalière pour les entreprises qui opèrent simultanément au Cameroun et au Nigeria ?",
-        "answer": "Opérer de part et d'autre des frontières expose les entreprises à des risques de double imposition et à des audits complexes sur les prix de transfert. KCI SARL coordonne vos stratégies fiscales entre nos différents pôles régionaux, garantissant que vos transactions transfrontalières soient structurées légalement selon les directives du commerce international. Nous alignons vos déclarations fiscales dans les deux pays pour protéger vos marges bénéficiaires de toute double taxation.",
+        "question": "How do you manage cross-border tax compliance for businesses operating simultaneously in Cameroon and Nigeria?",
+        "answer": "Operating across borders exposes businesses to double taxation risks and complex transfer pricing audits. KCI SARL coordinates your tax strategies across our regional hubs, ensuring your cross-border transactions are legally structured under international trade directives. We align your tax filings in both countries to protect your profit margins from double taxation.",
         "keywords": [
-          "fiscalité transfrontalière",
-          "double imposition",
-          "Cameroun",
+          "cross-border taxation",
+          "double taxation",
+          "Cameroon",
           "Nigeria",
-          "prix de transfert"
+          "transfer pricing"
         ]
       },
       "11": {
-        "question": "En quoi la présence stratégique de KCI Ltd à Guangzhou, en Chine, profite-t-elle aux acheteurs d'Afrique de l'Ouest et Centrale ?",
-        "answer": "Acheter des produits à l'étranger comporte d'immenses risques liés à la barrière de la langue, aux fraudes et aux défauts de qualité. KCI SARL agit comme votre intermédiaire physique de confiance en Chine. Disposer de notre propre bureau d'approvisionnement directement à Guangzhou nous permet de négocier les prix face à face avec les usines, de vérifier la légitimité des fournisseurs, d'éliminer les intermédiaires cachés et d'inspecter les marchandises avant qu'elles ne quittent le sol chinois — protégeant ainsi votre capital et votre réputation.",
+        "question": "How does KCI Ltd's strategic presence in Guangzhou, China benefit buyers in West and Central Africa?",
+        "answer": "Buying products abroad carries immense risks related to language barriers, fraud, and quality defects. KCI SARL acts as your trusted physical intermediary in China. Having our own procurement office directly in Guangzhou allows us to negotiate prices face-to-face with factories, verify supplier legitimacy, eliminate hidden middlemen, and inspect goods before they leave Chinese soil—protecting your capital and reputation.",
         "keywords": [
           "Guangzhou",
-          "Chine",
+          "China",
           "sourcing",
-          "approvisionnement",
-          "Afrique",
+          "procurement",
+          "Africa",
           "inspection"
         ]
       },
       "12": {
-        "question": "Quelles catégories spécifiques de produits ou de pôles d'approvisionnement gérez-vous ?",
-        "answer": "Nous sommes spécialisés dans l'approvisionnement de gros à fort volume à travers cinq secteurs clés :\n1. Technologies Avancées : Matériel informatique, électronique grand public et réseaux IT.\n2. Mode & Esthétique : Prêt-à-porter, textiles, cosmétiques et infrastructures de soins capillaires.\n3. Agriculture : Machines agricoles lourdes, engrais et intrants Agri-Tech.\n4. Santé : Consommables cliniques et équipements de diagnostic.\n5. Fournitures Industrielles : Matériaux de construction, matériel électromécanique et solutions d'emballage.",
+        "question": "Which specific product categories or procurement hubs do you manage?",
+        "answer": "We specialize in high-volume wholesale procurement across five key sectors:\n1. Advanced Technology: IT hardware, consumer electronics, and IT networks.\n2. Fashion & Aesthetics: Ready-to-wear, textiles, cosmetics, and hair care infrastructure.\n3. Agriculture: Heavy farm machinery, fertilizers, and Agri-Tech inputs.\n4. Healthcare: Clinical consumables and diagnostic equipment.\n5. Industrial Supplies: Construction materials, electromechanical equipment, and packaging solutions.",
         "keywords": [
-          "approvisionnement",
-          "technologie",
-          "mode",
+          "procurement",
+          "technology",
+          "fashion",
           "agriculture",
-          "santé",
-          "industrie"
+          "healthcare",
+          "industry"
         ]
       },
       "13": {
-        "question": "En quoi consiste votre processus d'audit d'usine et d'assurance qualité ?",
-        "answer": "Avant le chargement du moindre conteneur, notre équipe d'inspection basée à Guangzhou se déplace physiquement dans l'usine de fabrication. Nous vérifions les certifications de l'usine, testons les lignes de production, prélevons des échantillons pour vérifier la qualité par rapport à vos fiches techniques ou vos designs, et comptons l'inventaire. Vous recevez un rapport d'inspection complet avec preuves vidéos et photographiques, garantissant que ce que vous recevez correspond exactement à ce que vous avez acheté.",
+        "question": "What does your factory audit and quality assurance process involve?",
+        "answer": "Before a single container is loaded, our inspection team based in Guangzhou physically visits the manufacturing plant. We verify factory certifications, test production lines, take samples to check quality against your technical specifications or designs, and count inventory. You receive a complete inspection report with video and photographic evidence, ensuring what you receive matches exactly what you purchased.",
         "keywords": [
-          "audit d'usine",
-          "assurance qualité",
+          "factory audit",
+          "quality assurance",
           "inspection",
           "Guangzhou",
-          "contrôle qualité"
+          "quality control"
         ]
       },
       "14": {
-        "question": "Pouvez-vous personnaliser des lignes de fabrication pour des marques de vêtements, des entreprises de tech ou des emballages sur mesure ?",
-        "answer": "Oui. Nous sommes spécialisés dans la production sous marque de distributeur et les services de fabrication d'équipement d'origine (OEM). Que vous lanciez une collection de mode sur mesure, développiez des appareils électroniques sous votre propre marque ou recherchiez des emballages d'entreprise personnalisés, nous vous connectons avec des fabricants certifiés capables de respecter vos cahiers des charges et vos objectifs de prix.",
+        "question": "Can you customize manufacturing lines for clothing brands, tech companies, or bespoke packaging?",
+        "answer": "Yes. We specialize in private label production and Original Equipment Manufacturer (OEM) services. Whether you are launching a custom fashion collection, developing electronic devices under your own brand, or seeking customized corporate packaging, we connect you with certified manufacturers capable of meeting your specifications and price targets.",
         "keywords": [
           "OEM",
-          "fabrication sur mesure",
-          "marque distributeur",
-          "emballage",
-          "personnalisation"
+          "custom manufacturing",
+          "private label",
+          "packaging",
+          "customization"
         ]
       },
       "15": {
-        "question": "Comment KCI SARL gère-t-elle l'approvisionnement en gros pour les intrants agricoles ou l'emballage industriel ?",
-        "answer": "Nous entretenons des relations institutionnelles directes avec les plus grands producteurs de matières premières et usines mondiales. Pour les marchandises en gros comme les engrais, l'acier de construction ou les cartons d'emballage écologiques, nous négocions des contrats de volume qui nous permettent de contourner les grossistes secondaires. Cela vous garantit des prix directs d'usine au plus bas et des volumes d'approvisionnement stables pour votre usine ou votre exploitation.",
+        "question": "How does KCI SARL manage bulk procurement for agricultural inputs or industrial packaging?",
+        "answer": "We maintain direct institutional relationships with the world's largest raw material producers and factories. For bulk goods such as fertilizers, construction steel, or eco-friendly packaging cartons, we negotiate volume contracts that allow us to bypass secondary wholesalers. This guarantees you the lowest direct factory prices and stable supply volumes for your plant or farm operation.",
         "keywords": [
-          "approvisionnement en gros",
-          "intrants agricoles",
-          "emballage",
-          "engrais",
-          "prix usine"
+          "bulk procurement",
+          "agricultural inputs",
+          "packaging",
+          "fertilizers",
+          "factory price"
         ]
       },
       "16": {
-        "question": "Les particuliers peuvent-ils utiliser vos services d'approvisionnement, ou travaillez-vous uniquement avec de grandes entreprises ?",
-        "answer": "Nous servons les deux profils. Bien que nous exécutions d'importants marchés d'approvisionnement industriels pour des multinationales et des entrepreneurs publics, nous maintenons des canaux accessibles pour les commerçants indépendants, les propriétaires de boutiques, les startups de la tech et les entrepreneurs agricoles qui souhaitent augmenter leur pouvoir d'achat en important directement depuis les centres de fabrication.",
+        "question": "Can individuals use your procurement services, or do you only work with large corporations?",
+        "answer": "We serve both profiles. While we execute major industrial procurement contracts for multinationals and public entrepreneurs, we maintain accessible channels for independent traders, shop owners, tech startups, and agricultural entrepreneurs who want to increase their purchasing power by importing directly from manufacturing centers.",
         "keywords": [
-          "particuliers",
-          "PME",
-          "commerçants",
+          "individuals",
+          "SMEs",
+          "traders",
           "startups",
-          "approvisionnement",
+          "procurement",
           "import"
         ]
       },
       "17": {
-        "question": "Comment protégez-vous mon entreprise contre les fournisseurs frauduleux sur les places de marché en ligne à l'étranger ?",
-        "answer": "Les plateformes en ligne regorgent d'agents commerciaux non certifiés qui se font passer pour de vraies usines. KCI SARL élimine totalement ce risque. Nous contournons les intermédiaires numériques en vérifiant les fournisseurs directement sur les registres officiels des fabricants chinois, en inspectant physiquement leurs sites de production et en contrôlant leur solvabilité financière avant le moindre transfert d'argent.",
+        "question": "How do you protect my business from fraudulent suppliers on foreign online marketplaces?",
+        "answer": "Online platforms are full of uncertified sales agents posing as real factories. KCI SARL eliminates this risk entirely. We bypass digital middlemen by verifying suppliers directly on official Chinese manufacturer registries, physically inspecting their production sites, and checking their financial solvency before any money is transferred.",
         "keywords": [
-          "fraude",
-          "fournisseurs",
-          "vérification",
-          "Chine",
-          "sécurité",
-          "approvisionnement"
+          "fraud",
+          "suppliers",
+          "verification",
+          "China",
+          "security",
+          "procurement"
         ]
       },
       "18": {
-        "question": "Quel est votre processus pour l'approvisionnement en pièces électromécaniques spécialisées ou en machines de flotte automobile ?",
-        "answer": "L'achat de matériel mécanique technique exige un alignement précis sur vos plans d'ingénierie. Nos spécialistes de l'approvisionnement travaillent directement à partir de vos fiches techniques ou de vos références de pièces (codes OEM). Nous mettons ces spécifications en correspondance directe avec des fabricants industriels spécialisés en Chine, garantissant que tous les composants sur mesure ou machines de flotte s'intègrent parfaitement à vos systèmes mécaniques existants.",
+        "question": "What is your process for sourcing specialized electromechanical parts or fleet vehicle machinery?",
+        "answer": "Purchasing technical mechanical equipment requires precise alignment with your engineering plans. Our procurement specialists work directly from your technical data sheets or part references (OEM codes). We match these specifications directly with specialized industrial manufacturers in China, ensuring all custom components or fleet machinery integrate perfectly with your existing mechanical systems.",
         "keywords": [
-          "pièces électromécaniques",
+          "electromechanical parts",
           "OEM",
-          "flotte automobile",
-          "machines",
+          "vehicle fleet",
+          "machinery",
           "sourcing"
         ]
       },
       "19": {
-        "question": "Aidez-vous les entreprises à s'approvisionner en solutions d'énergie verte, comme les installations solaires ?",
-        "answer": "Oui. Nous sommes très actifs dans les chaînes d'approvisionnement en énergies propres. Nous achetons des panneaux solaires à haute performance, des onduleurs industriels et des systèmes de stockage sur batteries au lithium longue durée directement auprès de fabricants d'énergies renouvelables de premier plan (Tier-1), permettant aux développeurs locaux de bâtir des infrastructures solaires fiables à des coûts d'investissement très optimisés.",
+        "question": "Do you help businesses source green energy solutions, such as solar installations?",
+        "answer": "Yes. We are highly active in clean energy supply chains. We purchase high-performance solar panels, industrial inverters, and long-life lithium battery storage systems directly from leading Tier-1 renewable energy manufacturers, enabling local developers to build reliable solar infrastructure at highly optimized investment costs.",
         "keywords": [
-          "énergie solaire",
-          "énergie verte",
-          "panneaux solaires",
-          "onduleurs",
-          "renouvelable"
+          "solar energy",
+          "green energy",
+          "solar panels",
+          "inverters",
+          "renewable"
         ]
       },
       "20": {
-        "question": "Quelles sont les quantités minimales de commande (MOQ) requises pour s'approvisionner via KCI SARL ?",
-        "answer": "Les quantités minimales de commande dépendent entièrement des usines de fabrication et du type de produit. Cependant, parce que nous regroupons les expéditions et maintenons un volume d'affaires important auprès de grandes lignes de production, nous sommes fréquemment en mesure de négocier des MOQ plus bas et plus flexibles pour nos clients que s'ils essayaient d'acheter de manière indépendante.",
+        "question": "What are the minimum order quantities (MOQ) required to procure through KCI SARL?",
+        "answer": "Minimum order quantities depend entirely on manufacturing plants and product type. However, because we consolidate shipments and maintain significant business volume with major production lines, we are frequently able to negotiate lower and more flexible MOQs for our clients than if they tried to buy independently.",
         "keywords": [
           "MOQ",
-          "quantité minimale",
-          "commande",
-          "approvisionnement",
-          "négociation"
+          "minimum quantity",
+          "order",
+          "procurement",
+          "negotiation"
         ]
       },
       "21": {
-        "question": "Vos services d'import/export incluent-ils l'intégralité du dédouanement dans les ports ?",
-        "answer": "Oui, nos solutions de transport logistique sont de bout en bout et sans aucun stress pour vous. Nous gérons l'intégralité de la chaîne, depuis l'usine jusqu'à la porte de votre entrepôt. Nos équipes logistiques prennent en charge toutes les formalités douanières, le dépôt des documents d'import/export, le paiement des droits de transit portuaire et la distribution routière sur le dernier kilomètre dans les grands ports comme Douala et Lagos.",
+        "question": "Do your import/export services include full customs clearance at ports?",
+        "answer": "Yes, our logistics transport solutions are end-to-end and stress-free. We manage the entire chain from factory to your warehouse door. Our logistics teams handle all customs formalities, import/export document filing, port transit duty payments, and last-mile road distribution at major ports such as Douala and Lagos.",
         "keywords": [
-          "dédouanement",
+          "customs clearance",
           "import",
           "export",
           "Douala",
           "Lagos",
-          "logistique"
+          "logistics"
         ]
       },
       "22": {
-        "question": "Quelles options de transport de fret proposez-vous et comment choisir la meilleure ?",
-        "answer": "Nous proposons des solutions sur mesure en fret aérien, maritime et routier selon votre budget et vos impératifs d'urgence. Le fret aérien est idéal pour les marchandises de grande valeur, légères ou urgentes (comme l'électronique ou les accessoires de beauté). Le fret maritime reste le choix le plus économique pour les marchandises industrielles lourdes ou volumineuses et les conteneurs de gros. Notre équipe établit un calendrier et une grille de coûts clairs pour chaque itinéraire afin de vous guider vers le meilleur choix.",
+        "question": "What freight transport options do you offer, and how do I choose the best one?",
+        "answer": "We offer tailored air, sea, and road freight solutions based on your budget and urgency. Air freight is ideal for high-value, lightweight, or urgent goods (such as electronics or beauty accessories). Sea freight remains the most economical choice for heavy or bulky industrial goods and bulk containers. Our team provides a clear timeline and cost breakdown for each route to guide you toward the best choice.",
         "keywords": [
-          "fret aérien",
-          "fret maritime",
-          "transport routier",
-          "logistique",
-          "conteneur"
+          "air freight",
+          "sea freight",
+          "road transport",
+          "logistics",
+          "container"
         ]
       },
       "23": {
-        "question": "Comment gérez-vous la livraison du dernier kilomètre pour les marchandises importées au Cameroun et au Nigeria ?",
-        "answer": "Dès que votre conteneur maritime ou votre fret aérien passe le dédouanement, le réseau de transport local de KCI SARL prend le relais. Nous gérons le chargement sécurisé et acheminons vos marchandises directement vers votre magasin, votre entrepôt ou votre destination finale à l'aide de véhicules suivis et contrôlés, garantissant ainsi la sécurité totale de votre stock.",
+        "question": "How do you manage last-mile delivery for goods imported into Cameroon and Nigeria?",
+        "answer": "Once your sea container or air freight clears customs, KCI SARL's local transport network takes over. We handle secure loading and deliver your goods directly to your store, warehouse, or final destination using tracked and monitored vehicles, ensuring total security of your stock.",
         "keywords": [
-          "dernier kilomètre",
-          "livraison",
-          "Cameroun",
+          "last mile",
+          "delivery",
+          "Cameroon",
           "Nigeria",
-          "transport local"
+          "local transport"
         ]
       },
       "24": {
-        "question": "Quels pays couvrez-vous pour l'assistance et l'encadrement des demandes de visas d'études et d'affaires ?",
-        "answer": "Nous fournissons un service rigoureux de préparation de dossiers et d'accompagnement pour les visas d'études et d'affaires vers le Royaume-Uni, le Canada, la Chine, l'Inde, la Russie et vers plusieurs pays de l'espace Schengen.",
+        "question": "Which countries do you cover for study and business visa application support?",
+        "answer": "We provide rigorous document preparation and support services for study and business visas to the United Kingdom, Canada, China, India, Russia, and several Schengen Area countries.",
         "keywords": [
           "visa",
-          "Royaume-Uni",
+          "United Kingdom",
           "Canada",
-          "Chine",
+          "China",
           "Schengen",
-          "études"
+          "study"
         ]
       },
       "25": {
-        "question": "Pourquoi devrais-je confier mon dossier de visa à KCI SARL plutôt que de faire la demande seul ?",
-        "answer": "La majorité des refus de visa est causée par de petites erreurs d'écriture, des profils financiers mal structurés ou des lettres d'invitation non authentifiées. KCI SARL élimine ces risques. Nous traitons votre dossier comme un véritable audit professionnel : nous vérifions vos relevés financiers, contrôlons la validité des parrainages universitaires ou d'entreprises et veillons à ce que chaque document soit parfaitement conforme aux exigences actuelles des ambassades afin de maximiser vos chances d'approbation.",
+        "question": "Why should I entrust my visa application to KCI SARL rather than applying on my own?",
+        "answer": "Most visa refusals are caused by minor writing errors, poorly structured financial profiles, or unauthenticated invitation letters. KCI SARL eliminates these risks. We treat your application like a professional audit: we verify your financial statements, check the validity of university or corporate sponsorships, and ensure every document is fully compliant with current embassy requirements to maximize your approval chances.",
         "keywords": [
           "visa",
-          "refus",
-          "dossier",
-          "ambassade",
-          "accompagnement",
+          "refusal",
+          "application",
+          "embassy",
+          "support",
           "audit"
         ]
       },
       "26": {
-        "question": "KCI SARL peut-elle organiser toute la logistique de voyage et d'accueil pour les délégations d'affaires internationales ?",
-        "answer": "Oui. Nous concevons des formules de mobilité globale complètes pour les cadres d'entreprise et les associations professionnelles. Cela couvre la préparation de vos documents de visa, la réservation de vos vols internationaux, l'hébergement dans des hôtels de premier choix et la coordination de vos déplacements locaux sécurisés dans les pays de destination comme la Chine et le Nigeria.",
+        "question": "Can KCI SARL organize all travel and hospitality logistics for international business delegations?",
+        "answer": "Yes. We design complete global mobility packages for corporate executives and professional associations. This covers visa document preparation, international flight booking, accommodation in top-tier hotels, and coordination of secure local travel in destination countries such as China and Nigeria.",
         "keywords": [
-          "délégation",
-          "voyage d'affaires",
-          "mobilité globale",
-          "hébergement",
-          "logistique"
+          "delegation",
+          "business travel",
+          "global mobility",
+          "accommodation",
+          "logistics"
         ]
       },
       "27": {
-        "question": "Comment votre service de conseil en visa étudiant aide-t-il les étudiants africains qui souhaitent étudier à l'étranger ?",
-        "answer": "Nous accompagnons les étudiants tout au long du parcours universitaire international. Nous les aidons à obtenir des lettres d'admission vérifiées auprès d'universités internationales accréditées, à structurer les dossiers financiers des parents ou garants pour répondre aux exigences des agents des visas et à préparer les entretiens consulaires rigoureux pour qu'ils abordent leur avenir académique avec confiance.",
+        "question": "How does your student visa advisory service help African students who want to study abroad?",
+        "answer": "We support students throughout the international university journey. We help them obtain verified admission letters from accredited international universities, structure parents' or sponsors' financial files to meet visa officer requirements, and prepare for rigorous consular interviews so they can approach their academic future with confidence.",
         "keywords": [
-          "visa étudiant",
-          "études à l'étranger",
+          "student visa",
+          "study abroad",
           "admission",
-          "entretien consulaire",
-          "Afrique"
+          "consular interview",
+          "Africa"
         ]
       },
       "28": {
-        "question": "Comment KCI SARL assure-t-elle le suivi et la protection de mes marchandises de valeur pendant le transport international ?",
-        "answer": "Nous appliquons des mesures de sécurité strictes pour tous les transports. Chaque marchandise regroupée dans nos entrepôts est enregistrée de manière sécurisée, soigneusement emballée et contrôlée tout au long du voyage. Nous maintenons une communication constante avec nos transporteurs maritimes et aériens, ce qui nous permet de vous donner des mises à jour régulières sur l'avancement de votre cargaison, de port à port.",
+        "question": "How does KCI SARL ensure tracking and protection of my valuable goods during international transport?",
+        "answer": "We apply strict security measures for all shipments. Every item consolidated in our warehouses is securely registered, carefully packed, and monitored throughout the journey. We maintain constant communication with our sea and air carriers, allowing us to provide regular updates on your cargo's progress, port to port.",
         "keywords": [
-          "suivi",
-          "sécurité",
-          "transport international",
-          "cargaison",
-          "entrepôt"
+          "tracking",
+          "security",
+          "international transport",
+          "cargo",
+          "warehouse"
         ]
       },
       "29": {
-        "question": "Pouvez-vous aider à l'achat et au dédouanement de véhicules spécialisés ou de camions industriels lourds ?",
-        "answer": "Oui. L'importation de véhicules de transport lourds nécessite des procédures d'expédition et de dédouanement spécifiques. Notre bureau logistique coordonne le transport international par navires rouliers (Ro-Ro) ou par conteneurs sécurisés nécessaires pour ces véhicules lourds, et gère de manière fluide toutes les formalités d'immatriculation et de douane automobile.",
+        "question": "Can you help with purchasing and customs clearance of specialized vehicles or heavy industrial trucks?",
+        "answer": "Yes. Importing heavy transport vehicles requires specific shipping and customs procedures. Our logistics office coordinates international transport via roll-on/roll-off (Ro-Ro) vessels or secure containers required for these heavy vehicles, and smoothly handles all vehicle registration and automotive customs formalities.",
         "keywords": [
-          "véhicules lourds",
-          "camions",
+          "heavy vehicles",
+          "trucks",
           "Ro-Ro",
-          "dédouanement",
-          "importation"
+          "customs clearance",
+          "import"
         ]
       },
       "30": {
-        "question": "Quels documents dois-je préparer avant de contacter votre bureau d'assistance visa ?",
-        "answer": "Pour entamer votre consultation, vous devez vous munir de votre passeport international en cours de validité, de vos relevés de notes ou diplômes (pour les étudiants), ou des documents d'enregistrement de votre entreprise et des détails de votre invitation (pour les voyages d'affaires). Notre équipe étudiera ces premières pièces pour concevoir votre liste de contrôle personnalisée, étape par étape.",
+        "question": "What documents should I prepare before contacting your visa assistance office?",
+        "answer": "To begin your consultation, you should have your valid international passport, academic transcripts or diplomas (for students), or your company registration documents and invitation details (for business travel). Our team will review these initial documents to design your personalized step-by-step checklist.",
         "keywords": [
-          "documents visa",
-          "passeport",
-          "diplômes",
+          "visa documents",
+          "passport",
+          "diplomas",
           "consultation",
           "checklist"
         ]
       },
       "31": {
-        "question": "Que signifie le terme « Facilities Management » et comment cela protège-t-il la valeur de mes biens immobiliers ?",
-        "answer": "Le Facilities Management est la gestion et l'entretien systématiques de l'environnement physique d'un bâtiment. Sans maintenance professionnelle, un bien immobilier se dégrade rapidement, ce qui fait chuter sa valeur marchande et ses revenus locatifs. KCI SARL protège vos investissements immobiliers en prenant en charge le nettoyage commercial en profondeur, les réparations électriques/plomberie spécialisées et la maintenance structurelle préventive, garantissant que votre bâtiment reste attractif pour les locataires et les acheteurs.",
+        "question": "What does the term Facilities Management mean, and how does it protect the value of my real estate?",
+        "answer": "Facilities Management is the systematic management and maintenance of a building's physical environment. Without professional maintenance, a property degrades quickly, causing its market value and rental income to drop. KCI SARL protects your real estate investments by handling deep commercial cleaning, specialized electrical/plumbing repairs, and preventive structural maintenance—ensuring your building remains attractive to tenants and buyers.",
         "keywords": [
           "facilities management",
-          "immobilier",
+          "real estate",
           "maintenance",
-          "entretien",
-          "valeur"
+          "upkeep",
+          "value"
         ]
       },
       "32": {
-        "question": "Quels types de propriétés votre équipe de gestion technique de bâtiments prend-elle en charge ?",
-        "answer": "Nous gérons un portefeuille immobilier très diversifié, incluant des bureaux commerciaux d'entreprises, des immeubles résidentiels à forte densité, des centres commerciaux, des complexes hôteliers et des entrepôts industriels au Cameroun et au Nigeria.",
+        "question": "What types of properties does your building technical management team handle?",
+        "answer": "We manage a highly diversified real estate portfolio, including corporate commercial offices, high-density residential buildings, shopping centers, hotel complexes, and industrial warehouses in Cameroon and Nigeria.",
         "keywords": [
-          "gestion de bâtiments",
-          "bureaux",
-          "résidentiel",
-          "entrepôts",
-          "Cameroun",
+          "building management",
+          "offices",
+          "residential",
+          "warehouses",
+          "Cameroon",
           "Nigeria"
         ]
       },
       "33": {
-        "question": "Comment fonctionne votre modèle de promotion immobilière pour les propriétaires fonciers qui n'ont pas de capital de construction ?",
-        "answer": "Nous offrons une solution de développement stratégique puissante pour les propriétaires de terrains. Si vous possédez une parcelle bien située mais que vous manquez de fonds pour construire, KCI SARL peut s'associer à vous. Nous mobilisons les capitaux d'investisseurs, gérons la conception architecturale, obtenons les permis d'urbanisme et de construire et supervisons l'ensemble des travaux de construction, transformant ainsi votre terrain brut en un actif résidentiel ou commercial hautement rentable.",
+        "question": "How does your real estate development model work for landowners without construction capital?",
+        "answer": "We offer a powerful strategic development solution for landowners. If you own a well-located plot but lack funds to build, KCI SARL can partner with you. We mobilize investor capital, manage architectural design, obtain urban planning and building permits, and oversee all construction work—transforming your raw land into a highly profitable residential or commercial asset.",
         "keywords": [
-          "promotion immobilière",
+          "real estate development",
           "construction",
-          "investissement",
-          "terrain",
-          "développement"
+          "investment",
+          "land",
+          "development"
         ]
       },
       "34": {
-        "question": "KCI SARL peut-elle aider mon entreprise à trouver ou à louer un bureau commercial ou un entrepôt industriel ?",
-        "answer": "Oui. Notre bureau de courtage immobilier gère la recherche, l'acquisition et la location immobilière d'entreprise. Nous utilisons nos réseaux fonciers locaux pour localiser des emplacements sécurisés de premier choix dans les zones d'affaires clés, correspondant parfaitement à vos besoins d'espace et à vos flux d'activités.",
+        "question": "Can KCI SARL help my business find or lease commercial office space or an industrial warehouse?",
+        "answer": "Yes. Our real estate brokerage office handles corporate property search, acquisition, and leasing. We use our local land networks to locate secure, prime locations in key business districts that perfectly match your space needs and activity flows.",
         "keywords": [
-          "courtage immobilier",
-          "bureau commercial",
-          "entrepôt",
-          "location",
+          "real estate brokerage",
+          "commercial office",
+          "warehouse",
+          "leasing",
           "acquisition"
         ]
       },
       "35": {
-        "question": "Proposez-vous des solutions de recrutement externe de personnel pour la gestion des bâtiments ?",
-        "answer": "Oui. Trouver du personnel fiable pour l'entretien d'un bâtiment peut s'avérer difficile. KCI SARL sélectionne, forme et déploie du personnel de support professionnel directement sur vos sites. Cela comprend des hôtesses d'accueil, des réceptionnistes, des superviseurs de site, des agents de nettoyage professionnels et des techniciens de maintenance, tout en gérant l'intégralité des contrats de travail et des salaires en interne.",
+        "question": "Do you offer outsourced staffing solutions for building management?",
+        "answer": "Yes. Finding reliable staff for building maintenance can be difficult. KCI SARL recruits, trains, and deploys professional support staff directly on your sites. This includes receptionists, front desk staff, site supervisors, professional cleaning agents, and maintenance technicians—while managing all employment contracts and payroll internally.",
         "keywords": [
-          "recrutement",
+          "recruitment",
           "staffing",
           "personnel",
           "maintenance",
-          "gestion de bâtiments"
+          "building management"
         ]
       },
       "36": {
-        "question": "Qu'est-ce que la « Maintenance Préventive » et pourquoi est-elle préférable aux réparations d'urgence habituelles ?",
-        "answer": "Les réparations d'urgence sont réactives, coûteuses et interrompent vos activités quotidiennes. La maintenance préventive est une stratégie proactive. KCI SARL planifie des inspections régulières des réseaux de plomberie, des installations électriques, des générateurs de secours et des systèmes de ventilation de vos bâtiments. En réparant l'usure naturelle d<>dès les premiers signes, nous éliminons les pannes imprévues et vous économisons des millions en coûts de grosses réparations structurelles.",
+        "question": "What is Preventive Maintenance, and why is it preferable to routine emergency repairs?",
+        "answer": "Emergency repairs are reactive, costly, and disrupt your daily operations. Preventive maintenance is a proactive strategy. KCI SARL schedules regular inspections of plumbing networks, electrical installations, backup generators, and ventilation systems in your buildings. By addressing natural wear at the first signs, we eliminate unexpected breakdowns and save you millions in major structural repair costs.",
         "keywords": [
-          "maintenance préventive",
-          "réparations",
-          "plomberie",
-          "électricité",
-          "générateurs"
+          "preventive maintenance",
+          "repairs",
+          "plumbing",
+          "electrical",
+          "generators"
         ]
       },
       "37": {
-        "question": "Comment protégez-vous les acheteurs immobiliers contre les transactions foncières frauduleuses au Cameroun et au Nigeria ?",
-        "answer": "Les arnaques sur les terrains sont un problème majeur dans les marchés immobiliers régionaux. KCI SARL protège votre argent grâce à une vérification juridique et technique stricte. Notre équipe immobilière contrôle les titres de propriété auprès des ministères et conservations foncières, fait vérifier les limites des parcelles par des géomètres assermentés et confirme le statut juridique du vendeur avant toute signature de contrat, sécurisant ainsi vos investissements immobiliers à 100 %.",
+        "question": "How do you protect real estate buyers from fraudulent land transactions in Cameroon and Nigeria?",
+        "answer": "Land scams are a major problem in regional real estate markets. KCI SARL protects your money through strict legal and technical verification. Our real estate team checks property titles with ministries and land registries, has parcel boundaries verified by sworn surveyors, and confirms the seller's legal status before any contract is signed—securing your real estate investments 100%.",
         "keywords": [
-          "fraude foncière",
-          "titres de propriété",
-          "immobilier",
-          "Cameroun",
+          "land fraud",
+          "property titles",
+          "real estate",
+          "Cameroon",
           "Nigeria",
-          "sécurité"
+          "security"
         ]
       },
       "38": {
-        "question": "KCI SARL peut-elle gérer les locataires et collecter les loyers pour les propriétaires de la diaspora ?",
-        "answer": "Oui. Nous sommes spécialisés dans la gestion immobilière pour les clients de la diaspora. Notre équipe s'occupe de la sélection rigoureuse des locataires, de la rédaction des baux légaux, du recouvrement ponctuel des loyers et de l'entretien continu du bien. Nous vous fournissons des rapports financiers transparents et assurons le transfert de vos fonds de manière sécurisée, vous permettant de gérer vos investissements en Afrique en toute sérénité depuis l'étranger.",
+        "question": "Can KCI SARL manage tenants and collect rent for diaspora property owners?",
+        "answer": "Yes. We specialize in property management for diaspora clients. Our team handles rigorous tenant screening, drafting legal leases, timely rent collection, and ongoing property maintenance. We provide transparent financial reports and securely transfer your funds, allowing you to manage your investments in Africa with peace of mind from abroad.",
         "keywords": [
           "diaspora",
-          "gestion locative",
-          "loyers",
-          "baux",
-          "investissement immobilier"
+          "property management",
+          "rent",
+          "leases",
+          "real estate investment"
         ]
       },
       "39": {
-        "question": "Quelles options écologiques ou durables proposez-vous pour l'exploitation des bâtiments ?",
-        "answer": "Nous intégrons la transition énergétique dans nos plans de gestion de bâtiments. Nos équipes techniques analysent la consommation d'énergie de vos locaux et y installent des systèmes d'éclairage LED à faible consommation, des dispositifs d'économie d'eau et des installations solaires alternatives, réduisant ainsi considérablement vos factures de services publics et votre empreinte carbone.",
+        "question": "What eco-friendly or sustainable options do you offer for building operations?",
+        "answer": "We integrate energy transition into our building management plans. Our technical teams analyze your premises' energy consumption and install low-consumption LED lighting systems, water-saving devices, and alternative solar installations—significantly reducing your utility bills and carbon footprint.",
         "keywords": [
-          "écologique",
-          "durable",
+          "eco-friendly",
+          "sustainable",
           "LED",
-          "énergie solaire",
-          "empreinte carbone"
+          "solar energy",
+          "carbon footprint"
         ]
       },
       "40": {
-        "question": "Comment puis-je demander un devis pour un service de nettoyage, des réparations ou de la gestion de propriété ?",
-        "answer": "Vous pouvez demander un devis personnalisé en écrivant directement à nos équipes depuis la page Contactez-nous de notre site, en envoyant un e-mail à sales@kci-ltd.com, ou en programmant une évaluation technique sur site avec nos équipes de Yaoundé ou de Lagos.",
+        "question": "How can I request a quote for cleaning, repairs, or property management services?",
+        "answer": "You can request a personalized quote by writing directly to our teams from the Contact Us page on our website, emailing sales@kci-ltd.com, or scheduling an on-site technical assessment with our teams in Yaoundé or Lagos.",
         "keywords": [
-          "devis",
-          "nettoyage",
-          "réparations",
-          "gestion de propriété",
+          "quote",
+          "cleaning",
+          "repairs",
+          "property management",
           "contact"
         ]
       },
       "41": {
-        "question": "Quels types de solutions de paiement votre bureau FinTech propose-t-il aux entreprises ?",
-        "answer": "Notre service FinTech centralise et accélère le règlement de vos paiements professionnels. Nous prenons en charge le paiement rapide de vos taxes d'entreprise, de vos droits de douane transfrontaliers, de vos factures d'eau et d'électricité (commodités urbaines) et de vos abonnements mensuels aux logiciels professionnels indispensables, évitant ainsi que vos activités et vos chaînes d'approvisionnement ne subissent des retards de paiement.",
+        "question": "What types of payment solutions does your FinTech office offer businesses?",
+        "answer": "Our FinTech service centralizes and accelerates settlement of your business payments. We handle rapid payment of your corporate taxes, cross-border customs duties, water and electricity bills (utility services), and monthly subscriptions to essential business software—preventing your operations and supply chains from suffering payment delays.",
         "keywords": [
           "FinTech",
-          "paiement",
+          "payment",
           "taxes",
-          "douane",
-          "factures",
-          "transfert"
+          "customs",
+          "invoices",
+          "transfer"
         ]
       },
       "42": {
-        "question": "Qu'est-ce que l'Incubateur d'Entreprises de KCI et qui peut s'y inscrire ?",
-        "answer": "L'Incubateur de KCI est un écosystème de croissance conçu pour accompagner les jeunes entrepreneurs, les petits exploitants agricoles et les artisans locaux. Les membres bénéficient de formations approfondies en gestion d'entreprise, d'un accès à des outils comptables professionnels, de sessions de mentorat direct et de passerelles concrètes vers des réseaux de financement régionaux et des marchés d'exportation internationaux pour développer leurs projets.",
+        "question": "What is the KCI Business Incubator and who can enroll?",
+        "answer": "The KCI Incubator is a growth ecosystem designed to support young entrepreneurs, small-scale farmers, and local artisans. Members benefit from in-depth business management training, access to professional accounting tools, direct mentoring sessions, and concrete pathways to regional funding networks and international export markets to grow their projects.",
         "keywords": [
-          "incubateur",
+          "incubator",
           "entrepreneurs",
-          "mentorat",
-          "formation",
-          "financement"
+          "mentoring",
+          "training",
+          "funding"
         ]
       },
       "43": {
-        "question": "Quels types d'événements professionnels votre équipe de gestion stratégique peut-elle organiser ?",
-        "answer": "Nous planifions, budgétisons et réalisons des événements d'affaires de premier plan, notamment des conférences commerciales B2B internationales, des lancements de produits de marques, des séminaires sectoriels, des assemblées générales d'actionnaires (AGM) et des expositions commerciales. Nous gérons tout, de la recherche de la salle et de l'ingénierie audiovisuelle jusqu'à la mise à disposition d'hôtesses professionnelles et de services de restauration premium.",
+        "question": "What types of professional events can your strategic management team organize?",
+        "answer": "We plan, budget, and deliver premier business events, including international B2B trade conferences, brand product launches, sector seminars, annual general meetings (AGMs), and trade exhibitions. We manage everything from venue sourcing and audiovisual engineering to providing professional hostesses and premium catering services.",
         "keywords": [
-          "événements",
-          "conférences",
+          "events",
+          "conferences",
           "B2B",
-          "séminaires",
-          "expositions",
+          "seminars",
+          "exhibitions",
           "AGM"
         ]
       },
       "44": {
-        "question": "Pouvez-vous concevoir des plans de conseil sur mesure adaptés au budget d'une startup ?",
-        "answer": "Oui. Notre philosophie de conseil repose entièrement sur la flexibilité. Nous savons que les entreprises en phase de démarrage ont des budgets serrés, c'est pourquoi nos formules d'accompagnement sont évolutives. Nos options de conseil à temps partiel vous permettent de bénéficier d'avis d'experts en stratégie, gestion financière et marketing adaptés précisément à votre niveau de croissance et à votre budget du moment.",
+        "question": "Can you design customized advisory plans suited to a startup's budget?",
+        "answer": "Yes. Our advisory philosophy is built entirely on flexibility. We know early-stage businesses have tight budgets, which is why our support packages are scalable. Our part-time advisory options let you benefit from expert advice in strategy, financial management, and marketing tailored precisely to your growth stage and current budget.",
         "keywords": [
-          "conseil",
+          "advisory",
           "startup",
           "budget",
-          "stratégie",
-          "accompagnement"
+          "strategy",
+          "support"
         ]
       },
       "45": {
-        "question": "Quel est le délai d'attente pour l'évaluation d'une demande d'approvisionnement ou d'une proposition commerciale par votre équipe ?",
-        "answer": "Nous privilégions une communication rapide et efficace. Notre bureau d'accueil examine toutes les propositions commerciales, demandes d'approvisionnement sur mesure ou demandes de conseil sous 24 à 48 heures ouvrables, afin de vous transmettre une feuille de route claire ou de planifier une séance de cadrage initiale en ligne.",
+        "question": "What is the turnaround time for your team to evaluate a procurement request or business proposal?",
+        "answer": "We prioritize fast, effective communication. Our front office reviews all business proposals, custom procurement requests, or advisory inquiries within 24 to 48 business hours, to provide you with a clear roadmap or schedule an initial online scoping session.",
         "keywords": [
-          "délai",
-          "proposition commerciale",
-          "approvisionnement",
-          "24-48 heures",
-          "réponse"
+          "turnaround",
+          "business proposal",
+          "procurement",
+          "24-48 hours",
+          "response"
         ]
       },
       "46": {
-        "question": "KCI SARL peut-elle aider mon entreprise à accéder aux chaînes d'approvisionnement et aux marchés internationaux ?",
-        "answer": "Oui. Notre réseau transfrontalier qui relie le Cameroun, le Nigeria et la Chine est construit précisément pour ouvrir les marchés mondiaux aux entreprises locales. Nous vous aidons à importer des matières premières de fabrication à des prix d'usine compétitifs, à valoriser l'emballage et le branding de vos produits selon les standards internationaux et à maîtriser les règles de conformité complexes pour exporter vos marchandises partout dans le monde.",
+        "question": "Can KCI SARL help my business access supply chains and international markets?",
+        "answer": "Yes. Our cross-border network linking Cameroon, Nigeria, and China is built precisely to open global markets to local businesses. We help you import manufacturing raw materials at competitive factory prices, enhance your product packaging and branding to international standards, and master complex compliance rules to export your goods worldwide.",
         "keywords": [
-          "marchés internationaux",
+          "international markets",
           "export",
           "import",
-          "Cameroun",
+          "Cameroon",
           "Nigeria",
-          "Chine"
+          "China"
         ]
       },
       "47": {
-        "question": "Proposez-vous des services d'étude de marché professionnelle et d'analyse de la concurrence ?",
-        "answer": "Oui. Avant de lancer un nouveau produit, d'acheter un terrain ou de vous étendre dans une nouvelle région, notre équipe de recherche réalise des études de faisabilité complètes. Nous analysons la demande des consommateurs, les stratégies de prix de vos concurrents, les options logistiques et les exigences réglementaires, vous apportant ainsi les données nécessaires pour prendre des décisions commerciales sûres et rentables.",
+        "question": "Do you offer professional market research and competitive analysis services?",
+        "answer": "Yes. Before launching a new product, purchasing land, or expanding into a new region, our research team conducts comprehensive feasibility studies. We analyze consumer demand, competitors' pricing strategies, logistics options, and regulatory requirements—providing the data you need to make safe, profitable business decisions.",
         "keywords": [
-          "étude de marché",
-          "analyse concurrence",
-          "faisabilité",
-          "recherche",
-          "stratégie"
+          "market research",
+          "competitive analysis",
+          "feasibility",
+          "research",
+          "strategy"
         ]
       },
       "48": {
-        "question": "Comment votre assistance pour les transactions financières transfrontalières protège-t-elle mes fonds contre les risques de change ?",
-        "answer": "Acheter des marchandises en jonglant avec plusieurs devises (telles que le Franc CFA d'Afrique Centrale, le Naira nigérian, le Yuan chinois et le Dollar américain) peut entraîner des pertes imprévues en raison des fluctuations des taux de change. L'assistance de paiement FinTech de KCI SARL vous guide vers des modèles de routage financiers optimaux et des canaux de transaction sécurisés, réduisant au minimum les pertes liées aux conversions de devises pour protéger vos budgets de projet.",
+        "question": "How does your cross-border financial transaction assistance protect my funds from exchange rate risks?",
+        "answer": "Purchasing goods while juggling multiple currencies (such as Central African CFA Franc, Nigerian Naira, Chinese Yuan, and US Dollar) can lead to unexpected losses due to exchange rate fluctuations. KCI SARL's FinTech payment assistance guides you toward optimal financial routing models and secure transaction channels, minimizing currency conversion losses to protect your project budgets.",
         "keywords": [
-          "change",
-          "devises",
-          "Franc CFA",
+          "exchange rate",
+          "currencies",
+          "CFA Franc",
           "Naira",
           "Yuan",
           "FinTech"
         ]
       },
       "49": {
-        "question": "Quelle est la première étape pour devenir un partenaire stratégique ou un client de KC International ?",
-        "answer": "La première étape consiste à nous faire part de vos besoins via notre formulaire de contact en ligne, ou par e-mail à l'adresse info@kci-ltd.com. Nous planifierons une séance de travail initiale avec l'un de nos directeurs de département à Yaoundé, Lagos ou Guangzhou pour définir votre plan de solutions sur mesure.",
+        "question": "What is the first step to become a strategic partner or client of KC International?",
+        "answer": "The first step is to share your needs via our online contact form, or by email at info@kci-ltd.com. We will schedule an initial working session with one of our department directors in Yaoundé, Lagos, or Guangzhou to define your customized solutions plan.",
         "keywords": [
-          "partenaire",
+          "partner",
           "client",
           "contact",
           "info@kci-ltd.com",
-          "première étape"
+          "first step"
         ]
       },
       "50": {
-        "question": "De quelle manière KCI International Ltd soutient-elle les initiatives sociales de la Fondation KC ?",
-        "answer": "KCI SARL est fière de servir de pilier commercial et technique à la Fondation KC. Nous apportons notre expertise de gestion, du mentorat direct et des ressources matérielles aux initiatives de la fondation, notamment pour les programmes scolaires « Catch Them Young », les projets d'Agriculture Intégrée Circulaire et les incubateurs d'artisans — unissant le succès de notre entreprise à une véritable transformation sociale en Afrique.",
+        "question": "How does KCI International Ltd support the social initiatives of the KC Foundation?",
+        "answer": "KCI SARL is proud to serve as the commercial and technical pillar of the KC Foundation. We contribute our management expertise, direct mentoring, and material resources to the foundation's initiatives, including the Catch Them Young school programs, Circular Integrated Agriculture projects, and artisan incubators—uniting our company's success with genuine social transformation in Africa.",
         "keywords": [
-          "Fondation KC",
-          "impact social",
+          "KC Foundation",
+          "social impact",
           "Catch Them Young",
-          "mentorat",
-          "Afrique"
+          "mentoring",
+          "Africa"
         ]
       }
     },
@@ -1972,8 +1739,8 @@
     },
     "hero": {
       "title": "Procurement",
-      "titleHighlight": "Verticals",
-      "description": "Activated when your strategy requires it — consulting remains our core. With hubs in China, Nigeria, and Cameroon, we secure factory-direct sourcing at the best prices when you need it."
+      "titleHighlight": "Hubs",
+      "description": "Forget the stress of imports and the risks of buying abroad! With our direct presence in China, Nigeria, and Cameroon, we find the best products for you — directly from the factory and at the best market prices. We connect you with the most reliable manufacturers to supply your business safely."
     },
     "search": {
       "placeholder": "Search for products or categories...",
@@ -1986,8 +1753,8 @@
     },
     "categories": {
       "technology": {
-        "name": "Technology",
-        "description": "Advanced technological solutions and electronic equipment",
+        "name": "Technology & Electronics",
+        "description": "Sourcing of IT, electronic, and industrial equipment",
         "subcategories": {
           "electronics": {
             "name": "Electronics",
@@ -2042,8 +1809,8 @@
         }
       },
       "fashion": {
-        "name": "Fashion & Beauty",
-        "description": "Premium quality fashion, beauty and personal care",
+        "name": "Fashion & Textiles",
+        "description": "Ready-to-wear sourcing, bulk manufacturing, and raw materials",
         "subcategories": {
           "beauty": {
             "name": "Beauty and Fashion",
@@ -2098,8 +1865,8 @@
         }
       },
       "agriculture": {
-        "name": "Agriculture",
-        "description": "Modern agricultural solutions and farming equipment",
+        "name": "Agricultural Sector",
+        "description": "Agricultural raw materials, inputs, and equipment sourcing",
         "subcategories": {
           "crops": {
             "name": "Crops",
@@ -2124,8 +1891,8 @@
         }
       },
       "food": {
-        "name": "Food & Beverage",
-        "description": "Quality food products and beverages",
+        "name": "Food & Beverages",
+        "description": "Supply chains, processing, and imports",
         "subcategories": {
           "foodProducts": {
             "name": "Food Products",
@@ -2150,8 +1917,8 @@
         }
       },
       "healthcare": {
-        "name": "Healthcare",
-        "description": "Healthcare solutions and medical equipment",
+        "name": "Medical Equipment",
+        "description": "Clinical supplies, consumables, and regulatory compliance",
         "subcategories": {
           "health": {
             "name": "Health Solutions",
@@ -2174,58 +1941,6 @@
             ]
           }
         }
-      },
-      "entertainment": {
-        "name": "Entertainment",
-        "description": "Gaming, audio and musical instruments",
-        "subcategories": {
-          "gaming": {
-            "name": "Gaming Consoles",
-            "description": "Gaming consoles and accessories",
-            "popularProducts": [
-              "Consoles",
-              "Controllers",
-              "Games",
-              "Gaming Accessories"
-            ]
-          },
-          "audio": {
-            "name": "Audio Systems",
-            "description": "Audio equipment and sound systems",
-            "popularProducts": [
-              "Speakers",
-              "Headphones",
-              "Microphones",
-              "Sound Systems"
-            ]
-          },
-          "musical": {
-            "name": "Musical Instruments",
-            "description": "Musical instruments and equipment",
-            "popularProducts": [
-              "Guitars",
-              "Pianos",
-              "Drums",
-              "Studio Equipment"
-            ]
-          }
-        }
-      },
-      "others": {
-        "name": "Others",
-        "description": "Packaging solutions and other specialized products",
-        "subcategories": {
-          "packaging": {
-            "name": "Packaging Solutions",
-            "description": "Packaging and logistics solutions",
-            "popularProducts": [
-              "Cardboard Boxes",
-              "Plastic Films",
-              "Labels",
-              "Pallets"
-            ]
-          }
-        }
       }
     },
     "modal": {
@@ -2241,43 +1956,43 @@
     "hero": {
       "title": "Resources &",
       "titleHighlight": "Insights",
-      "description": "We believe in growing together. Explore our library of practical guides, verified customer stories, and business tips built to help your company thrive."
+      "description": "We firmly believe we grow better when we move forward together. Discover our sharing and support center — a complete library of practical tools, simple explanations, and concrete advice to help you make the right decisions and help your business thrive."
     },
     "sections": {
       "blog": {
-        "title": "Corporate Blog",
-        "description": "Simple articles packed with helpful business tips, industry trends, and news from our consulting team.",
+        "title": "Our Practical Blog",
+        "description": "Simple, clear articles packed with tips for your business. We decode market trends, new tax laws, transport management, and all the latest news from our team.",
         "cta": "Browse articles"
       },
       "successStories": {
-        "title": "Customer Success Stories",
-        "description": "Heartfelt testimonials, real-life examples, and inspiring stories from businesses that have grown with KCI Ltd.",
+        "title": "Our Client Stories",
+        "description": "Sincere testimonials, real examples, and inspiring journeys of business owners who overcame challenges and grew their businesses alongside KCI SARL.",
         "cta": "Read testimonials"
       },
       "partners": {
-        "title": "Strategic Alliance Updates",
-        "description": "News and updates about the global network of partners, suppliers, and associations we collaborate with.",
-        "cta": "Follow partners"
+        "title": "Our Partners Journal",
+        "description": "Follow the life and evolution of the vast network of friends, suppliers, and associations who trust us across our commercial corridors in Cameroon, Nigeria, and China.",
+        "cta": "Follow our partners"
       },
       "events": {
-        "title": "Upcoming Events",
-        "description": "Community workshops, helpful webinars, and networking events designed to boost your skills.",
+        "title": "Our Events & Workshops",
+        "description": "Your invitation to our upcoming on-the-ground training workshops, entrepreneur seminars, and online meetings (webinars) to develop your skills.",
         "cta": "View events"
       },
       "downloads": {
         "title": "Downloads Center",
-        "description": "Handy documents you can save instantly — service catalogs, step-by-step checklists, and business guides.",
+        "description": "Useful documents to save in one click! Find our tax preparation guides, free advice sheets, service sheets, and startup forms.",
         "cta": "Access resources"
       },
       "faq": {
-        "title": "Frequently Asked Questions",
-        "description": "Clear, straightforward answers about our consulting services, pricing, and onboarding process.",
+        "title": "Frequently Asked Questions (FAQ)",
+        "description": "Clear, simple, and direct answers to everyday questions about customs management, tax calculations, payment security, or how we handle your file.",
         "cta": "View FAQ"
       }
     },
     "cta": {
       "title": "Join the KCI SARL Family",
-      "description": "Let's build the future together. Your project is unique — helping you achieve it is our greatest joy.",
+      "description": "Let's build the future together. Your project is unique, and our greatest joy is helping you bring it to life.",
       "button": "Contact Us"
     }
   }
