@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
 import { usePathname, Link } from '@/i18n/navigation'
 import { Menu, X, Phone, Mail, MapPin } from 'lucide-react'
+import Image from 'next/image'
 import { LanguageSelector } from '@/components/LanguageSelector'
 
 type NavItem = {
@@ -107,9 +108,12 @@ export function Navbar() {
       >
         <div className='w-full px-4 sm:px-6 lg:px-10 xl:px-16 2xl:px-24 flex items-center justify-between gap-3 lg:gap-6'>
           <Link href='/' prefetch className='shrink-0'>
-            <img
+            <Image
               src='/images/kci-logo.png'
               alt={t('logo.alt')}
+              width={200}
+              height={48}
+              priority
               className='h-9 sm:h-10 lg:h-11 w-auto object-contain'
             />
           </Link>

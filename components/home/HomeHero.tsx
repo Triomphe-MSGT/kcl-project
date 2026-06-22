@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
+import Image from 'next/image'
 
 type HeroSlide = {
   id: number
@@ -152,10 +153,13 @@ export function HomeHero() {
               index === activeSlide ? 'opacity-100 z-10' : 'opacity-0 z-0'
             }`}
           >
-            <img
+            <Image
               src={slide.image}
               alt=''
-              className='w-full h-full object-cover object-center'
+              fill
+              priority={index === 0}
+              className='object-cover object-center'
+              sizes='100vw'
             />
             <div className='absolute inset-0 bg-gradient-to-r from-kci-brand/70 via-kci-brand/50 to-kci-brand/35' />
           </div>

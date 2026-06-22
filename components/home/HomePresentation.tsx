@@ -3,6 +3,7 @@
 import { useRef } from 'react'
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
+import Image from 'next/image'
 import { motion, useInView } from 'motion/react'
 import { ArrowRight, CheckCircle2 } from 'lucide-react'
 
@@ -59,10 +60,12 @@ export function HomePresentation() {
               whileHover={{ scale: 1.02, y: -4 }}
               transition={{ type: 'spring', stiffness: 260, damping: 22 }}
             >
-              <img
+              <Image
                 src='/images/home/presentation.jpg'
                 alt='Équipe de conseil KC International'
-                className='w-full h-full object-cover object-center'
+                fill
+                className='object-cover object-center'
+                sizes='(max-width: 768px) 100vw, 40vw'
               />
               <div className='absolute inset-0 bg-gradient-to-t from-kci-bar/50 via-transparent to-transparent' />
             </motion.div>

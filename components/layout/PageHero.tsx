@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { motion } from 'motion/react'
 
 const easeOut = [0.22, 1, 0.36, 1] as const
@@ -25,11 +26,14 @@ export function PageHero({
 
   return (
     <section className='relative pt-28 pb-14 lg:pt-32 lg:pb-16 overflow-hidden'>
-      <img
+      <Image
         src={image}
         alt=''
-        className='absolute inset-0 h-full w-full object-cover'
-        aria-hidden='true'
+        fill
+        priority
+        className='object-cover'
+        aria-hidden
+        sizes='100vw'
       />
       <div
         className='absolute inset-0 bg-gradient-to-br from-kci-brand/92 via-kci-brand/85 to-kci-bar/95'

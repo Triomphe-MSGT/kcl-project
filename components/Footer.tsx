@@ -4,6 +4,7 @@ import { JSX, useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import { ArrowUp } from 'lucide-react'
+import Image from 'next/image'
 import {
   IconBrandFacebook,
   IconBrandTelegram,
@@ -66,9 +67,11 @@ export function Footer(): JSX.Element {
         <div className='flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between'>
           <div className='max-w-xs'>
             <Link href='/' prefetch className='inline-block mb-4'>
-              <img
+              <Image
                 src='/images/kci-logo-white.png'
                 alt='KC International'
+                width={200}
+                height={48}
                 className='h-10 w-auto object-contain'
               />
             </Link>

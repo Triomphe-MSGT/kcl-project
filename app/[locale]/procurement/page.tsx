@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
+import Image from 'next/image'
 import { Link } from '@/i18n/navigation'
 import {
   Search,
@@ -221,7 +222,7 @@ const productCategories: ProductCategory[] = [
   },
 ]
 
-export default function ProductsPage() {
+export default function ProcurementPage() {
   const t = useTranslations('ProcurementPage')
   const [selectedCategory, setSelectedCategory] = useState<string>('all')
   const [searchTerm, setSearchTerm] = useState('')
@@ -388,10 +389,12 @@ export default function ProductsPage() {
                     viewMode === 'list' ? 'w-1/3' : 'h-48'
                   }`}
                 >
-                  <img
+                  <Image
                     src={category.image}
                     alt={t(`categories.${category.id}.name`)}
-                    className='w-full h-full object-cover group-hover:scale-105 transition-transform duration-500'
+                    fill
+                    className='object-cover group-hover:scale-105 transition-transform duration-500'
+                    sizes='(max-width: 768px) 100vw, 33vw'
                   />
                   <div className='absolute inset-0 bg-gradient-to-t from-black/30 to-transparent'></div>
                   <div className='absolute top-4 left-4'>
@@ -512,12 +515,14 @@ export default function ProductsPage() {
 
             <div className='grid grid-cols-1 lg:grid-cols-2'>
               <div className='relative h-[300px] lg:h-full overflow-hidden'>
-                <img
+                <Image
                   src={selectedSubcategory.image}
                   alt={t(
                     `categories.${selectedSubcategory.categoryId}.subcategories.${selectedSubcategory.subcategoryKey}.name`
                   )}
-                  className='w-full h-full object-cover group-hover:scale-105 transition-transform duration-500'
+                  fill
+                  className='object-cover group-hover:scale-105 transition-transform duration-500'
+                  sizes='(max-width: 1024px) 100vw, 50vw'
                 />
                 <div className='absolute inset-0 bg-gradient-to-t from-black/50 to-transparent'></div>
                 <div className='absolute bottom-6 left-6'>

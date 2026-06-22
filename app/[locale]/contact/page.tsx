@@ -16,6 +16,7 @@ import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { PageHero } from '@/components/layout/PageHero'
+import { openContactMailto } from '@/lib/mailto'
 
 const createContactSchema = (t: (key: string) => string) =>
   z.object({
@@ -103,33 +104,6 @@ export default function ContactPage() {
     }
   }, [searchParams, reset])
 
-  const onSubmit = async (data: ContactFormData) => {
-    setIsSubmitting(true)
-    setSubmitStatus('idle')
-
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      })
-
-      if (!response.ok) {
-        setSubmitStatus('error')
-        return
-      }
-
-      setSubmitStatus('success')
-      reset()
-    } catch {
-      setSubmitStatus('error')
-    } finally {
-      setIsSubmitting(false)
-    }
-  }
-
   const departmentOptions = [
     { value: 'sales', label: t('form.fields.department.options.sales') },
     { value: 'info', label: t('form.fields.department.options.info') },
@@ -140,6 +114,29 @@ export default function ContactPage() {
     },
     { value: 'other', label: t('form.fields.department.options.other') },
   ]
+
+  const onSubmit = (data: ContactFormData) => {
+    setIsSubmitting(true)
+    setSubmitStatus('idle')
+
+    try {
+      const departmentLabel = departmentOptions.find(
+        (option) => option.value === data.department
+      )?.label
+
+      openContactMailto({
+        ...data,
+        departmentLabel,
+      })
+
+      setSubmitStatus('success')
+      reset()
+    } catch {
+      setSubmitStatus('error')
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
 
   const offices = ['guangzhou', 'lagos', 'yaounde'] as const
 

@@ -2,6 +2,7 @@
 
 import { useRef } from 'react'
 import { useTranslations } from 'next-intl'
+import Image from 'next/image'
 import { motion, useInView } from 'motion/react'
 
 const easeOut = [0.22, 1, 0.36, 1] as const
@@ -45,10 +46,12 @@ export function AboutIntro() {
               aria-hidden='true'
             />
             <div className='relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg ring-1 ring-slate-200/80'>
-              <img
+              <Image
                 src='/images/home/presentation.jpg'
                 alt={t('imageAlt')}
-                className='h-full w-full object-cover'
+                fill
+                className='object-cover'
+                sizes='(max-width: 1024px) 100vw, 40vw'
               />
               <div className='absolute inset-0 bg-gradient-to-t from-kci-bar/30 via-transparent to-transparent' />
             </div>

@@ -3,6 +3,7 @@
 import { useRef } from 'react'
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
+import Image from 'next/image'
 import { motion, useInView } from 'motion/react'
 import {
   Calculator,
@@ -183,10 +184,12 @@ export function HomeAxes() {
                     : 'ring-1 ring-slate-200/60 hover:ring-kci-brand/30'
                 }`}
               >
-                <img
+                <Image
                   src={image}
                   alt=''
-                  className='absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110'
+                  fill
+                  className='object-cover transition-transform duration-700 ease-out group-hover:scale-110'
+                  sizes='(max-width: 768px) 100vw, 33vw'
                 />
 
                 <div className='absolute inset-0 bg-gradient-to-b from-slate-900/20 via-slate-900/10 to-slate-900/80 transition-opacity duration-500 group-hover:via-slate-900/20 group-hover:to-slate-900/90' />

@@ -55,7 +55,6 @@
       "eyebrow": "Axes commerciaux",
       "title": "Ce que nous faisons pour vous",
       "description": "Chez KCI SARL, nous prenons soin de votre activité en vous libérant des contraintes quotidiennes. Nos solutions souples et performantes sont pensées pour organiser votre business, vous faire gagner un temps précieux et vous accompagner vers le succès en toute sérénité.",
-      "optionalBadge": "Option",
       "learnMore": "En savoir plus",
       "viewAll": "Découvrir tous nos services",
       "items": {
@@ -538,42 +537,7 @@
       "includedServices": "Services Inclus",
       "duration": "Durée",
       "price": "Prix",
-      "placeOrder": "Passer une Commande",
       "close": "Fermer"
-    },
-    "modalOrder": {
-      "placeOrder": "Demander un Service",
-      "close": "Fermer",
-      "orderModal": {
-        "title": "Demander un Service",
-        "name": {
-          "label": "Nom Complet",
-          "placeholder": "Entrez votre nom complet"
-        },
-        "address": {
-          "label": "Localisation/Adresse",
-          "placeholder": "Entrez votre adresse complète"
-        },
-        "serviceDescription": {
-          "label": "Description du Service",
-          "placeholder": "Décrivez le service dont vous avez besoin"
-        },
-        "requirements": {
-          "label": "Exigences Supplémentaires",
-          "placeholder": "Des exigences ou préférences spécifiques"
-        },
-        "category": {
-          "label": "Catégorie"
-        },
-        "service": {
-          "label": "Service"
-        },
-        "whatsapp": {
-          "serviceTitle": "Nouvelle demande de service — KCI Ltd"
-        },
-        "submit": "Envoyer la Demande",
-        "note": "Votre demande de service sera envoyée via WhatsApp pour traitement"
-      }
     },
     "common": {
       "moreServices": "services supplémentaires"
@@ -791,89 +755,6 @@
       "placeOrder": "Passer une Commande",
       "close": "Fermer"
     },
-    "modalOrder": {
-      "placeOrder": "Passer Commande",
-      "close": "Fermer",
-      "orderModal": {
-        "title": "Passez Votre Commande",
-        "name": {
-          "label": "Nom Complet",
-          "placeholder": "Entrez votre nom complet"
-        },
-        "address": {
-          "label": "Adresse de Livraison",
-          "placeholder": "Entrez votre adresse complète"
-        },
-        "productDescription": {
-          "label": "Description du Produit",
-          "placeholder": "Décrivez le produit dont vous avez besoin"
-        },
-        "quantity": {
-          "label": "Quantité",
-          "placeholder": "Entrez la quantité"
-        },
-        "category": {
-          "label": "Catégorie"
-        },
-        "product": {
-          "label": "Produit"
-        },
-        "whatsapp": {
-          "orderTitle": "Nouvelle commande — KCI Ltd"
-        },
-        "submit": "Soumettre la Commande",
-        "note": "Votre commande sera envoyée via WhatsApp pour traitement"
-      }
-    },
-    "common": {
-      "products": "produits"
-    }
-  },
-  "ProductsPage": {
-    "hero": {
-      "title": "Découvrez Notre Gamme",
-      "titleHighlight": "Complète de Produits",
-      "description": "Découvrez notre gamme complète de produits d'import/export de haute qualité, soigneusement sélectionnés auprès de fournisseurs vérifiés."
-    },
-    "search": {
-      "placeholder": "Rechercher des produits ou catégories...",
-      "allCategories": "Toutes les Catégories",
-      "noResults": {
-        "title": "Aucun produit trouvé",
-        "description": "Essayez de modifier vos critères de recherche.",
-        "resetButton": "Réinitialiser les Filtres"
-      }
-    },
-    "modal": {
-      "popularProducts": "Produits Populaires",
-      "placeOrder": "Passer une Commande",
-      "close": "Fermer"
-    },
-    "modalOrder": {
-      "placeOrder": "Passer Commande",
-      "close": "Fermer",
-      "orderModal": {
-        "title": "Passez Votre Commande",
-        "name": {
-          "label": "Nom Complet",
-          "placeholder": "Entrez votre nom complet"
-        },
-        "address": {
-          "label": "Adresse de Livraison",
-          "placeholder": "Entrez votre adresse complète"
-        },
-        "productDescription": {
-          "label": "Description du Produit",
-          "placeholder": "Décrivez le produit dont vous avez besoin"
-        },
-        "quantity": {
-          "label": "Quantité",
-          "placeholder": "Entrez la quantité"
-        },
-        "submit": "Soumettre la Commande",
-        "note": "Votre commande sera envoyée via WhatsApp pour traitement"
-      }
-    },
     "common": {
       "products": "produits"
     }
@@ -992,7 +873,7 @@
           "minLength": "Le message doit contenir au moins 10 caractères"
         }
       },
-      "success": "Message envoyé avec succès ! Nous vous répondrons bientôt.",
+      "success": "Votre application mail s'ouvre. Envoyez le message pour nous contacter — nous vous répondrons bientôt.",
       "error": "Veuillez corriger les erreurs ci-dessous et réessayer."
     },
     "offices": {
@@ -1645,117 +1526,6 @@
       "title": "Vous avez encore des questions ?",
       "description": "Notre équipe d'experts est là pour vous aider avec toute question spécifique sur nos services ou vos besoins d'import/export.",
       "buttonText": "Contactez Notre Équipe"
-    }
-  },
-  "AboutSection": {
-    "title": "Réseau International",
-    "description": "3 bureaux stratégiques pour couvrir toute la chaîne import/export Chine-Afrique",
-    "offices": {
-      "guangzhou": {
-        "location": "Guangzhou, Chine",
-        "role": "Pôle Sourcing & Contrôle Qualité",
-        "description": "À vos côtés pour veiller sur vos achats, trouver les meilleures usines et contrôler la qualité avant expédition.",
-        "contact": "+86 150 1197 1089",
-        "services": [
-          "Sourcing Produit/Fournisseur",
-          "Contrôle Qualité",
-          "Négociation Commerciale",
-          "Logistique d'Export"
-        ],
-        "teamSize": "10+ Employés",
-        "coverage": [
-          "Chine",
-          "Hong Kong",
-          "Macao",
-          "Autres Pays Asiatiques"
-        ]
-      },
-      "lagos": {
-        "location": "Lagos, Nigeria",
-        "role": "Pôle Afrique de l'Ouest",
-        "description": "Logistique, transports et solutions de paiement pour votre commerce en Afrique de l'Ouest.",
-        "contact": "+234 903 162 2889",
-        "services": [
-          "Distribution Régionale",
-          "Dédouanement",
-          "Stockage",
-          "Livraison Dernier Kilomètre"
-        ],
-        "teamSize": "10+ Employés",
-        "coverage": [
-          "Nigeria",
-          "Ghana",
-          "Bénin",
-          "Togo",
-          "Burkina Faso",
-          "Niger",
-          "Mali",
-          "Sénégal"
-        ]
-      },
-      "yaounde": {
-        "location": "Yaoundé, Cameroun",
-        "role": "Siège Régional CEMAC",
-        "description": "Comptabilité, fiscalité, gestion immobilière et démarches de visa pour l'Afrique Centrale.",
-        "contact": "+237 6 83 24 22 77",
-        "services": [
-          "Conformité Réglementaire",
-          "Certification Produits",
-          "Conseil Douanier",
-          "Distribution Centrale"
-        ],
-        "teamSize": "10+ Employés",
-        "coverage": [
-          "Cameroun",
-          "Gabon",
-          "RD Congo",
-          "Congo",
-          "Tchad",
-          "RCA"
-        ]
-      }
-    },
-    "labels": {
-      "team": "Équipe",
-      "contact": "Contact",
-      "mainServices": "Services Principaux",
-      "geographicCoverage": "Couverture Géographique"
-    }
-  },
-  "ServicesSection": {
-    "title": "Solutions Complètes Import/Export",
-    "description": "Que vous soyez une petite entreprise ou une grande corporation, nos solutions d'import/export peuvent vous aider à réussir dans le marché concurrentiel d'aujourd'hui.",
-    "trustIndicators": {
-      "quality": {
-        "title": "Qualité Premium",
-        "description": "Excellence de premier niveau dans chaque service"
-      },
-      "speed": {
-        "title": "Service Rapide",
-        "description": "Délai de traitement rapide pour les besoins urgents"
-      },
-      "safety": {
-        "title": "Livraison Sécurisée",
-        "description": "Manipulation sécurisée et fiable"
-      },
-      "support": {
-        "title": "Support 24/7",
-        "description": "Assistance continue jour et nuit"
-      }
-    },
-    "keyBenefits": "Avantages Clés",
-    "advancedFeatures": "Fonctionnalités Avancées",
-    "typicalProcess": "Processus Typique",
-    "processSteps": [
-      "Analyse de vos besoins",
-      "Sourcing et négociation",
-      "Contrôle qualité",
-      "Expédition et suivi"
-    ],
-    "cta": {
-      "title": "Prêt à Optimiser Votre Chaîne Import/Export ?",
-      "description": "Nos experts analysent gratuitement vos besoins et proposent une stratégie sur mesure pour réduire vos coûts et optimiser vos délais de livraison.",
-      "buttonText": "Consultation Gratuite"
     }
   },
   "FooterSection": {

@@ -3,6 +3,7 @@
 import { useLocale, Locale } from 'next-intl'
 import { useRouter, usePathname } from '@/i18n/navigation'
 import { useSearchParams } from 'next/navigation'
+import Image from 'next/image'
 
 type Language = {
   code: 'fr' | 'en'
@@ -55,9 +56,11 @@ export function LanguageSelector({
   if (variant === 'desktop') {
     return (
       <div className='flex items-center space-x-2'>
-        <img
+        <Image
           src={currentLanguage.flag}
           alt={`${currentLanguage.name} flag`}
+          width={20}
+          height={15}
           className='w-5 h-auto'
         />
         <select
@@ -85,9 +88,11 @@ export function LanguageSelector({
   // Mobile variant
   return (
     <div className='flex items-center space-x-3 mb-3'>
-      <img
+      <Image
         src={currentLanguage.flag}
         alt={`${currentLanguage.name} flag`}
+        width={20}
+        height={15}
         className='w-5 h-auto'
       />
       <select
