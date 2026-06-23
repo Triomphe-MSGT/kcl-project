@@ -10,6 +10,7 @@ const publicRoutes = [
   '/resources/',
   '/contact/',
   '/faq/',
+  '/privacy/',
 ] as const
 
 for (const locale of locales) {

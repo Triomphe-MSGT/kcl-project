@@ -1594,5 +1594,33 @@
       "description": "Let's build the future together. Your project is unique, and our greatest joy is helping you bring it to life.",
       "button": "Contact Us"
     }
+  },
+  "PrivacyPage": {
+    "hero": {
+      "title": "Privacy Policy",
+      "description": "How KCI Ltd. collects, uses, and protects your personal data."
+    },
+    "sections": {
+      "collection": {
+        "title": "Data we collect",
+        "body": "We only collect information you voluntarily provide through our contact forms (name, email, phone, company, subject, and message) or during business interactions with our teams."
+      },
+      "usage": {
+        "title": "How we use data",
+        "body": "This information is used to respond to your requests, prepare quotes, provide commercial follow-up, and improve our services. We do not use it for unsolicited advertising."
+      },
+      "sharing": {
+        "title": "Sharing and retention",
+        "body": "Your data is not sold to third parties. It may only be shared with technical providers strictly required to operate the website or process your request, under confidentiality obligations."
+      },
+      "rights": {
+        "title": "Your rights",
+        "body": "You may request access, correction, or deletion of your data by contacting us. We will handle your request as quickly as possible."
+      },
+      "contact": {
+        "title": "Contact us",
+        "body": "For any question about this policy, email info@kciltd.com or use the contact form on this website."
+      }
+    }
   }
 }

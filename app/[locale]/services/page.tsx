@@ -246,13 +246,11 @@ export default function ServicesPage() {
   ) => {
     setSelectedSubcategory({ categoryId, subcategoryKey, image })
     setIsModalOpen(true)
-    document.body.style.overflow = 'hidden'
   }
 
   const closeModal = () => {
     setIsModalOpen(false)
     setSelectedSubcategory(null)
-    document.body.style.overflow = ''
   }
 
   useEffect(() => {
@@ -268,6 +266,20 @@ export default function ServicesPage() {
 
     return () => {
       window.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [isModalOpen])
+
+  useEffect(() => {
+    if (!isModalOpen) {
+      document.body.style.overflow = ''
+      return
+    }
+
+    const previousOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+
+    return () => {
+      document.body.style.overflow = previousOverflow
     }
   }, [isModalOpen])
 

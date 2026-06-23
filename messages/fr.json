@@ -1568,6 +1568,34 @@
       "developedBy": "Développé par Triomphe Mandeg"
     }
   },
+  "PrivacyPage": {
+    "hero": {
+      "title": "Politique de confidentialité",
+      "description": "Comment KCI Ltd. collecte, utilise et protège vos données personnelles."
+    },
+    "sections": {
+      "collection": {
+        "title": "Données collectées",
+        "body": "Nous collectons uniquement les informations que vous nous transmettez volontairement via nos formulaires de contact (nom, e-mail, téléphone, entreprise, objet et message) ou lors d'échanges commerciaux avec nos équipes."
+      },
+      "usage": {
+        "title": "Utilisation des données",
+        "body": "Ces informations servent à répondre à vos demandes, préparer des devis, assurer le suivi commercial et améliorer la qualité de nos services. Nous ne les utilisons pas à des fins publicitaires non sollicitées."
+      },
+      "sharing": {
+        "title": "Partage et conservation",
+        "body": "Vos données ne sont pas vendues à des tiers. Elles peuvent être partagées uniquement avec des prestataires techniques strictement nécessaires à l'exploitation du site ou du traitement de votre dossier, dans le respect de la confidentialité."
+      },
+      "rights": {
+        "title": "Vos droits",
+        "body": "Vous pouvez demander l'accès, la rectification ou la suppression de vos données en nous contactant. Nous traiterons votre demande dans les meilleurs délais."
+      },
+      "contact": {
+        "title": "Nous contacter",
+        "body": "Pour toute question relative à cette politique, écrivez à info@kciltd.com ou utilisez le formulaire de contact du site."
+      }
+    }
+  },
   "whatsapp": {
     "config": {
       "defaultMessage": "Bonjour ! Je suis intéressé par vos services. Pouvez-vous m'aider ?"

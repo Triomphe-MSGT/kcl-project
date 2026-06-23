@@ -280,10 +280,16 @@ export default function ProcurementPage() {
   }, [isModalOpen])
 
   useEffect(() => {
-    if (isModalOpen) {
-      document.body.style.overflow = 'hidden'
-    } else {
+    if (!isModalOpen) {
       document.body.style.overflow = ''
+      return
+    }
+
+    const previousOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+
+    return () => {
+      document.body.style.overflow = previousOverflow
     }
   }, [isModalOpen])
 
@@ -575,6 +581,9 @@ export default function ProcurementPage() {
                         `categories.${selectedSubcategory.categoryId}.subcategories.${selectedSubcategory.subcategoryKey}.name`
                       )
                     )}
+                    onClick={() => {
+                      document.body.style.overflow = ''
+                    }}
                     className='bg-gradient-to-r from-kci-brand to-kci-accent hover:from-kci-brand/90 hover:to-kci-accent/90 text-white tracking-wide shadow-md hover:shadow-lg px-6 py-3 rounded-lg flex items-center justify-center'
                   >
                     <ShoppingCart size={18} className='mr-2' />
