@@ -5,9 +5,8 @@ import {
 } from '@/lib/mailto'
 
 describe('mailto contact', () => {
-  it('routes sales to sales inbox', () => {
-    expect(resolveContactEmail('sales')).toBe('sales@kci-ltd.com')
-    expect(resolveContactEmail('info')).toBe('info@kci-ltd.com')
+  it('always routes to the main contact inbox', () => {
+    expect(resolveContactEmail()).toBe('info@kci-ltd.com')
   })
 
   it('builds a mailto url with encoded subject and body', () => {
@@ -20,7 +19,7 @@ describe('mailto contact', () => {
       departmentLabel: 'Sales',
     })
 
-    expect(url.startsWith('mailto:sales@kci-ltd.com?')).toBe(true)
+    expect(url.startsWith('mailto:info@kci-ltd.com?')).toBe(true)
     const query = url.split('?')[1] ?? ''
     const params = new URLSearchParams(query)
 

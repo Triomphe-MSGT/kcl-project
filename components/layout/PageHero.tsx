@@ -25,7 +25,7 @@ export function PageHero({
   const isCenter = align === 'center'
 
   return (
-    <section className='relative pt-28 pb-14 lg:pt-32 lg:pb-16 overflow-hidden'>
+    <section className='relative pt-24 pb-10 sm:pt-28 sm:pb-14 lg:pt-32 lg:pb-16 overflow-hidden'>
       <Image
         src={image}
         alt=''
@@ -67,7 +67,7 @@ export function PageHero({
             </p>
           )}
 
-          <h1 className='text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4'>
+          <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-3 sm:mb-4'>
             {title}
             {titleHighlight && (
               <span className='block text-kci-warm mt-1'>{titleHighlight}</span>
@@ -75,7 +75,7 @@ export function PageHero({
           </h1>
 
           {description && (
-            <p className='text-base sm:text-lg text-white/85 leading-relaxed'>
+            <p className='text-sm sm:text-base md:text-lg text-white/85 leading-relaxed'>
               {description}
             </p>
           )}

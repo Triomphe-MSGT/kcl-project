@@ -9,7 +9,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
-import { WhatsAppAssistant } from '@/components/whatsapp-assistant'
+import { FloatingContactStack } from '@/components/FloatingContactStack'
 import { ScrollProgress } from '@/components/ui/scroll-progress'
 import { NavigationProgress } from '@/components/NavigationProgress'
 
@@ -58,6 +58,12 @@ const brockMann = localFont({
   ],
   variable: '--font-brockmann',
 })
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover' as const,
+}
 
 export const metadata: Metadata = {
   title: "KCI Ltd | Importation de la Chine vers l'Afrique",
@@ -149,10 +155,10 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <NavigationProgress />
           <Navbar />
-          {children}
+          <div className='site-main'>{children}</div>
           <Footer />
           <ScrollProgress />
-          <WhatsAppAssistant />
+          <FloatingContactStack />
         </NextIntlClientProvider>
       </body>
     </html>

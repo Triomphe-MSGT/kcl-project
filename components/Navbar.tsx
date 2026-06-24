@@ -66,7 +66,7 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300 pt-[env(safe-area-inset-top,0px)] ${
         overlayNav ? 'nav-header-over-hero' : ''
       }`}
     >
@@ -161,25 +161,25 @@ export function Navbar() {
       {/* Menu hamburger — plein écran mobile/tablette */}
       {isOpen && (
         <div
-          className='lg:hidden fixed inset-0 top-[60px] sm:top-[64px] z-40 bg-black/40'
+          className='lg:hidden fixed inset-0 top-[56px] sm:top-[60px] z-40 bg-black/40'
           onClick={() => setIsOpen(false)}
           aria-hidden='true'
         />
       )}
       <div
-        className={`lg:hidden fixed left-0 right-0 z-50 bg-white border-b border-slate-100 shadow-xl transition-all duration-300 overflow-y-auto ${
+        className={`lg:hidden fixed left-0 right-0 z-50 bg-white border-b border-slate-100 shadow-xl transition-all duration-300 overflow-y-auto overscroll-contain ${
           isOpen
-            ? 'top-[60px] sm:top-[64px] max-h-[calc(100vh-60px)] opacity-100'
-            : 'top-[60px] sm:top-[64px] max-h-0 opacity-0 pointer-events-none'
+            ? 'top-[56px] sm:top-[60px] max-h-[calc(100dvh-56px-env(safe-area-inset-top,0px))] sm:max-h-[calc(100dvh-60px-env(safe-area-inset-top,0px))] opacity-100'
+            : 'top-[56px] sm:top-[60px] max-h-0 opacity-0 pointer-events-none'
         }`}
       >
-        <nav className='w-full px-6 py-6 flex flex-col'>
+        <nav className='w-full px-4 sm:px-6 py-5 sm:py-6 flex flex-col pb-[max(1.25rem,env(safe-area-inset-bottom,0px))]'>
           {navItems.map((item) => (
             <Link
               key={item.labelKey}
               href={item.href}
               prefetch
-              className={`text-base font-bold uppercase tracking-wide py-3.5 border-b border-slate-100 transition-colors ${
+              className={`text-sm sm:text-base font-bold uppercase tracking-wide py-3 sm:py-3.5 border-b border-slate-100 transition-colors ${
                 isActiveLink(item.href)
                   ? 'text-kci-accent border-l-4 border-l-kci-accent pl-4 -ml-px bg-kci-surface/60'
                   : 'text-slate-800 pl-2'

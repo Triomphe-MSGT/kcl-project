@@ -5,11 +5,12 @@ import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import { motion, AnimatePresence, useInView } from 'motion/react'
 import { MapPin, Phone, Globe } from 'lucide-react'
+import { siteImages } from '@/lib/site-images'
 
 const offices = [
-  { key: 'yaounde', image: '/images/offices/yaounde.jpg', flag: '🇨🇲' },
-  { key: 'lagos', image: '/images/offices/lagos.jpg', flag: '🇳🇬' },
-  { key: 'guangzhou', image: '/images/offices/guangzhou.jpg', flag: '🇨🇳' },
+  { key: 'yaounde', image: siteImages.offices.yaounde, flag: '🇨🇲' },
+  { key: 'lagos', image: siteImages.offices.lagos, flag: '🇳🇬' },
+  { key: 'guangzhou', image: siteImages.offices.guangzhou, flag: '🇨🇳' },
 ] as const
 
 const easeOut = [0.22, 1, 0.36, 1] as const

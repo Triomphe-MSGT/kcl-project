@@ -4,27 +4,17 @@ import { useState, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import Image from 'next/image'
+import { siteImages } from '@/lib/site-images'
 
 type HeroSlide = {
   id: number
   image: string
 }
 
-const heroSlides: HeroSlide[] = [
-  {
-    id: 1,
-    image: 'https://kimi-web-img.moonshot.cn/img/www.thehabarinetwork.com/fd34a554b2043404824b5ae4d66c133d4d359bb8.jpg',
-    
-  },
-  {
-    id: 2,
-    image: '/images/home/hero-2.jpg',
-  },
-  {
-    id: 3,
-    image: '/images/home/hero-3.jpg',
-  },
-]
+const heroSlides: HeroSlide[] = siteImages.home.hero.map((image, index) => ({
+  id: index + 1,
+  image,
+}))
 
 function useLoopingTypewriter(
   text: string,
@@ -141,7 +131,7 @@ export function HomeHero() {
 
   return (
     <section
-      className='relative w-full min-h-screen h-screen overflow-hidden'
+      className='relative w-full min-h-[100dvh] overflow-hidden'
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
@@ -155,7 +145,7 @@ export function HomeHero() {
           >
             <Image
               src={slide.image}
-              alt=''
+              alt='Équipe et activités KC International en Afrique'
               fill
               priority={index === 0}
               className='object-cover object-center'
@@ -166,10 +156,10 @@ export function HomeHero() {
         ))}
       </div>
 
-      <div className='relative z-20 flex items-center h-full w-full pt-28 sm:pt-32 lg:pt-36 pb-20'>
-        <div className='w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 xl:px-16'>
+      <div className='relative z-20 flex items-center h-full w-full pt-24 sm:pt-28 lg:pt-36 pb-28 sm:pb-24 lg:pb-20'>
+        <div className='w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 xl:px-16 pr-[calc(0.5rem+env(safe-area-inset-right,0px))]'>
           <div className='max-w-3xl'>
-            <p className='flex items-center gap-3 mb-6 text-sm md:text-base font-medium text-white/90 hero-text-shadow'>
+            <p className='flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6 text-xs sm:text-sm md:text-base font-medium text-white/90 hero-text-shadow'>
               <span
                 className='inline-block w-10 h-[2px] bg-kci-accent/80 shrink-0'
                 aria-hidden='true'
@@ -177,7 +167,7 @@ export function HomeHero() {
               <span className='tracking-wide'>{t('tagline')}</span>
             </p>
 
-            <h1 className='text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6 hero-text-shadow min-h-[2.6em] sm:min-h-[2.4em]'>
+            <h1 className='text-white text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.15] mb-4 sm:mb-6 hero-text-shadow min-h-[2.8em] sm:min-h-[2.4em]'>
               <span className='text-white'>
                 {displayedLine1}
                 {!isTypingLine2 && <TypewriterCursor />}
@@ -193,22 +183,22 @@ export function HomeHero() {
               )}
             </h1>
 
-            <p className='text-white text-base md:text-lg lg:text-xl leading-relaxed mb-10 max-w-xl lg:max-w-2xl font-bold hero-text-shadow'>
+            <p className='text-white text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed mb-8 sm:mb-10 max-w-xl lg:max-w-2xl font-bold hero-text-shadow'>
               {t('description')}
             </p>
 
-            <div className='flex flex-col sm:flex-row items-stretch sm:items-center gap-4'>
+            <div className='flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 max-w-md sm:max-w-none'>
               <Link
                 href='/services'
                 prefetch
-                className='inline-flex items-center justify-center bg-kci-accent hover:bg-sky-300 text-white text-sm font-bold uppercase tracking-wide px-8 py-3.5 rounded-full transition-all duration-300 shadow-lg shadow-kci-accent/50 ring-2 ring-white/20'
+                className='inline-flex items-center justify-center bg-kci-accent hover:bg-sky-300 text-white text-xs sm:text-sm font-bold uppercase tracking-wide px-6 sm:px-8 py-3 sm:py-3.5 rounded-full transition-all duration-300 shadow-lg shadow-kci-accent/50 ring-2 ring-white/20'
               >
                 {t('cta.primary')}
               </Link>
               <Link
                 href='/contact'
                 prefetch
-                className='inline-flex items-center justify-center border-2 border-white text-white hover:bg-white hover:text-kci-brand text-sm font-bold uppercase tracking-wide px-8 py-3.5 rounded-full transition-all duration-300 shadow-lg shadow-black/20'
+                className='inline-flex items-center justify-center border-2 border-white text-white hover:bg-white hover:text-kci-brand text-xs sm:text-sm font-bold uppercase tracking-wide px-6 sm:px-8 py-3 sm:py-3.5 rounded-full transition-all duration-300 shadow-lg shadow-black/20'
               >
                 {t('cta.secondary')}
               </Link>
@@ -217,8 +207,8 @@ export function HomeHero() {
         </div>
       </div>
 
-      <div className='absolute bottom-6 sm:bottom-8 left-0 right-0 z-30 flex justify-center px-4'>
-        <div className='flex gap-2'>
+      <div className='absolute bottom-[calc(4.5rem+env(safe-area-inset-bottom,0px))] sm:bottom-6 sm:pb-0 left-0 right-0 sm:right-auto z-30 flex justify-center sm:justify-center px-4 pointer-events-none'>
+        <div className='flex gap-2 pointer-events-auto'>
           {heroSlides.map((_, index) => (
             <button
               key={index}

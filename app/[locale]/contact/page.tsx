@@ -16,6 +16,8 @@ import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { PageHero } from '@/components/layout/PageHero'
+import { SocialDock } from '@/components/SocialDock'
+import { CONTACT_EMAIL } from '@/lib/social-links'
 import { openContactMailto } from '@/lib/mailto'
 
 const createContactSchema = (t: (key: string) => string) =>
@@ -192,18 +194,29 @@ export default function ContactPage() {
                 </div>
               ))}
             </div>
-            <div className='bg-white rounded-2xl p-6 sm:p-8 ring-1 ring-slate-200/80 max-w-3xl mx-auto text-center'>
-              <h3 className='text-xl text-gray-900 mb-4'>
-                {t('offices.emails.title')}
-              </h3>
-              <div className='space-y-2 text-gray-600 '>
-                <div className='flex items-center justify-center gap-2'>
-                  <Mail size={16} className='text-kci-brand' />
-                  <span>{t('offices.emails.sales')}</span>
-                </div>
-                <div className='flex items-center justify-center gap-2'>
-                  <Mail size={16} className='text-kci-brand' />
-                  <span>{t('offices.emails.info')}</span>
+            <div className='bg-white rounded-2xl p-6 sm:p-8 ring-1 ring-slate-200/80 max-w-3xl mx-auto text-center space-y-8'>
+              <div>
+                <h3 className='text-xl text-gray-900 mb-3'>
+                  {t('offices.emails.title')}
+                </h3>
+                <a
+                  href={`mailto:${CONTACT_EMAIL}`}
+                  className='inline-flex items-center justify-center gap-2 text-kci-brand font-medium hover:text-kci-brand-light transition-colors'
+                >
+                  <Mail size={18} className='shrink-0' />
+                  {CONTACT_EMAIL}
+                </a>
+              </div>
+
+              <div className='border-t border-slate-100 pt-8'>
+                <h3 className='text-xl text-gray-900 mb-2'>
+                  {t('offices.social.availableOn')}
+                </h3>
+                <p className='text-sm text-gray-600 mb-5 max-w-lg mx-auto'>
+                  {t('offices.social.description')}
+                </p>
+                <div className='max-w-sm mx-auto'>
+                  <SocialDock showLabels />
                 </div>
               </div>
             </div>
@@ -224,7 +237,7 @@ export default function ContactPage() {
                 </p>
               </div>
 
-              <div className='p-8'>
+              <div className='p-4 sm:p-6 lg:p-8'>
                 {/* Status Messages */}
                 {submitStatus === 'success' && (
                   <div className='mb-6 p-4 bg-green-50 border border-green-200 rounded-lg flex items-center'>

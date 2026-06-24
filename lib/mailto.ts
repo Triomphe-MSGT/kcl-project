@@ -9,11 +9,10 @@ export type ContactMailtoPayload = {
   message: string
 }
 
-const SALES_EMAIL = 'sales@kci-ltd.com'
 const DEFAULT_EMAIL = 'info@kci-ltd.com'
 
-export function resolveContactEmail(department?: string): string {
-  return department === 'sales' ? SALES_EMAIL : DEFAULT_EMAIL
+export function resolveContactEmail(): string {
+  return DEFAULT_EMAIL
 }
 
 export function buildContactMailtoBody(
@@ -38,7 +37,7 @@ export function buildContactMailtoBody(
 }
 
 export function buildContactMailtoUrl(payload: ContactMailtoPayload): string {
-  const to = resolveContactEmail(payload.department)
+  const to = resolveContactEmail()
   const subject = `[KCI Contact] ${payload.subject}`
   const body = buildContactMailtoBody(payload)
 

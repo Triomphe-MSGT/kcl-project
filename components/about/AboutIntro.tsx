@@ -4,6 +4,7 @@ import { useRef } from 'react'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { motion, useInView } from 'motion/react'
+import { siteImages } from '@/lib/site-images'
 
 const easeOut = [0.22, 1, 0.36, 1] as const
 
@@ -47,7 +48,7 @@ export function AboutIntro() {
             />
             <div className='relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg ring-1 ring-slate-200/80'>
               <Image
-                src='/images/home/presentation.jpg'
+                src={siteImages.about.intro}
                 alt={t('imageAlt')}
                 fill
                 className='object-cover'

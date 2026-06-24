@@ -5,12 +5,7 @@ import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import { ArrowUp } from 'lucide-react'
 import Image from 'next/image'
-import {
-  IconBrandFacebook,
-  IconBrandTelegram,
-  IconBrandTiktok,
-  IconBrandWhatsapp,
-} from '@tabler/icons-react'
+import { CONTACT_EMAIL, socialLinks } from '@/lib/social-links'
 import { DEVELOPER_PHONES } from '@/lib/developer'
 
 const navLinks = [
@@ -24,29 +19,6 @@ const navLinks = [
 const legalLinks = [
   { key: 'privacy', href: '/privacy' },
   { key: 'faq', href: '/faq' },
-] as const
-
-const socialLinks = [
-  {
-    icon: IconBrandFacebook,
-    href: 'https://www.facebook.com/share/165s3npC8M/',
-    label: 'Facebook',
-  },
-  {
-    icon: IconBrandTiktok,
-    href: 'https://www.tiktok.com/@moock_media?_t=ZM-8zbnXqJLwts&_r=1',
-    label: 'TikTok',
-  },
-  {
-    icon: IconBrandTelegram,
-    href: 'https://t.me/kci_ltd',
-    label: 'Telegram',
-  },
-  {
-    icon: IconBrandWhatsapp,
-    href: 'https://chat.whatsapp.com/FUPwuge53AeGHsrUXvU8Q5',
-    label: 'WhatsApp',
-  },
 ] as const
 
 export function Footer(): JSX.Element {
@@ -114,16 +86,10 @@ export function Footer(): JSX.Element {
 
         <div className='mt-8 flex flex-col gap-2 border-t border-white/10 pt-6 text-xs sm:text-sm text-white/50 sm:flex-row sm:flex-wrap sm:gap-x-6'>
           <a
-            href='mailto:info@kci-ltd.com'
+            href={`mailto:${CONTACT_EMAIL}`}
             className='hover:text-kci-accent transition-colors'
           >
-            info@kci-ltd.com
-          </a>
-          <a
-            href='mailto:sales@kci-ltd.com'
-            className='hover:text-kci-accent transition-colors'
-          >
-            sales@kci-ltd.com
+            {CONTACT_EMAIL}
           </a>
           <span>+237 683 242 277 · +234 903 162 2889</span>
         </div>

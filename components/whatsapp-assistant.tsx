@@ -9,7 +9,7 @@ const WHATSAPP_CONFIG = {
   phoneNumber: '+237683242277',
 }
 
-export function WhatsAppAssistant() {
+export function WhatsAppAssistant({ embedded = false }: { embedded?: boolean }) {
   const [isOpen, setIsOpen] = useState(false)
   const [customMessage, setCustomMessage] = useState('')
   const t = useTranslations('whatsapp')
@@ -36,10 +36,19 @@ export function WhatsAppAssistant() {
     return hour >= 9 && hour <= 18 && now.getDay() >= 1 && now.getDay() <= 5
   }
 
+  const rootClass = embedded ? 'relative' : 'fixed bottom-6 right-6 z-50'
+
   return (
-    <div className='fixed bottom-6 right-6 z-50'>
+    <div className={rootClass}>
       {isOpen && (
-        <div className='mb-4 w-80 bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden'>
+        <>
+          <button
+            type='button'
+            className='fixed inset-0 z-40 bg-black/40 sm:hidden'
+            onClick={() => setIsOpen(false)}
+            aria-label={t('texts.closeButton')}
+          />
+          <div className='fixed sm:absolute inset-x-3 sm:inset-x-auto bottom-[calc(3.5rem+env(safe-area-inset-bottom,0px))] sm:bottom-full sm:mb-4 left-auto right-0 sm:right-0 w-[min(20rem,calc(100vw-1.5rem))] max-h-[min(32rem,calc(100dvh-6rem))] overflow-y-auto bg-white rounded-2xl shadow-2xl border border-gray-100 z-50'>
           <div className='bg-gradient-to-r from-green-500 to-green-600 p-4 text-white'>
             <div className='flex items-center justify-between'>
               <div className='flex items-center space-x-3'>
@@ -116,15 +125,23 @@ export function WhatsAppAssistant() {
               <span>{t('texts.sendButton')}</span>
             </button>
           </div>
-        </div>
+          </div>
+        </>
       )}
 
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className='w-14 h-14 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110'
+        className='h-11 w-11 sm:h-14 sm:w-14 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95 touch-manipulation shrink-0'
         aria-label='WhatsApp Assistant'
       >
-        {isOpen ? <X size={24} /> : <IconBrandWhatsapp size={28} />}
+        {isOpen ? (
+          <X size={22} className='sm:h-6 sm:w-6' />
+        ) : (
+          <>
+            <IconBrandWhatsapp size={24} className='sm:hidden' />
+            <IconBrandWhatsapp size={28} className='hidden sm:block' />
+          </>
+        )}
       </button>
     </div>
   )

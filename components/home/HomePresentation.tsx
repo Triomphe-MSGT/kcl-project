@@ -6,6 +6,7 @@ import { Link } from '@/i18n/navigation'
 import Image from 'next/image'
 import { motion, useInView } from 'motion/react'
 import { ArrowRight, CheckCircle2 } from 'lucide-react'
+import { siteImages } from '@/lib/site-images'
 
 const highlightKeys = ['founded', 'hubs', 'approach'] as const
 
@@ -61,8 +62,8 @@ export function HomePresentation() {
               transition={{ type: 'spring', stiffness: 260, damping: 22 }}
             >
               <Image
-                src='/images/home/presentation.jpg'
-                alt='Équipe de conseil KC International'
+                src={siteImages.home.presentation}
+                alt='Professionnels africains accompagnés par KC International'
                 fill
                 className='object-cover object-center'
                 sizes='(max-width: 768px) 100vw, 40vw'

@@ -4,8 +4,8 @@
       "home": "Accueil",
       "about": "À Propos de Nous",
       "services": "Nos Services",
-      "procurement": "Pôles d'Approvisionnement",
-      "resources": "Ressources & Perspectives",
+      "procurement": "Approvisionnement",
+      "resources": "Ressources",
       "contact": "Contactez-nous",
       "faq": "FAQ"
     },
@@ -130,7 +130,7 @@
     "intro": {
       "paragraph2": "Nous ne croyons pas aux solutions toutes faites. C'est pourquoi nous prenons le temps de vous écouter pour vous proposer un accompagnement sur mesure, adapté à votre réalité. Grâce à nos équipes présentes sur le terrain à Yaoundé (Cameroun), Lagos (Nigeria) et Guangzhou (Chine), nous relions vos projets locaux aux opportunités du monde entier, pour vous apporter le meilleur de chaque marché.",
       "paragraph3": "Notre équipe rassemble des professionnels passionnés qui comprennent parfaitement les difficultés et les réalités de la gestion d'entreprise d'aujourd'hui. Que vous soyez un jeune créateur qui lance sa startup, un gérant de PME qui souhaite mieux organiser son travail, ou une plus grande entreprise prête à s'installer dans une nouvelle région, nous marchons à vos côtés. Nous sommes le partenaire de confiance sur qui vous pouvez vous appuyer pour traverser les étapes de votre croissance en toute sérénité.",
-      "imageAlt": "Équipe KC International SARL"
+      "imageAlt": "Professionnels africains accompagnés par KC International SARL"
     },
     "mission": {
       "title": "Notre Mission",
@@ -185,7 +185,7 @@
       "description": "Chez KCI SARL, nous prenons soin de votre activité en vous libérant des contraintes quotidiennes. Nos solutions souples et performantes sont pensées pour organiser votre business, vous faire gagner un temps précieux et vous accompagner vers le succès en toute sérénité.",
       "services": {
         "accounting": {
-          "title": "1. Comptabilité, Finance & Fiscalité (Votre Sérénité Financière)",
+          "title": "1. Comptabilité & Fiscalité",
           "items": [
             "Comptabilité & Conseil Fiscal : Nous gardons vos comptes propres, clairs et bien organisés au quotidien. Nous réalisons des vérifications internes pour veiller à la bonne santé financière de votre activité.",
             "Outils Comptables Faciles : Nous installons les outils numériques adaptés à la taille de votre équipe et nous vous apprenons à les utiliser pour suivre votre argent facilement.",
@@ -194,16 +194,24 @@
             "Optimisation Fiscale Intelligente : Nous cherchons pour vous toutes les solutions légales pour réduire vos dépenses d'impôts, protéger vos bénéfices et améliorer votre trésorerie."
           ]
         },
-        "sourcing": {
-          "title": "2. Achats, Import/Export & Logistique (Votre Passerelle sur le Monde)",
+        "fintech": {
+          "title": "2. Solutions de Paiement (FinTech)",
           "items": [
-            "Sourcing & Achats de Confiance : Nous cherchons les meilleurs fournisseurs locaux et à l'étranger (notamment en Chine), négocions les prix de gros et vérifions la qualité des produits directement en usine pour vous éviter les mauvaises surprises.",
+            "Règlement Simplifié des Factures : Gagnez du temps en nous laissant gérer en toute sécurité le paiement de vos factures d'eau et d'électricité, de vos abonnements professionnels et de vos taxes.",
+            "Transferts d'Argent Sécurisés : Des solutions fiables et rapides pour envoyer et recevoir vos fonds d'un pays à l'autre afin de maintenir vos activités commerciales fluides."
+          ]
+        },
+        "sourcing": {
+          "title": "3. Achats & Approvisionnement (Local & International)",
+          "items": [
+            "Achats Locaux de Confiance : Nous identifions et négocions avec des fournisseurs fiables au Cameroun, au Nigeria et dans la sous-région pour vos besoins quotidiens en marchandises, matériaux et équipements.",
+            "Sourcing International : Lorsque nécessaire, nous cherchons les meilleurs fournisseurs à l'étranger (notamment en Chine), négocions les prix de gros et vérifions la qualité des produits directement en usine.",
             "Transport de Marchandises (Fret) : Que ce soit par avion, par bateau ou par route, nous acheminons votre cargaison en toute sécurité, en prenant soin de toutes les formalités de douane et de transit.",
             "Livraison Clé en Main : Nous suivons vos colis et vos commandes jusqu'au bout, pour livrer vos marchandises directement à la porte de votre boutique, de votre usine ou de votre entrepôt."
           ]
         },
         "events": {
-          "title": "3. Organisation d'Événements (Vos Rendez-vous Réussis)",
+          "title": "4. Organisation d'Événements",
           "items": [
             "Suivi Budgétaire & Économies : Nous planifions les dépenses de vos événements professionnels ou privés pour respecter scrupuleusement votre budget tout en garantissant une qualité maximale.",
             "Matériel Audiovisuel & Traiteurs de Choix : Nous installons le meilleur de la technologie (écrans, sons, lumières) et sélectionnons des menus délicieux pour accueillir vos invités dans les meilleures conditions.",
@@ -211,35 +219,22 @@
           ]
         },
         "realEstate": {
-          "title": "4. Vos Projets Immobiliers (Achat, Vente & Construction)",
+          "title": "5. Vos Projets Immobiliers",
           "items": [
             "Conseil, Achat & Location : Nous vous accompagnons pour acheter, vendre ou louer des bureaux, des locaux commerciaux ou des terrains en sécurisant entièrement vos transactions.",
             "Promotion & Projets Immobiliers : Nous aidons les propriétaires et les investisseurs à dessiner leurs projets, à obtenir les permis de construire et à piloter les chantiers de construction du début à la fin."
           ]
         },
         "facilities": {
-          "title": "5. Entretien & Gestion de vos Locaux (Facilities Management)",
+          "title": "6. Entretien & Gestion de vos Locaux",
           "items": [
             "Nettoyage Professionnel & Petites Réparations : Des services de ménage soignés, de désinfection et des interventions rapides de bricolage pour garder vos bureaux toujours propres et accueillants.",
             "Maintenance Préventive : Nous surveillons régulièrement vos équipements (électricité, plomberie, générateurs) pour réparer l'usure naturelle avant que les pannes ne surviennent, vous évitant ainsi des dépenses imprévues.",
             "Mise à disposition de Personnel (Staffing) : Nous trouvons et sélectionnons pour vous des employés de confiance (agents d'accueil, techniciens, etc) pour renforcer votre équipe selon vos besoins."
           ]
         },
-        "travel": {
-          "title": "6. Services de Voyage & Aide pour les Visas",
-          "items": [
-            "Accompagnement et Guides Visa : Un guide bienveillant et expert pour vous aider à préparer votre dossier de visa de manière irréprochable (visas d'affaires ou d'études) pour le Royaume-Uni, le Canada, la Chine, l'Inde, la Russie et bien d'autres destinations."
-          ]
-        },
-        "fintech": {
-          "title": "7. Solutions de Paiement Faciles (FinTech)",
-          "items": [
-            "Règlement Simplifié des Factures : Gagnez du temps en nous laissant gérer en toute sécurité le paiement de vos factures d'eau et d'électricité, de vos abonnements professionnels et de vos taxes.",
-            "Transferts d'Argent Sécurisés : Des solutions fiables et rapides pour envoyer et recevoir vos fonds d'un pays à l'autre afin de maintenir vos activités commerciales fluides."
-          ]
-        },
         "support": {
-          "title": "8. Assistance Personnalisée (Prestations sur mesure)",
+          "title": "7. Assistance Personnalisée",
           "items": [
             "Un Accompagnement Unique : Parce que chaque parcours est différent, nous restons à votre entière disposition pour vous apporter une aide flexible et sur mesure pour n'importe quel autre besoin spécifique de votre quotidien professionnel ou personnel."
           ]
@@ -254,8 +249,8 @@
   },
   "ServicesPage": {
     "hero": {
-      "title": "Ce Que Nous Pouvons Faire Pour Vous",
-      "description": "Chez KCI SARL, nous prenons soin de votre activité en vous libérant des contraintes quotidiennes. Nos solutions souples et performantes sont pensées pour organiser votre business, vous faire gagner un temps précieux et vous accompagner vers le succès en toute sérénité."
+      "title": "Nos Services",
+      "description": "Des solutions professionnelles adaptées aux réalités des entreprises africaines : comptabilité, paiements, achats locaux et internationaux, événements, immobilier et gestion de locaux."
     },
     "search": {
       "placeholder": "Rechercher des services ou catégories...",
@@ -267,10 +262,10 @@
       }
     },
     "categories": {
-      "financial": {
-        "name": "Services Financiers",
-        "description": "Comptabilité & Fiscalité, solutions de paiement FinTech et sérénité financière",
-        "badge": "Finance & Fiscalité",
+      "accounting": {
+        "name": "Comptabilité & Fiscalité",
+        "description": "Tenue de livres, audit financier, création d'entreprise et conformité OHADA",
+        "badge": "Comptabilité",
         "clientsServed": "clients servis",
         "subcategories": {
           "accounting": {
@@ -283,18 +278,6 @@
               "Vérifications internes",
               "Outils numériques",
               "Suivi de trésorerie"
-            ]
-          },
-          "fintech": {
-            "name": "Solutions de Paiement FinTech",
-            "description": "Traitement des taxes, abonnements et transferts de fonds",
-            "duration": "À la demande",
-            "price": "Sur devis",
-            "features": [
-              "Paiement des factures",
-              "Taxes et abonnements",
-              "Transferts internationaux",
-              "Routage multi-devises"
             ]
           },
           "businessCreation": {
@@ -323,22 +306,42 @@
           }
         }
       },
+      "fintech": {
+        "name": "Solutions de Paiement",
+        "description": "Paiement des factures, taxes, abonnements et transferts sécurisés pour votre entreprise",
+        "badge": "FinTech & Paiements",
+        "clientsServed": "clients servis",
+        "subcategories": {
+          "fintech": {
+            "name": "Solutions de Paiement FinTech",
+            "description": "Traitement des taxes, abonnements et transferts de fonds",
+            "duration": "À la demande",
+            "price": "Sur devis",
+            "features": [
+              "Paiement des factures",
+              "Taxes et abonnements",
+              "Transferts internationaux",
+              "Routage multi-devises"
+            ]
+          }
+        }
+      },
       "procurementLogistics": {
-        "name": "Achats, Import/Export & Logistique",
-        "description": "Sourcing mondial, formalités douanières et fret intégré",
-        "badge": "Sourcing & Fret",
+        "name": "Achats & Approvisionnement",
+        "description": "Achats locaux au Cameroun et au Nigeria, sourcing international et logistique intégrée",
+        "badge": "Achats & Logistique",
         "clientsServed": "clients servis",
         "subcategories": {
           "sourcing": {
-            "name": "Sourcing & Achats de Confiance",
-            "description": "Recherche de fournisseurs, négociation de gros et contrôle qualité en usine",
+            "name": "Achats Locaux & Sourcing",
+            "description": "Fournisseurs locaux et internationaux, négociation et contrôle qualité",
             "duration": "Variable",
             "price": "Sur devis",
             "features": [
-              "Fournisseurs locaux et étrangers",
+              "Fournisseurs locaux (CMR, NGA)",
+              "Sourcing international",
               "Négociation de prix",
-              "Contrôle en usine",
-              "Présence en Chine"
+              "Contrôle qualité"
             ]
           },
           "freight": {
@@ -498,38 +501,6 @@
             ]
           }
         }
-      },
-      "travel": {
-        "name": "Services de Voyage & Visas",
-        "description": "Encadrement et assistance visa pour le Royaume-Uni, le Canada, la Chine, l'Inde, la Russie et bien d'autres destinations.",
-        "badge": "Mobilité Globale",
-        "clientsServed": "clients servis",
-        "subcategories": {
-          "visa": {
-            "name": "Accompagnement Visa",
-            "description": "Préparation irréprochable de dossiers visa d'affaires ou d'études",
-            "duration": "2-8 semaines",
-            "price": "Sur devis",
-            "features": [
-              "UK, Canada, Chine",
-              "Inde, Russie, Schengen",
-              "Audit de dossier",
-              "Préparation entretien"
-            ]
-          },
-          "delegation": {
-            "name": "Logistique de Délégations",
-            "description": "Vols, hébergement et coordination pour délégations d'affaires internationales",
-            "duration": "Sur mesure",
-            "price": "Sur devis",
-            "features": [
-              "Réservation de vols",
-              "Hébergement premium",
-              "Déplacements locaux",
-              "Coordination complète"
-            ]
-          }
-        }
       }
     },
     "modal": {
@@ -545,9 +516,9 @@
   },
   "ProcurementPage": {
     "hero": {
-      "title": "Pôles d'",
-      "titleHighlight": "Approvisionnement",
-      "description": "Oubliez le stress des importations et les risques d'achats à l'étranger ! Grâce à notre présence directe en Chine, au Nigeria et au Cameroun, nous trouvons pour vous les meilleurs produits, directement en usine et aux meilleurs prix du marché. Nous vous connectons aux fabricants les plus fiables pour approvisionner votre commerce ou votre entreprise en toute sécurité."
+      "title": "Approvisionnement",
+      "titleHighlight": "",
+      "description": "Découvrez les produits que nous pouvons vous approvisionner : achats locaux au Cameroun et au Nigeria, sourcing international depuis la Chine. Technologies, mode, agriculture, alimentation et santé — chaque pôle avec des produits concrets pour votre entreprise."
     },
     "search": {
       "placeholder": "Rechercher des produits ou catégories...",
@@ -761,8 +732,8 @@
   },
   "ResourcesPage": {
     "hero": {
-      "title": "Ressources &",
-      "titleHighlight": "Perspectives",
+      "title": "Ressources",
+      "titleHighlight": "",
       "description": "Nous croyons fermement qu'on grandit mieux lorsqu'on avance ensemble. Découvrez notre centre de partage et d'entraide, une bibliothèque complète d'outils pratiques, d'explications simples et de conseils concrets pour vous aider à prendre les bonnes décisions et à faire prospérer votre activité."
     },
     "sections": {
@@ -904,13 +875,11 @@
         "phoneLabel": "Ligne directe"
       },
       "emails": {
-        "title": "Nos Boîtes aux Lettres Numériques",
-        "sales": "Pour vos commandes, achats et import/export : sales@kci-ltd.com",
-        "info": "Pour des questions générales ou des conseils d'affaires : info@kci-ltd.com"
+        "title": "Notre adresse e-mail"
       },
       "social": {
-        "title": "Suivez nos Belles Histoires",
-        "description": "Rejoignez notre communauté en ligne pour découvrir nos conseils gratuits et les réussites des entrepreneurs que nous accompagnons."
+        "availableOn": "Nous sommes aussi disponibles sur",
+        "description": "Rejoignez-nous sur nos réseaux pour nos actualités, conseils et échanges directs avec nos équipes."
       }
     }
   },
@@ -1532,7 +1501,7 @@
     "companyTagline": "Votre partenaire de confiance pour grandir en toute sérénité",
     "contact": {
       "inquiries": "Pour toute demande : info@kci-ltd.com",
-      "orders": "Pour passer commande : sales@kci-ltd.com",
+      "orders": "For orders and inquiries: info@kci-ltd.com",
       "whatsapp": "WhatsApp : +8615011971089",
       "calls": "Appels : +2349031622889 / +237683242277"
     },
@@ -1541,8 +1510,8 @@
       "links": {
         "about": "À Propos de Nous",
         "services": "Nos Services",
-        "procurement": "Pôles d'Approvisionnement",
-        "resources": "Ressources & Perspectives",
+        "procurement": "Approvisionnement",
+        "resources": "Ressources",
         "contact": "Contactez-nous",
         "faq": "FAQ"
       }

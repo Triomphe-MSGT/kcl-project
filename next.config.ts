@@ -14,6 +14,10 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'kimi-web-img.moonshot.cn',
       },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
     ],
   },
 }

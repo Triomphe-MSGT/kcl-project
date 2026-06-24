@@ -7,12 +7,11 @@ import { CheckCircle2 } from 'lucide-react'
 
 const serviceKeys = [
   'accounting',
+  'fintech',
   'sourcing',
   'events',
   'realEstate',
   'facilities',
-  'travel',
-  'fintech',
   'support',
 ] as const
 

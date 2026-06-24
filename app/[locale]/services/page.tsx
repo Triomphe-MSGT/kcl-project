@@ -10,8 +10,6 @@ import {
   Truck,
   Calendar,
   Building2,
-  Briefcase,
-  Plane,
   Ship,
   Car,
   ChefHat,
@@ -32,8 +30,10 @@ import {
   X,
   MapPin,
   FileText,
+  Package,
 } from 'lucide-react'
 import { PageHero } from '@/components/layout/PageHero'
+import { siteImages } from '@/lib/site-images'
 
 // Types
 interface ServiceSubcategory {
@@ -55,33 +55,44 @@ interface ServiceCategory {
 
 const serviceCategories: ServiceCategory[] = [
   {
-    id: 'financial',
+    id: 'accounting',
     icon: Calculator,
     color: 'text-kci-brand',
     bgColor: 'bg-kci-brand/10',
     gradient: 'from-kci-brand to-blue-600',
     totalClients: 320,
-    image: '/images/home/axes/financial.jpg',
+    image: siteImages.services.accounting,
     subcategories: [
       {
         key: 'accounting',
         icon: BarChart3,
-        image: '/images/home/axes/financial.jpg',
-      },
-      {
-        key: 'fintech',
-        icon: DollarSign,
-        image: '/images/home/axes/financial.jpg',
+        image: siteImages.services.accountingAudit,
       },
       {
         key: 'businessCreation',
         icon: Target,
-        image: '/images/home/presentation.jpg',
+        image: siteImages.services.businessCreation,
       },
       {
         key: 'dsf',
         icon: FileText,
-        image: '/images/home/axes/financial.jpg',
+        image: siteImages.services.dsf,
+      },
+    ],
+  },
+  {
+    id: 'fintech',
+    icon: DollarSign,
+    color: 'text-emerald-600',
+    bgColor: 'bg-emerald-50',
+    gradient: 'from-emerald-500 to-teal-600',
+    totalClients: 210,
+    image: siteImages.services.fintech,
+    subcategories: [
+      {
+        key: 'fintech',
+        icon: DollarSign,
+        image: siteImages.services.fintech,
       },
     ],
   },
@@ -92,22 +103,22 @@ const serviceCategories: ServiceCategory[] = [
     bgColor: 'bg-kci-accent/10',
     gradient: 'from-kci-accent to-blue-600',
     totalClients: 450,
-    image: '/images/home/axes/procurement.jpg',
+    image: siteImages.services.procurement,
     subcategories: [
       {
         key: 'sourcing',
         icon: ShoppingBag,
-        image: '/images/home/axes/procurement.jpg',
+        image: siteImages.services.sourcing,
       },
       {
         key: 'freight',
         icon: Ship,
-        image: '/images/home/axes/procurement.jpg',
+        image: siteImages.services.freight,
       },
       {
         key: 'delivery',
         icon: Car,
-        image: '/images/home/axes/procurement.jpg',
+        image: siteImages.services.delivery,
       },
     ],
   },
@@ -118,27 +129,27 @@ const serviceCategories: ServiceCategory[] = [
     bgColor: 'bg-kci-warm/10',
     gradient: 'from-kci-warm to-orange-600',
     totalClients: 320,
-    image: '/images/home/axes/events.jpg',
+    image: siteImages.services.events,
     subcategories: [
       {
         key: 'budget',
         icon: DollarSign,
-        image: '/images/home/axes/events.jpg',
+        image: siteImages.services.eventBudget,
       },
       {
         key: 'audiovisual',
         icon: Volume2,
-        image: '/images/home/axes/events.jpg',
+        image: siteImages.services.eventAv,
       },
       {
         key: 'catering',
         icon: ChefHat,
-        image: '/images/home/axes/events.jpg',
+        image: siteImages.services.eventCatering,
       },
       {
         key: 'staff',
         icon: Users,
-        image: '/images/home/axes/events.jpg',
+        image: siteImages.services.eventStaff,
       },
     ],
   },
@@ -149,22 +160,22 @@ const serviceCategories: ServiceCategory[] = [
     bgColor: 'bg-kci-accent/10',
     gradient: 'from-kci-accent to-blue-600',
     totalClients: 180,
-    image: '/images/home/axes/facilities.jpg',
+    image: siteImages.services.facilities,
     subcategories: [
       {
         key: 'maintenance',
         icon: Wrench,
-        image: '/images/home/axes/facilities.jpg',
+        image: siteImages.services.maintenance,
       },
       {
         key: 'cleaning',
         icon: Sparkles,
-        image: '/images/home/axes/facilities.jpg',
+        image: siteImages.services.cleaning,
       },
       {
         key: 'staffing',
         icon: Users,
-        image: '/images/home/axes/facilities.jpg',
+        image: siteImages.services.staffing,
       },
     ],
   },
@@ -175,38 +186,17 @@ const serviceCategories: ServiceCategory[] = [
     bgColor: 'bg-amber-50',
     gradient: 'from-amber-500 to-orange-600',
     totalClients: 150,
-    image: '/images/home/axes/real-estate.jpg',
+    image: siteImages.services.realEstate,
     subcategories: [
       {
         key: 'brokerage',
         icon: MapPin,
-        image: '/images/home/axes/real-estate.jpg',
+        image: siteImages.services.brokerage,
       },
       {
         key: 'promotion',
         icon: TrendingUp,
-        image: '/images/home/axes/real-estate.jpg',
-      },
-    ],
-  },
-  {
-    id: 'travel',
-    icon: Plane,
-    color: 'text-green-600',
-    bgColor: 'bg-green-50',
-    gradient: 'from-green-500 to-emerald-600',
-    totalClients: 220,
-    image: '/images/home/axes/travel.jpg',
-    subcategories: [
-      {
-        key: 'visa',
-        icon: FileText,
-        image: '/images/home/axes/travel.jpg',
-      },
-      {
-        key: 'delegation',
-        icon: Briefcase,
-        image: '/images/home/axes/travel.jpg',
+        image: siteImages.services.promotion,
       },
     ],
   },
@@ -494,7 +484,7 @@ export default function ServicesPage() {
           {/* No Results */}
           {filteredCategories.length === 0 && (
             <div className='text-center py-12 bg-white/90 backdrop-blur-md rounded-xl border border-gray-100/30 shadow-lg'>
-              <Briefcase className='text-gray-400 mx-auto mb-4' size={64} />
+              <Package className='text-gray-400 mx-auto mb-4' size={64} />
               <h3 className='text-xl font-semibold text-gray-900 mb-2 tracking-wide'>
                 {t('search.noResults.title')}
               </h3>
@@ -517,8 +507,8 @@ export default function ServicesPage() {
 
       {/* Subcategory Modal */}
       {isModalOpen && selectedSubcategory && (
-        <div className='fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 overflow-y-auto'>
-          <div className='w-full max-w-4xl max-h-[95vh] overflow-y-auto bg-white/95 backdrop-blur-md rounded-xl border border-gray-100/30 shadow-xl relative'>
+        <div className='fixed inset-0 bg-black/50 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4 overflow-y-auto'>
+          <div className='w-full sm:max-w-4xl max-h-[92dvh] sm:max-h-[95vh] overflow-y-auto bg-white/95 backdrop-blur-md rounded-t-2xl sm:rounded-xl border border-gray-100/30 shadow-xl relative'>
             <button
               onClick={closeModal}
               className='absolute top-4 right-4 p-2 text-gray-600 hover:text-gray-900 transition-colors bg-white/90 rounded-full shadow-md hover:shadow-lg z-10'
@@ -528,7 +518,7 @@ export default function ServicesPage() {
             </button>
 
             <div className='grid grid-cols-1 lg:grid-cols-2'>
-              <div className='relative h-[300px] lg:h-full overflow-hidden'>
+              <div className='relative h-[220px] sm:h-[280px] lg:h-full min-h-[200px] overflow-hidden'>
                 <Image
                   src={selectedSubcategory.image}
                   alt={t(

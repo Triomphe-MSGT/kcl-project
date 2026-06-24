@@ -108,7 +108,7 @@
     "companyTagline": "Your trusted partner for confident growth",
     "contact": {
       "inquiries": "For all inquiries: info@kci-ltd.com",
-      "orders": "To place an order: sales@kci-ltd.com",
+      "orders": "For orders and inquiries: info@kci-ltd.com",
       "whatsapp": "WhatsApp: +8615011971089",
       "calls": "Calls: +2349031622889 / +237683242277"
     },
@@ -117,8 +117,8 @@
       "links": {
         "about": "About Us",
         "services": "Our Services",
-        "procurement": "Procurement Hubs",
-        "resources": "Resources & Insights",
+        "procurement": "Procurement",
+        "resources": "Resources",
         "contact": "Contact Us",
         "faq": "FAQ"
       }
@@ -149,8 +149,8 @@
       "home": "Home",
       "about": "About Us",
       "services": "Our Services",
-      "procurement": "Procurement Hubs",
-      "resources": "Resources & Insights",
+      "procurement": "Procurement",
+      "resources": "Resources",
       "contact": "Contact Us",
       "faq": "FAQ"
     },
@@ -170,7 +170,7 @@
     "intro": {
       "paragraph2": "We don't believe in one-size-fits-all solutions. That's why we take the time to listen and offer tailored support adapted to your reality. With teams on the ground in Yaoundé (Cameroon), Lagos (Nigeria), and Guangzhou (China), we connect your local projects to global opportunities, bringing you the best of each market.",
       "paragraph3": "Our team brings together passionate professionals who understand the challenges and realities of running a business today. Whether you're a young founder launching a startup, an SME manager looking to better organize your work, or a larger company ready to expand into a new region, we walk alongside you. We are the trusted partner you can rely on to navigate every stage of your growth with confidence.",
-      "imageAlt": "KC International SARL team"
+      "imageAlt": "African professionals supported by KC International SARL"
     },
     "mission": {
       "title": "Our Mission",
@@ -225,7 +225,7 @@
       "description": "At KCI SARL, we take care of your business by freeing you from daily constraints. Our flexible, high-performance solutions are designed to organize your operations, save you valuable time, and guide you toward success with peace of mind.",
       "services": {
         "accounting": {
-          "title": "1. Accounting, Finance & Tax (Your Financial Peace of Mind)",
+          "title": "1. Accounting & Tax",
           "items": [
             "Accounting & Tax Advisory: We keep your books clean, clear, and well organized every day. We perform internal reviews to safeguard the financial health of your business.",
             "Easy Accounting Tools: We install digital tools suited to your team size and teach you how to use them to track your money with ease.",
@@ -234,16 +234,24 @@
             "Smart Tax Optimization: We find every legal solution to reduce your tax expenses, protect your profits, and improve your cash flow."
           ]
         },
-        "sourcing": {
-          "title": "2. Procurement, Import/Export & Logistics (Your Gateway to the World)",
+        "fintech": {
+          "title": "2. Payment Solutions (FinTech)",
           "items": [
-            "Trusted Sourcing & Procurement: We find the best local and international suppliers (especially in China), negotiate bulk prices, and verify product quality directly at the factory to help you avoid unpleasant surprises.",
+            "Simplified Bill Payments: Save time by letting us securely manage payment of your water and electricity bills, professional subscriptions, and taxes.",
+            "Secure Money Transfers: Reliable, fast solutions to send and receive funds across countries to keep your business activities running smoothly."
+          ]
+        },
+        "sourcing": {
+          "title": "3. Procurement & Supply (Local & International)",
+          "items": [
+            "Trusted Local Procurement: We identify and negotiate with reliable suppliers in Cameroon, Nigeria, and the sub-region for your daily merchandise, materials, and equipment needs.",
+            "International Sourcing: When needed, we find the best suppliers abroad (especially in China), negotiate bulk prices, and verify product quality directly at the factory.",
             "Freight & Cargo Transport: Whether by air, sea, or road, we move your cargo safely while handling all customs and transit formalities.",
             "Turnkey Delivery: We track your parcels and orders all the way through, delivering your goods directly to your shop, factory, or warehouse door."
           ]
         },
         "events": {
-          "title": "3. Event Management (Your Successful Events)",
+          "title": "4. Event Management",
           "items": [
             "Budget Tracking & Savings: We plan spending for your professional or private events to scrupulously respect your budget while guaranteeing maximum quality.",
             "Audiovisual Equipment & Premium Catering: We set up the best technology (screens, sound, lighting) and select delicious menus to welcome your guests in the best conditions.",
@@ -251,35 +259,22 @@
           ]
         },
         "realEstate": {
-          "title": "4. Your Real Estate Projects (Buy, Sell & Build)",
+          "title": "5. Your Real Estate Projects",
           "items": [
             "Advisory, Purchase & Leasing: We support you in buying, selling, or renting offices, commercial premises, or land while fully securing your transactions.",
             "Property Development & Real Estate Projects: We help owners and investors design their projects, obtain building permits, and manage construction sites from start to finish."
           ]
         },
         "facilities": {
-          "title": "5. Premises Care & Management (Facilities Management)",
+          "title": "6. Premises Care & Management",
           "items": [
             "Professional Cleaning & Minor Repairs: Careful housekeeping, disinfection, and quick handyman interventions to keep your offices clean and welcoming.",
             "Preventive Maintenance: We regularly monitor your equipment (electrical, plumbing, generators) to repair natural wear before breakdowns occur, saving you unexpected expenses.",
             "Staffing Solutions: We find and select trusted employees (reception agents, technicians, etc.) to strengthen your team according to your needs."
           ]
         },
-        "travel": {
-          "title": "6. Travel Services & Visa Assistance",
-          "items": [
-            "Visa Guidance & Support: A caring, expert guide to help you prepare your visa application flawlessly (business or study visas) for the UK, Canada, China, India, Russia, and many other destinations."
-          ]
-        },
-        "fintech": {
-          "title": "7. Easy Payment Solutions (FinTech)",
-          "items": [
-            "Simplified Bill Payments: Save time by letting us securely manage payment of your water and electricity bills, professional subscriptions, and taxes.",
-            "Secure Money Transfers: Reliable, fast solutions to send and receive funds across countries to keep your business activities running smoothly."
-          ]
-        },
         "support": {
-          "title": "8. Personalized Assistance (Tailored Services)",
+          "title": "7. Personalized Assistance",
           "items": [
             "Unique Support: Because every journey is different, we remain fully available to provide flexible, tailored help for any other specific professional or personal need."
           ]
@@ -294,8 +289,8 @@
   },
   "ServicesPage": {
     "hero": {
-      "title": "What We Can Do For You",
-      "description": "At KCI SARL, we take care of your business by freeing you from daily constraints. Our flexible, high-performance solutions are designed to organize your operations, save you valuable time, and guide you toward success with peace of mind."
+      "title": "Our Services",
+      "description": "Professional solutions tailored to African business realities: accounting, payments, local and international procurement, events, real estate, and facilities management."
     },
     "search": {
       "placeholder": "Search for services or categories...",
@@ -307,10 +302,10 @@
       }
     },
     "categories": {
-      "financial": {
-        "name": "Financial Services",
-        "description": "Accounting & Tax, FinTech payment solutions, and financial peace of mind",
-        "badge": "Finance & Tax",
+      "accounting": {
+        "name": "Accounting & Tax",
+        "description": "Bookkeeping, financial audit, business creation, and OHADA compliance",
+        "badge": "Accounting",
         "clientsServed": "clients served",
         "subcategories": {
           "accounting": {
@@ -323,18 +318,6 @@
               "Internal reviews",
               "Digital tools",
               "Cash flow tracking"
-            ]
-          },
-          "fintech": {
-            "name": "FinTech Payment Solutions",
-            "description": "Tax payments, subscriptions, and secure fund transfers",
-            "duration": "On demand",
-            "price": "On quote",
-            "features": [
-              "Bill payments",
-              "Taxes & subscriptions",
-              "International transfers",
-              "Multi-currency routing"
             ]
           },
           "businessCreation": {
@@ -363,22 +346,42 @@
           }
         }
       },
+      "fintech": {
+        "name": "Payment Solutions",
+        "description": "Bill payments, taxes, subscriptions, and secure transfers for your business",
+        "badge": "FinTech & Payments",
+        "clientsServed": "clients served",
+        "subcategories": {
+          "fintech": {
+            "name": "FinTech Payment Solutions",
+            "description": "Tax payments, subscriptions, and secure fund transfers",
+            "duration": "On demand",
+            "price": "On quote",
+            "features": [
+              "Bill payments",
+              "Taxes & subscriptions",
+              "International transfers",
+              "Multi-currency routing"
+            ]
+          }
+        }
+      },
       "procurementLogistics": {
-        "name": "Procurement, Import/Export & Logistics",
-        "description": "Global sourcing, customs formalities, and integrated freight",
-        "badge": "Sourcing & Freight",
+        "name": "Procurement & Supply",
+        "description": "Local procurement in Cameroon and Nigeria, international sourcing, and integrated logistics",
+        "badge": "Procurement & Logistics",
         "clientsServed": "clients served",
         "subcategories": {
           "sourcing": {
-            "name": "Trusted Sourcing & Procurement",
-            "description": "Supplier research, bulk negotiation, and factory quality control",
+            "name": "Local Procurement & Sourcing",
+            "description": "Local and international suppliers, negotiation, and quality control",
             "duration": "Variable",
             "price": "On quote",
             "features": [
-              "Local & international suppliers",
+              "Local suppliers (CMR, NGA)",
+              "International sourcing",
               "Price negotiation",
-              "Factory inspection",
-              "Presence in China"
+              "Quality control"
             ]
           },
           "freight": {
@@ -538,38 +541,6 @@
             ]
           }
         }
-      },
-      "travel": {
-        "name": "Travel & Visa Services",
-        "description": "Visa guidance and support for the UK, Canada, China, India, Russia, and many other destinations.",
-        "badge": "Global Mobility",
-        "clientsServed": "clients served",
-        "subcategories": {
-          "visa": {
-            "name": "Visa Assistance",
-            "description": "Flawless preparation of business or study visa applications",
-            "duration": "2-8 weeks",
-            "price": "On quote",
-            "features": [
-              "UK, Canada, China",
-              "India, Russia, Schengen",
-              "File audit",
-              "Interview preparation"
-            ]
-          },
-          "delegation": {
-            "name": "Delegation Logistics",
-            "description": "Flights, accommodation, and coordination for international business delegations",
-            "duration": "Tailored",
-            "price": "On quote",
-            "features": [
-              "Flight booking",
-              "Premium accommodation",
-              "Local transport",
-              "Full coordination"
-            ]
-          }
-        }
       }
     },
     "modal": {
@@ -684,13 +655,11 @@
         "phoneLabel": "Direct line"
       },
       "emails": {
-        "title": "Our Digital Mailboxes",
-        "sales": "For orders, purchases, and import/export: sales@kci-ltd.com",
-        "info": "For general questions or business advice: info@kci-ltd.com"
+        "title": "Our email address"
       },
       "social": {
-        "title": "Follow Our Stories",
-        "description": "Join our online community to discover our free advice and the successes of the entrepreneurs we support."
+        "availableOn": "We are also available on",
+        "description": "Follow us on social media for updates, advice, and direct contact with our teams."
       }
     }
   },
@@ -1338,8 +1307,8 @@
   "ProcurementPage": {
     "hero": {
       "title": "Procurement",
-      "titleHighlight": "Hubs",
-      "description": "Forget the stress of imports and the risks of buying abroad! With our direct presence in China, Nigeria, and Cameroon, we find the best products for you — directly from the factory and at the best market prices. We connect you with the most reliable manufacturers to supply your business safely."
+      "titleHighlight": "",
+      "description": "Discover the products we can supply for you: local procurement in Cameroon and Nigeria, international sourcing from China. Technology, fashion, agriculture, food, and healthcare — each hub with concrete products for your business."
     },
     "search": {
       "placeholder": "Search for products or categories...",
@@ -1553,8 +1522,8 @@
   },
   "ResourcesPage": {
     "hero": {
-      "title": "Resources &",
-      "titleHighlight": "Insights",
+      "title": "Resources",
+      "titleHighlight": "",
       "description": "We firmly believe we grow better when we move forward together. Discover our sharing and support center — a complete library of practical tools, simple explanations, and concrete advice to help you make the right decisions and help your business thrive."
     },
     "sections": {
